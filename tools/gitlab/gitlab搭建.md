@@ -229,29 +229,6 @@ gitlab-rake gitlab:env:info
 - /var/log/gitlab：此目录下存放了gitlab各个组件产生的日志
 - /opt/gitlab/backups/：默认备份文件生成的目录
 
-## 5. 遇到的问题
-
-### 5.1 clone路径不对
-
-直接更改/etc/gitlab/gitlab.rb不能生效，更改/opt/gitlab/embedded/service/gitlab-rails/config/gitlab.yml文件
-
-****
-
-```
-vi /opt/gitlab/embedded/service/gitlab-rails/config/gitlab.yml
-```
-
-更改**host和port**即可
-
-```
-  ## GitLab settings 
-  gitlab:
-    ## Web server settings (note: host is the FQDN, do not include http://)
-    host: xxx.xxx.xxx.xxx
-    port: 8181
-    https: fals
-```
-
 
 
 
