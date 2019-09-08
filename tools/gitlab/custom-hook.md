@@ -66,7 +66,7 @@ hook 脚本就是git 自身的规范，写shell，python、ruby 都可以
 ```bash
 #!/bin/sh
 
-echo "Say hi from gitlab server.cesh 😄"
+echo "Say hi from gitlab server 😄"
 exit 0
 ```
 
