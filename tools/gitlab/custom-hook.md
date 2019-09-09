@@ -122,3 +122,6 @@ Completed with errors, see above
 ### 参考文章
 
 [Gitlab 服务器端 custom hook 配置](<https://www.jianshu.com/p/5531a21afa68>)
+
+[官方文档](<https://docs.gitlab.com/ee/administration/custom_hooks.html>)
+
