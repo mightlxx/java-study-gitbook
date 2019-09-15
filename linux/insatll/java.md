@@ -59,4 +59,4 @@ ln -s /usr/local/java/jdk1.8.0_221/bin/java /usr/bin/java
 java -version
 ```
 
-![image-20190909212359280](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20190909212359280.png)
+![image-20190909212359280](./img/image-20190909212359280.png)

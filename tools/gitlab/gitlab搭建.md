@@ -180,7 +180,7 @@ sudo gitlab-ctl status
 
   默认账户是root，密码在此页面设置
 
-![image-20190907201354004](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20190907201354004.png)
+![image-20190907201354004](./img/image-20190907201354004.png)
 
 ## 3. 常用的几个Gitlab命令
 

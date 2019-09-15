@@ -4,9 +4,9 @@
 
 提示：Host 'xxx.xxx.x.xx' is not allowed to connect to this MySQL server
 
-![image-20190909005913379](/Users/zhangshengzhong/Library/Application%20Support/typora-user-images/image-20190909005913379.png)
+![image-20190913211110163](./img/image-20190913211110163.png)
 
-## 2. 问题原因
+2. 问题原因
 
 客户端想直接用root账户从远端直接连接，Mysql从安全性考虑，限定了root账户只能有本机端localhost连接
 
@@ -18,7 +18,7 @@ select Host,User from mysql.user;
 
 结果如下
 
-![image-20190909214141218](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20190909214141218.png)
+![image-20190909214141218](./img/image-20190909214141218.png)
 
 ## 3. 解决方案
 
