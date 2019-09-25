@@ -51,7 +51,7 @@ i = i + 1;
 
 　所以就出现了**缓存一致性协议**。最出名的就是Intel 的MESI协议，MESI协议保证了每个缓存中使用的共享变量的副本是一致的。它核心的思想是：**当CPU写数据时，如果发现操作的变量是共享变量**，即在其他CPU中也存在该变量的副本，会发出信号通知其他CPU将该变量的**缓存行置为无效状态**，因此当其他CPU需要读取这个变量时，发现自己缓存中缓存该变量的缓存行是无效的，那么它就会从内存重新读取。
 
-![image-20190914220720769](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20190914220720769.png)
+![image-20190914220720769](./img/image-20190914220720769.png)
 
 ## 2. 并发编程中的三个概念
 
@@ -74,7 +74,7 @@ i = i + 1;
 >　　举个最简单的例子，大家想一下假如为一个32位的变量赋值过程不具备原子性的话，会发生什么后果？
 >
 >```
->i = ``9``;
+>i = 9;
 >```
 >
 > 　　假若一个线程执行到这个语句时，我暂且假设为一个32位的变量赋值包括两个过程：为低16位赋值，为高16位赋值。
@@ -132,7 +132,7 @@ i = i + 1;
 >
 >这段代码有4个语句，那么可能的一个执行顺序是：
 >
->![image-20190914221554358](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20190914221554358.png)
+>![image-20190914221554358](./img/image-20190914221554358.png)
 >
 >那么可不可能是这个执行顺序呢： 语句2   语句1    语句4   语句3
 >
@@ -169,7 +169,7 @@ Java内存模型为我们提供了哪些保证以及在java中提供了哪些方
 举个简单的例子：在java中，执行下面这个语句：
 
 ```
-`i  = ``10``;`
+i  = 10;
 ```
 
  　　执行线程必须先在自己的工作线程中对变量i所在的缓存行进行赋值操作，然后再写入主存当中。而不是直接将数值10写入主存当中。
@@ -260,11 +260,33 @@ Java内存模型只保证了基本读取和赋值是原子性操作，如果要�
 
 >下面看一个例子：
 >
->```
->`public` `class` `Test {``    ``public` `volatile` `int` `inc = ``0``;``    ` `    ``public` `void` `increase() {``        ``inc++;``    ``}``    ` `    ``public` `static` `void` `main(String[] args) {``        ``final` `Test test = ``new` `Test();``        ``for``(``int` `i=``0``;i<``10``;i++){``            ``new` `Thread(){``                ``public` `void` `run() {``                    ``for``(``int` `j=``0``;j<``1000``;j++)``                        ``test.increase();``                ``};``            ``}.start();``        ``}``        ` `        ``while``(Thread.activeCount()>``1``)  ``//保证前面的线程都执行完``            ``Thread.yield();``        ``System.out.println(test.inc);``    ``}``}`
+>```java
+>public class Test {
+>    public volatile int inc = 0;
+>     
+>    public void increase() {
+>        inc++;
+>    }
+>     
+>    public static void main(String[] args) {
+>        final Test test = new Test();
+>        for(int i=0;i<10;i++){
+>            new Thread(){
+>                public void run() {
+>                    for(int j=0;j<1000;j++)
+>                        test.increase();
+>                };
+>            }.start();
+>        }
+>         
+>        while(Thread.activeCount()>1)  //保证前面的线程都执行完
+>            Thread.yield();
+>        System.out.println(test.inc);
+>    }
+>}
 >```
 >
-> 　　大家想一下这段程序的输出结果是多少？也许有些朋友认为是10000。但是事实上运行它会发现每次运行结果都不一致，都是一个小于10000的数字。
+>　　大家想一下这段程序的输出结果是多少？也许有些朋友认为是10000。但是事实上运行它会发现每次运行结果都不一致，都是一个小于10000的数字。
 >
 >　　可能有的朋友就会有疑问，不对啊，上面是对变量inc进行自增操作，由于volatile保证了可见性，那么在每个线程中对inc自增完之后，在其他线程中都能看到修改后的值啊，所以有10个线程分别进行了1000次操作，那么最终inc的值应该是1000*10=10000。
 >
@@ -290,93 +312,93 @@ Java内存模型只保证了基本读取和赋值是原子性操作，如果要�
 >
 >　　采用synchronized：
 >
->```
+>```java
 >public class Test {
->    public  int inc = 0;
->    
->    public synchronized void increase() {
->        inc++;
->    }
->    
->    public static void main(String[] args) {
->        final Test test = new Test();
->        for(int i=0;i<10;i++){
->            new Thread(){
->                public void run() {
->                    for(int j=0;j<1000;j++)
->                        test.increase();
->                };
->            }.start();
->        }
->        
->        while(Thread.activeCount()>1)  //保证前面的线程都执行完
->            Thread.yield();
->        System.out.println(test.inc);
->    }
+>public  int inc = 0;
+>
+>public synchronized void increase() {
+>   inc++;
+>}
+>
+>public static void main(String[] args) {
+>   final Test test = new Test();
+>   for(int i=0;i<10;i++){
+>       new Thread(){
+>           public void run() {
+>               for(int j=0;j<1000;j++)
+>                   test.increase();
+>           };
+>       }.start();
+>   }
+>   
+>   while(Thread.activeCount()>1)  //保证前面的线程都执行完
+>       Thread.yield();
+>   System.out.println(test.inc);
+>}
 >}
 >```
 >
 >采用Lock：
 >
->```
+>```java
 >
 >public class Test {
->    public  int inc = 0;
->    Lock lock = new ReentrantLock();
->    
->    public  void increase() {
->        lock.lock();
->        try {
->            inc++;
->        } finally{
->            lock.unlock();
->        }
->    }
->    
->    public static void main(String[] args) {
->        final Test test = new Test();
->        for(int i=0;i<10;i++){
->            new Thread(){
->                public void run() {
->                    for(int j=0;j<1000;j++)
->                        test.increase();
->                };
->            }.start();
->        }
->        
->        while(Thread.activeCount()>1)  //保证前面的线程都执行完
->            Thread.yield();
->        System.out.println(test.inc);
->    }
+>public  int inc = 0;
+>Lock lock = new ReentrantLock();
+>
+>public  void increase() {
+>   lock.lock();
+>   try {
+>       inc++;
+>   } finally{
+>       lock.unlock();
+>   }
+>}
+>
+>public static void main(String[] args) {
+>   final Test test = new Test();
+>   for(int i=0;i<10;i++){
+>       new Thread(){
+>           public void run() {
+>               for(int j=0;j<1000;j++)
+>                   test.increase();
+>           };
+>       }.start();
+>   }
+>   
+>   while(Thread.activeCount()>1)  //保证前面的线程都执行完
+>       Thread.yield();
+>   System.out.println(test.inc);
+>}
 >}
 >
 >```
 >
 >采用AtomicInteger：
 >
->```
+>```java
 >public class Test {
->    public  AtomicInteger inc = new AtomicInteger();
->     
->    public  void increase() {
->        inc.getAndIncrement();
->    }
->    
->    public static void main(String[] args) {
->        final Test test = new Test();
->        for(int i=0;i<10;i++){
->            new Thread(){
->                public void run() {
->                    for(int j=0;j<1000;j++)
->                        test.increase();
->                };
->            }.start();
->        }
->        
->        while(Thread.activeCount()>1)  //保证前面的线程都执行完
->            Thread.yield();
->        System.out.println(test.inc);
->    }
+>public  AtomicInteger inc = new AtomicInteger();
+>
+>public  void increase() {
+>   inc.getAndIncrement();
+>}
+>
+>public static void main(String[] args) {
+>   final Test test = new Test();
+>   for(int i=0;i<10;i++){
+>       new Thread(){
+>           public void run() {
+>               for(int j=0;j<1000;j++)
+>                   test.increase();
+>           };
+>       }.start();
+>   }
+>   
+>   while(Thread.activeCount()>1)  //保证前面的线程都执行完
+>       Thread.yield();
+>   System.out.println(test.inc);
+>}
 >}
 >```
 >
@@ -396,21 +418,37 @@ Java内存模型只保证了基本读取和赋值是原子性操作，如果要�
 >
 >　　可能上面说的比较绕，举个简单的例子：
 >
->```
->`//x、y为非volatile变量``//flag为volatile变量` `x = ``2``;        ``//语句1``y = ``0``;        ``//语句2``flag = ``true``;  ``//语句3``x = ``4``;         ``//语句4``y = -``1``;       ``//语句5`
+>```java
+>//x、y为非volatile变量
+>//flag为volatile变量
+> 
+>x = 2;        //语句1
+>y = 0;        //语句2
+>flag = true;  //语句3
+>x = 4;         //语句4
+>y = -1;       //语句5
 >```
 >
-> 　　由于flag变量为volatile变量，那么在进行指令重排序的过程的时候，不会将语句3放到语句1、语句2前面，也不会讲语句3放到语句4、语句5后面。但是要注意语句1和语句2的顺序、语句4和语句5的顺序是不作任何保证的。
+>　　由于flag变量为volatile变量，那么在进行指令重排序的过程的时候，不会将语句3放到语句1、语句2前面，也不会讲语句3放到语句4、语句5后面。但是要注意语句1和语句2的顺序、语句4和语句5的顺序是不作任何保证的。
 >
 >　　并且volatile关键字能保证，执行到语句3时，语句1和语句2必定是执行完毕了的，且语句1和语句2的执行结果对语句3、语句4、语句5是可见的。
 >
 >　　那么我们回到前面举的一个例子：
 >
->```
->`//线程1:``context = loadContext();   ``//语句1``inited = ``true``;             ``//语句2` `//线程2:``while``(!inited ){``  ``sleep()``}``doSomethingwithconfig(context);`
+>```java
+>//线程1:
+>context = loadContext();   //语句1
+>inited = true;             //语句2
+> 
+>//线程2:
+>while(!inited ){
+>  sleep()
+>}
+>doSomethingwithconfig(context);
+>
 >```
 >
-> 　　前面举这个例子的时候，提到有可能语句2会在语句1之前执行，那么久可能导致context还没被初始化，而线程2中就使用未初始化的context去进行操作，导致程序出错。
+>　　前面举这个例子的时候，提到有可能语句2会在语句1之前执行，那么久可能导致context还没被初始化，而线程2中就使用未初始化的context去进行操作，导致程序出错。
 >
 >　　这里如果用volatile关键字对inited变量进行修饰，就不会出现这种问题了，因为当执行到语句2时，必定能保证context已经初始化完毕。
 
@@ -444,23 +482,63 @@ synchronized关键字是防止多个线程同时执行一段代码，那么就�
 
 **1.状态标记量**
 
-```
-`volatile` `boolean` `flag = ``false``;` `while``(!flag){``    ``doSomething();``}` `public` `void` `setFlag() {``    ``flag = ``true``;``}`
+```java
+volatile boolean flag = false;
+ 
+while(!flag){
+    doSomething();
+}
+ 
+public void setFlag() {
+    flag = true;
+}
 ```
 
  
 
-```
-`volatile` `boolean` `inited = ``false``;``//线程1:``context = loadContext();  ``inited = ``true``;            ` `//线程2:``while``(!inited ){``sleep()``}``doSomethingwithconfig(context);`
+```java
+volatile boolean inited = false;
+//线程1:
+context = loadContext();  
+inited = true;            
+ 
+//线程2:
+while(!inited ){
+sleep()
+}
+doSomethingwithconfig(context);
 ```
 
  
 
 **2.double check**
 
+```java
+class Singleton{
+    private volatile static Singleton instance = null;
+     
+    private Singleton() {
+         
+    }
+     
+    public static Singleton getInstance() {
+        if(instance==null) {
+            synchronized (Singleton.class) {
+                if(instance==null)
+                    instance = new Singleton();
+            }
+        }
+        return instance;
+    }
+}
 ```
-`class` `Singleton{``    ``private` `volatile` `static` `Singleton instance = ``null``;``    ` `    ``private` `Singleton() {``        ` `    ``}``    ` `    ``public` `static` `Singleton getInstance() {``        ``if``(instance==``null``) {``            ``synchronized` `(Singleton.``class``) {``                ``if``(instance==``null``)``                    ``instance = ``new` `Singleton();``            ``}``        ``}``        ``return` `instance;``    ``}``}`
-```
+
+## 6. 说说 synchronized 关键字和 volatile 关键字的区别
+
+- **volatile关键字**是线程同步的**轻量级实现**，所以**volatile性能肯定比synchronized关键字要好**。但是**volatile关键字只能用于变量而synchronized关键字可以修饰方法以及代码块**。synchronized关键字在JavaSE1.6之后进行了主要包括为了减少获得锁和释放锁带来的性能消耗而引入的偏向锁和轻量级锁以及其它各种优化之后执行效率有了显著提升，**实际开发中使用 synchronized 关键字的场景还是更多一些**。
+- **多线程访问volatile关键字不会发生阻塞，而synchronized关键字可能会发生阻塞**
+- **volatile关键字能保证数据的可见性，但不能保证数据的原子性。synchronized关键字两者都能保证。**
+- **volatile关键字主要用于解决变量在多个线程之间的可见性，而 synchronized关键字解决的是多个线程之间访问资源的同步性**
 
 ### 参考文章
 
