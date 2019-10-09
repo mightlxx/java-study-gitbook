@@ -51,7 +51,7 @@ cd /usr/local/redis/bin
 
 目录结构
 
-![image-20190909112349183](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20190909112349183.png)
+![image-20190909112349183](./img/image-20190909112349183.png)
 
 - redis-benchmark: redis 性能检测工具
 - redis-check-aof： AOF文件修复工具
@@ -75,7 +75,7 @@ cd /usr/local/redis/bin
 
 如图
 
-![image-20190909112943727](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20190909112943727.png)
+![image-20190909112943727](./img/image-20190909112943727.png)
 
 ### 3.2 后端模式启动
 
@@ -85,7 +85,7 @@ cd /usr/local/redis/bin
 vim /usr/local/redis/bin/redis.conf
 ```
 
-![image-20190909113153794](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20190909113153794.png)
+![image-20190909113153794](./img/image-20190909113153794.png)
 
 执行如下命令
 
@@ -97,7 +97,7 @@ vim /usr/local/redis/bin/redis.conf
 /usr/local/redis/bin/redis-server /usr/local/redis/bin/redis.conf
 ```
 
-![image-20190909114017734](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20190909114017734.png)
+![image-20190909114017734](./img/image-20190909114017734.png)
 
 ## 4. 连接redis
 
