@@ -4,11 +4,16 @@
 		"anchor-navigation-ex",
 		"-lunr", 
          "-search", 
-         "search-pro"
+         "search-pro",
+         "code",
+        "github" 
     ],
     "pluginsConfig": {
         "anchor-navigation-ex" : {
 			"showLevel": false
-			}
+			},
+        "github": {
+            "url": "https://github.com/zszdevelop/java-interview"
+        }
     }
 }
