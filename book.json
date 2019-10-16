@@ -1,4 +1,14 @@
 {
 	"plugins": ["expandable-chapters",
-    "chapter-fold"]
+    	"chapter-fold",
+		"anchor-navigation-ex",
+		"-lunr", 
+         "-search", 
+         "search-pro"
+    ],
+    "pluginsConfig": {
+        "anchor-navigation-ex" : {
+			"showLevel": false
+			}
+    }
 }
