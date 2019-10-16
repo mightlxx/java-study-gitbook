@@ -3,7 +3,7 @@
 * [前言](README.md)
 * [开发规范](CodeStandard/README.md)
     * [各层命名规范](CodeStandard/各层命名规范.md)
-* [Java基础](./base/README.md)
+* Java基础
     * [多线程](base/thread/README.md)
         * [线程生命周期](base/thread/线程生命周期.md)
         * [线程通信(等待通知wait/notify机制)](base/thread/线程通信.md)
@@ -63,6 +63,15 @@
     * [Tomcat](J2EE/tomcat/README.md)
         * [Tomcat系统架构](J2EE/tomcat/Tomcat系统架构.md)
 * [Spring](./spring/README.md)
+    * [Spring常见知识点](spring/interview/README.md)
+    * SpringAOP
+        * [SpringAOP概述](spring/aop/README.md)
+        * [Spring AOP实现原理](spring/aop/SpringAOP实现原理.md)
+    * SpringIOC
+    * Spring事务
+        * [Spring事务](spring/transaction/README.md)
+    * Spring单例
+    * [Spring Boot常见知识点](spring/SpringBoot/README.md)
     * [Spring概述](./spring/Spring概述.md)
         * [面向切面](./spring/面向切面.md)
         * [Spring容器](./spring/summary/Spring容器.md)
@@ -102,6 +111,13 @@
     * [redis事务](./redis/interview/redis事务.md)
     * redis使用场景
         * [Redis缓存场景](redis/scene/redis使用场景.md)
+        * hash场景
+            * [Redis修改局部信息场景，如用户信息（hash,）](redis/scene/Redis修改局部信息场景.md)
+        * list场景
+            * [Redis用作消息队列(list)](redis/scene/Redis用作消息队列.md)
+            * [Redis最新内容 （list）](redis/scene/Redis最新内容.md)
+        * set场景
+            * [共同好友列表 (set)](redis/scene/共同好友列表.md)
         * zset场景
             * [Redis排行榜场景（zset）](redis/scene/Redis排行榜场景.md)
             * [Redis热门服务场景(zset)](redis/scene/Redis热门服务场景.md)
@@ -199,14 +215,14 @@
             * [Mockito基本功能](./test/mock/mockito/Mockito基本功能.md)
             * [Mockito使用案例](./test/mock/mockito/Mockito使用案例.md)
             * [Mockito原理](./test/mock/mockito/Mockito原理.md)
-* [数据库连接池Druid](./druid/README.md)
-    * [Druid多数据源配置](./druid/Druid多数据源配置.md)
+            * [Mockito单测service](test/mock/Mockito单测service.md)
 * [linux](linux/README.md)
     * [操作命令](linux/operation/README.md)
         * [用户管理](linux/operation/用户管理.md)
         * [查找文件](linux/operation/查找文件.md)
     * [sshd](linux/sshd/README.md)
         * [ssh一段时间就断掉](linux/sshd/ssh一段时间就断掉.md)
+    * [清除挖矿程序（sysupdate, networkservice进程）](linux/error/清除挖矿程序.md)
     * 软件安装
         * [Java安装](linux/insatll/java.md)
         * MySQL
@@ -220,15 +236,17 @@
         * [FTP](linux/ftp/README.md)
             * [安装FTP服务](linux/ftp/安装FTP服务.md)
         * [unzip](linux/unzip/README.md)
+        * [kafka](linux/kafka/README.md)
 * [阿里云](aliyun/README.md)
     * [云服务器ECS](aliyun/ecs/README.md)
         * [安装/重装系统](aliyun/ecs/安装系统.md)
-* [快捷键](./keymap/README.md)
-    * [IDEA上阅读源码快捷键](./keymap/idea/IDEA上阅读源码快捷键.md)
 * [CDN](./cdn/README.md)
     * 相关概念
         * [DNS域名解析](cs/dns/README.md)
+* 计算机网络
+    * [计算机网络常见知识点](net/计算机网络常见知识点.md)
 * [计算机基础](./cs/README.md)
+    * [UML类图](cs/uml/README.md)
     * [磁盘存取](cs/disk/README.md)
     * [DNS域名解析](cs/dns/README.md)
 * 工具
@@ -241,6 +259,10 @@
         * [Gitlab-Runner的安装与使用](tools/gitlab/Gitlab-Runner的安装与使用.md)
         * [gitlab配置custom hook](tools/gitlab/custom-hook.md)
         * [问题集锦](tools/gitlab/问题集锦.md)
+    * [数据库连接池Druid](druid/README.md)
+        * [Druid多数据源配置](druid/Druid多数据源配置.md)
+    * [快捷键](keymap/README.md)
+        * [IDEA上阅读源码快捷键](keymap/idea/IDEA上阅读源码快捷键.md)
     * [版本控制](./tools/vcs/README.md)
         * [git](./tools/vcs/git/README.md)
             * [gitignore文件屏蔽规则](./tools/vcs/git/gitignore文件屏蔽规则.md)
