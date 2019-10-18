@@ -6,7 +6,8 @@
          "-search", 
          "search-pro",
          "code",
-        "github" 
+        "github",
+        "-sharing"
     ],
     "pluginsConfig": {
         "anchor-navigation-ex" : {

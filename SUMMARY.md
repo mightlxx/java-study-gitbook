@@ -4,6 +4,9 @@
 * [开发规范](CodeStandard/README.md)
     * [各层命名规范](CodeStandard/各层命名规范.md)
 * Java基础
+    * 容器
+        * [Java容器基础](base/collection/Java容器基础.md)
+        * [ArrayList 的扩容机制](base/collection/ArrayList 的扩容机制.md)
     * [多线程](base/thread/README.md)
         * [线程生命周期](base/thread/线程生命周期.md)
         * [线程通信(等待通知wait/notify机制)](base/thread/线程通信.md)
@@ -208,6 +211,13 @@
     * [索引](sql/索引.md)
 * [权限管理系统](./rbac/README.md)
     * [创建数据库](./rbac/db/README.md)
+    * [权限认证基础](rbac/base/权限认证基础.md)
+    * shiro
+        * [shiro基础](rbac/shiro/shiro基础.md)
+        * [SpringBoot整合shiro](rbac/shiro/SpringBoot整合shiro.md)
+        * [Shiro与JWT整合](rbac/shiro/Shiro与JWT整合.md)
+    * jwt
+        * [JWT详解](rbac/jwt/JWT详解.md)
 * [单元测试](./test/README.md)
     * [Junit](./test/junit/README.md)
         * [Junit常见注解和执行顺序](./test/junit/Junit常见注解和执行顺序.md)
