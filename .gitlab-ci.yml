@@ -30,5 +30,6 @@ deploy-job:
   script:
     - echo "部署服务开始"
     - rm -rf /home/ftpuser/gitbook/java
+    - gitbook build
     - cp -r _book /home/ftpuser/gitbook/java
     - echo "部署完成"
