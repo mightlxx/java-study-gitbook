@@ -1,7 +1,14 @@
 # 定义 test 和 package 两个 Stages
 stages:
+  - build
   - test
   - package
+  - deploy
+
+  # 定义安装包的存放位置和Tomcat服务器的地址的变量，便于后续部署使用.
+variables:
+  PROJECT_DIR: '/home/gitlab-runner/builds/gpZAsXgB/0/zsz/java-gitbook'
+  GITBOOK_DIR: '/home/ftpuser/gitbook'
 
 # 定义 package 阶段的一个 job
 package-job:
@@ -14,5 +21,21 @@ package-job:
 test-job:
   stage: test
   script:
-    - echo "Hello, test-job"
-    - echo "I am in test stage"
+    - echo "TODO test"
+
+# 定义 build 阶段的一个 job
+build-job:
+  stage: build
+  script:
+    - echo "执行gitbook build 打包命令"
+    - gitbook build
+    - echo "打包完成"
+
+
+# 定义 deploy 阶段的一个 job
+deploy-job:
+  stage: deploy
+  script:
+    - echo "部署服务开始"
+    - cp _book $GITBOOK_DIR/java
+    - echo "部署完成"
