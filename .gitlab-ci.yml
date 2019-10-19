@@ -5,10 +5,7 @@ stages:
   - package
   - deploy
 
-  # 定义安装包的存放位置和Tomcat服务器的地址的变量，便于后续部署使用.
-variables:
-  PROJECT_DIR: '/home/gitlab-runner/builds/gpZAsXgB/0/zsz/java-gitbook'
-  GITBOOK_DIR: '/home/ftpuser/gitbook'
+
 
 # 定义 package 阶段的一个 job
 package-job:
@@ -37,5 +34,6 @@ deploy-job:
   stage: deploy
   script:
     - echo "部署服务开始"
-    - cp _book $GITBOOK_DIR/java
+    - rm -rf /home/ftpuser/gitbook/java
+    - cp -r _book /home/ftpuser/gitbook/java
     - echo "部署完成"
