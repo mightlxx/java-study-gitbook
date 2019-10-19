@@ -64,7 +64,7 @@ gitlab-ci-multi-runner start gitbook-runner
 ps -aux | grep gitlab-runner
 ```
 
-gitlab运行成功了yunx ceshi fcfdsfsd dd
+gitlab运行成功了yunx ceshi fcfdsfsd dd 删除了runner
 
 ### 参考文章
 

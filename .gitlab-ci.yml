@@ -1,6 +1,5 @@
 # 定义 test 和 package 两个 Stages
 stages:
-  - build
   - test
   - package
   - deploy
@@ -8,12 +7,7 @@ stages:
 
 
 
-# 定义 build 阶段的一个 job
-build-job:
-  stage: build
-  script:
-    - echo "执行gitbook build 打包命令"
-    - echo "打包完成"
+
 
 # 定义 test 阶段的一个 job
 test-job:
