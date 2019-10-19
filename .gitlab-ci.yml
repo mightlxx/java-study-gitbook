@@ -7,12 +7,13 @@ stages:
 
 
 
-# 定义 package 阶段的一个 job
-package-job:
-  stage: package
+
+# 定义 build 阶段的一个 job
+build-job:
+  stage: build
   script:
-    - echo "Hello, package-job"
-    - echo "I am in package stage"
+    - echo "执行gitbook build 打包命令"
+    - echo "打包完成"
 
 # 定义 test 阶段的一个 job
 test-job:
@@ -20,13 +21,13 @@ test-job:
   script:
     - echo "TODO test"
 
-# 定义 build 阶段的一个 job
-build-job:
-  stage: build
+
+# 定义 package 阶段的一个 job
+package-job:
+  stage: package
   script:
-    - echo "执行gitbook build 打包命令"
-    - gitbook build
-    - echo "打包完成"
+    - echo "Hello, package-job"
+    - echo "I am in package stage"
 
 
 # 定义 deploy 阶段的一个 job
