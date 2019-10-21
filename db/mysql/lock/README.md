@@ -2,7 +2,7 @@
 
 ## 1. MyISAM 和InnoDB 存储引擎使用的锁
 
-- MyISAM 采用采用的是表级锁（table-level locking）
+- MyISAM 采用的是表级锁（table-level locking）
 - InnoDB 支持行级锁（row-level locking）和表级锁，默认行为是行级锁
 
 ## 2.表级锁和行级锁对比
