@@ -1,0 +1,33 @@
+# 定义 test 和 package 两个 Stages
+stages:
+  - test
+  - package
+  - deploy
+
+
+
+
+
+
+# 定义 test 阶段的一个 job
+test-job:
+  stage: test
+  script:
+    - echo "TODO test"
+
+
+# 定义 package 阶段的一个 job
+package-job:
+  stage: package
+  script:
+    - echo "Hello, package-job"
+    - echo "I am in package stage"
+
+
+# 定义 deploy 阶段的一个 job
+deploy-job:
+  stage: deploy
+  script:
+    - echo "部署服务开始"
+    - cp -r _book /home/ftpuser/gitbook/java
+    - echo "部署完成"
