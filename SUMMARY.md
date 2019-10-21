@@ -4,9 +4,12 @@
 * [开发规范](CodeStandard/README.md)
     * [各层命名规范](CodeStandard/各层命名规范.md)
 * Java基础
+    * [Java基础](base/object/Java基础.md)
+    * [Java异常处理](base/error/Java异常处理.md)
     * 容器
         * [Java容器基础](base/collection/Java容器基础.md)
         * [ArrayList 的扩容机制](base/collection/ArrayList 的扩容机制.md)
+        * [Comparable和Comparator](base/collection/Comparable和Comparator.md)
     * [多线程](base/thread/README.md)
         * [线程生命周期](base/thread/线程生命周期.md)
         * [线程通信(等待通知wait/notify机制)](base/thread/线程通信.md)
