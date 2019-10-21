@@ -93,7 +93,7 @@ beanfactory是基本容器，而applicationcontext是高级容器。Applicationc
 
 ### 5.1 谈谈自己对Spring AOP 的理解
 
-AOP(Aspect-Oriented Programming: 面向切面编程)**能够封装那些与业务无关，却为各个业务模块所共同调用的逻辑（例如，事务处理，日志管理，权限管理）**，便于**减少系统的重复代码，降低模块间的耦合度，并有利于未来的可扩展性和可维护性**
+AOP(Aspect-Oriented Programming: 面向切面编程)：**能够分离系统的业务逻辑和系统服务**（例如，事务处理，日志管理，权限管理）**，便于**减少系统的重复代码，降低模块间的耦合度，并有利于未来的可扩展性和可维护性**
 
 Spring AOP 就是基于动态代理的，如果要代理的对象，实现了某个接口，那么Spring AOP 会使用 **JDK Proxy**, 去创建代理对象，而对于没有实现接口的对象，就无法使用 JDK Proxy 去进行代理了，这时候 Spring AOP 会使用Cglib，**这时候 Spring AOP 会使用 Cglib 生成一个被代理对象的子类来作为代理**
 
@@ -183,10 +183,12 @@ public OneService getService(status) {
 
 ### 6.4 将一个类声明为Spring 的bean的注解有哪些
 
-我们一般使用`@Autowired` 注解自动装配bean，要想把类标识可用于 @Autowired 注解自动装配的bean的类，采用以下注解可实现
+我们一般使用 `@Autowired` 注解自动装配 bean，要想把类标识成可用于 `@Autowired` 注解自动装配的 bean 的类,采用以下注解可实现：
 
-- @Component：通用的注解，可标注任意类为Spring 组件，如果一个Bean 不知道属于哪个层，可以使用@Component注解标注
-- @Res
+- `@Component` ：通用的注解，可标注任意类为 `Spring` 组件。如果一个Bean不知道属于哪个层，可以使用`@Component` 注解标注。
+- `@Repository` : 对应持久层即 Dao 层，主要用于数据库相关操作。
+- `@Service` : 对应服务层，主要涉及一些复杂的逻辑，需要用到 Dao层。
+- `@Controller` : 对应 Spring MVC 控制层，主要用户接受用户请求并调用 Service 层返回数据给前端页面。
 
 ### 6.5 Spring 中的bean 生命周期？
 
