@@ -29,5 +29,6 @@ deploy-job:
   stage: deploy
   script:
     - echo "部署服务开始"
+    - rm -rf /home/ftpuser/gitbook/java
     - cp -r _book /home/ftpuser/gitbook/java
     - echo "部署完成"
