@@ -214,3 +214,9 @@ Netty 的出现很大程度上改善了 JDK 原生 NIO 所存在的一些让人�
 ## 4. AIO (Asynchronous I/O)
 
 AIO 也就是NIO2。在java7 中引入了NIO的改进版NIO2。他是异常非阻塞的IO模型。异步IO 是基于事件和回调机制实现的，也就是应用操作之间会直接返回。不会阻塞在哪里，当后台处理完成，操作系统会通知响应的线程进行后续操作
+
+
+
+## 参考文章
+
+[真正理解NIO](<https://www.jianshu.com/p/362b365e1bcc>)
