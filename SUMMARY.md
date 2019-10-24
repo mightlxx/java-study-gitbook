@@ -216,6 +216,7 @@
     * [事务](sql/transaction/README.md)
     * [索引](sql/索引.md)
 * [权限管理系统](./rbac/README.md)
+    * [RBAC权限管理](./rbac/RBAC权限管理.md)
     * [创建数据库](./rbac/db/README.md)
     * [权限认证基础](rbac/base/权限认证基础.md)
     * shiro
