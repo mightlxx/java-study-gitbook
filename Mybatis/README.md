@@ -1,47 +1,19 @@
 # MyBatis
 
-## 1. 简介
+- [Mybatis常见面试题](Mybatis/interview/Mybatis常见面试题.md)
 
-mybatis是一款优秀的持久层框架
+- 《MyBatis入门到精通》读书笔记
 
-- 支持自定义SQL查询，存储过程和高级映射
-- 消除了几乎所有的 JDBC 代码和参数的手动设置以及结果集的检索
-- Mybatis 可以使用XML或注解进行配置和映射
-- Mybatis通过将参数映射到配置的SQL形成最终执行的sql语句，最后将执行SQL的结果映射成 Java 对象返回
+  - [MyBatis简介](./Mybatis/book/README.md)
 
-## 2. MyBatis 的优势
+  - [集成与使用](./Mybatis/集成与使用.md)
 
-### 2.1 与其他ORM框架的优势
+  - [XML方式基本用法](./Mybatis/xml/README.md)
 
-- Mybatis将 java方法与sql关联，而不是数据库
+    - [select用法](./Mybatis/xml/select.md)
 
-  并没有将java 对象与数据库关联起来，而是将java方法与sql语句关联
+  - [Mapper接口动态代理实现原理](./Mybatis/Mapper接口动态代理实现原理.md)
 
-- Mybatis允许用户充分利用数据库的各种功能，
+  - [动态sql](./Mybatis/dynamicsql/README.md)
 
-  例如存储过程，视图，各种复杂的查询以及某数据库的特有特性
-
-- 可以完全控制SQL执行
-
-### 2.2  与JDBC 的优势
-
-- 简化了相关代码
-
-  SQL语句在一行代码中能执行
-
-- 声明式的sql语句
-
-  Mybatis提供了一个映射引擎，声明式的sql语句的执行结果与对象树映射起来
-
-- sql可以被动态生成
-
-  通过使用内建的类XML表达式语言，sql语句可以被动态生成
-
-### 2.3 支持声明式数据缓存（declarative data caching）
-
-当一条sql语句被标记为“可缓存”后，
-
-1. 首次执行他时从数据库获取的所有数据会被**存储在高速缓存**中，
-2. 后面再执行这条语句时就会从高速缓存中读取结果，而不是再次命中数据库
-
-Mybatis提供了默认情况下基于java hashMap的缓存实现
+    

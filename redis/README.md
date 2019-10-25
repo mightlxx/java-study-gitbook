@@ -1,72 +1,49 @@
 # Redis
 
-## 1. Redis是什么
-
-1. redis 是一个速度非常快的非关系数据库
-
-2. 它可以存储键（key）与5种不同类型的值（value）之间的映射（mapping）
-
-3. 可以将存储在内存中的键值对数据持久化到硬盘
-4. 可以使用复制特性来扩展读性能
-5. 可以通过客户端分片来扩展写性能
-
-## 2. 与其他数据库软件的对比
-
-与关系型数据库对比
-
-1. redis不使用表，
-2. 不会预定义或者强制要求用户对redis存储的数据进行关联
-
-与memcached
-
-共同点：都可以存储键值映射，性能相差无几
-
-不同点：
-
-1. 能够自动写入硬盘
-2. 除了字符串还能存储其他4种数据结构
-
-## 3.附加特性
-
-### 3.1 持久化存储
-
-当使用redis这种内存数据库时。一个首要考虑的问题就是“当服务器被关闭时，服务器存储的数据将何去何从”
-
-1. 时间点转储（point-in-time-dump）
-
-   转存操作既可以在指定时间内有指定数据的写操作执行
-
-2. 追加（append-only）
-
-   将所有的修改了数据库的命令写入一个只追加文件里面
-
-   追加方式
-
-   1. 从不同步
-   2. 每秒同步一次
-   3. 写入一个命令就同步一次
-
-### 3.2 主从复制
-
-尽管redis性能很好，但受限于redis的内存存储设计，有时候只使用一个redis服务并不能处理所有请求。为了扩展redis 的读特性，并为redis提供故障转移（failover）支持。redist 实现了主从复制
-
-1. 执行复制的从服务器会连接上主服务器。接收主服务器发送的整个数据库初始副本（copy）
-
-2. 之后主服务器执行写命令，**都会发送给所有连接这从服务器去执行**，从而实时更新从服务器的数据集。
-
-3. **从服务器的数据会不断的进行更新**，所以客户端可以向任意一个从服务器发送读请求
-
-   因此避免对主服务器进行集中式的访问
-
-## 4. 为什么使用redis
-
-相比memcached：
-
-​	可以让代码更简短，更易懂，更易维护，而且还可以使代码运行速度更快
-
-相比关系型数据库
-
-​	效率和易用性高
-
-
-
+- redis面试考点](./redis/interview/README.md)
+- [redis事务](./redis/interview/redis事务.md)
+- redis使用场景
+  - [Redis缓存场景](redis/scene/redis使用场景.md)
+  - hash场景
+    - [Redis修改局部信息场景，如用户信息（hash,）](redis/scene/Redis修改局部信息场景.md)
+  - list场景
+    - [Redis用作消息队列(list)](redis/scene/Redis用作消息队列.md)
+    - [Redis最新内容 （list）](redis/scene/Redis最新内容.md)
+  - set场景
+    - [共同好友列表 (set)](redis/scene/共同好友列表.md)
+  - zset场景
+    - [Redis排行榜场景（zset）](redis/scene/Redis排行榜场景.md)
+    - [Redis热门服务场景(zset)](redis/scene/Redis热门服务场景.md)
+    - [Redis在线人数场景（zset）](redis/scene/Redis在线人数场景.md)
+- redis可能出现的问题
+  - [Redis缓存雪崩](redis/question/Redis缓存雪崩.md)
+  - [Redis缓存穿透](redis/question/Redis缓存穿透.md)
+  - [如何解决 Redis 的并发竞争 Key 问题](redis/question/如何解决 Redis 的并发竞争 Key 问题.md)
+  - [Redis缓存预热](redis/question/Redis缓存预热.md)
+  - [Redis保证缓存与数据库双写时的数据一致性](redis/question/Redis保证缓存与数据库双写时的数据一致性.md)
+- [redis分布式锁](redis/lock/README.md)
+  - [一步步实现单机redis的分布式锁（setnx）](redis/lock/一步步实现单机redis的分布式锁.md)
+  - [Redlock分布式锁](redis/lock/Redlock分布式锁.md)
+- 读书笔记
+  - [Redis简介](./redis/book/README.md)
+  - [5种数据结构](./redis/5种数据结构.md)
+    - [String字符串](./redis/string/README.md)
+    - [List列表](./redis/list/README.md)
+    - [Set集合](./redis/set/README.md)
+    - [Hash散列](./redis/hash/README.md)
+    - [Zset有序集合](./redis/zset/README.md)
+  - [发布与订阅(pub/sub)](./redis/发布与订阅.md)
+  - [排序SORT](./redis/排序.md)
+  - [事务](./redis/事务.md)
+  - [键的过期时间](./redis/键的过期时间.md)
+  - [持久化](./redis/persistence/README.md)
+    - [快照(snapshotting)](./redis/persistence/快照.md)
+    - [只追加文件(append-only file,AOF)](./redis/persistence/只追加文件.md)
+- 安装
+  - [Redis安装](./redis/install/README.md)
+  - [开启远程访问](./redis/install/开启远程访问.md)
+- Redis使用
+  - [Spring Boot集成redis使用](./redis/use/SpringBoot集成redis使用.md)
+  - [redis连接客户端选择：Jedis,Redisson,Lettuce](redis/use/redis连接客户端选择.md)
+  - [JedisPool资源池优化](redis/use/JedisPool资源池优化.md)
+  - [RedisUtil工具类的使用(仅供参考)](redis/use/RedisUtil工具类的使用.md)

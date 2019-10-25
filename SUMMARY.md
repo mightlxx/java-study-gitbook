@@ -3,10 +3,10 @@
 * [前言](README.md)
 * [开发规范](CodeStandard/README.md)
     * [各层命名规范](CodeStandard/各层命名规范.md)
-* Java基础
+* [Java基础](base/README.md)
     * [Java基础](base/object/Java基础.md)
         * [ final,static,this,super 关键字总结](base/object/关键字总结.md)
-    * [Java异常处理](base/error/Java异常处理.md)
+        * [Java异常处理](base/error/Java异常处理.md)
     * 容器
         * [Java容器基础](base/collection/Java容器基础.md)
         * [ArrayList 的扩容机制](base/collection/ArrayList 的扩容机制.md)
@@ -110,13 +110,16 @@
     * [NoSql](./spring/NoSql/README.md)
         * [redis](./spring/NoSql/redis/README.md)
 * [MyBatis](./Mybatis/README.md)
-    * [集成与使用](./Mybatis/集成与使用.md)
-    * [XML方式基本用法](./Mybatis/xml/README.md)
-        * [select用法](./Mybatis/xml/select.md)
-    * [Mapper接口动态代理实现原理](./Mybatis/Mapper接口动态代理实现原理.md)
-    * [动态sql](./Mybatis/dynamicsql/README.md)
-        * [if用法](./Mybatis/dynamicsql/if.md)
-* Redis
+    * [Mybatis常见面试题](Mybatis/interview/Mybatis常见面试题.md)
+    * 《MyBatis入门到精通》读书笔记
+        * [MyBatis简介](./Mybatis/book/README.md)
+        * [集成与使用](./Mybatis/集成与使用.md)
+        * [XML方式基本用法](./Mybatis/xml/README.md)
+            * [select用法](./Mybatis/xml/select.md)
+        * [Mapper接口动态代理实现原理](./Mybatis/Mapper接口动态代理实现原理.md)
+        * [动态sql](./Mybatis/dynamicsql/README.md)
+            * [if用法](./Mybatis/dynamicsql/if.md)
+* [Redis](redis/README.md)
     * [redis面试考点](./redis/interview/README.md)
     * [redis事务](./redis/interview/redis事务.md)
     * redis使用场景
@@ -142,7 +145,7 @@
         * [一步步实现单机redis的分布式锁（setnx）](redis/lock/一步步实现单机redis的分布式锁.md)
         * [Redlock分布式锁](redis/lock/Redlock分布式锁.md)
     * 读书笔记
-        * [Redis简介](./redis/README.md)
+        * [Redis简介](./redis/book/README.md)
         * [5种数据结构](./redis/5种数据结构.md)
             * [String字符串](./redis/string/README.md)
             * [List列表](./redis/list/README.md)
