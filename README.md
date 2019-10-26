@@ -11,14 +11,13 @@
 - [Spring](<http://java.isture.com/spring/>)
 - [Mybatis](<http://java.isture.com/Mybatis/>)
 - [redis](<http://java.isture.com/redis/>)
-- 数据库
-- sql
-- 权限管理系统
-- 单元测试
-- linux
-- 计算机网络
-- 计算机基础
-- 工具
+- [数据库](http://java.isture.com/db/)
+- [sql](http://java.isture.com/sql/)
+- [权限管理系统](http://java.isture.com/rbac/)
+- [单元测试](http://java.isture.com/test/)
+- [linux](http://java.isture.com/linux/)
+- [计算机基础](http://java.isture.com/cs/)
+- [工具](http://java.isture.com/tools/)
 
 ## 参考与鸣谢
 
@@ -32,6 +31,6 @@
 
 ## 交流群
 
-<img src="./img/711571219089_.pic_hd.jpg" width="300px" alt="图片名称" align=center />
+<img src="./img/group.jpg" width="300px" alt="图片名称" align=center />
 
 

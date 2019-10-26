@@ -96,7 +96,7 @@ Java 虚拟机中所管理的内存中最大的一块，java 堆是所有线程�
 
 java堆是垃圾收集器管理的主要区域，因此也被称作**GC 堆（Garbage Collected Heap）**.从垃圾回收的角度，由于现在收集器基本都采用分代垃圾收集算法，所以 Java 堆还可以细分为：新生代和老年代：再细致一点有：Eden 空间、From Survivor、To Survivor 空间等。**进一步划分的目的是更好的回收内存，更快的分配内存**
 
-![image-20190924001743226](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20190924001743226.png)
+![image-20190924001743226](./img/image-20190924001743226.png)
 
 上图所示的eden 区，s0 区，s1区都是属于新生代，tentired区属于老年代，大部分情况
 
