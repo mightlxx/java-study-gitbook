@@ -1,9 +1,11 @@
 # 权限管理系统
 
-权限控制管理，采用RBAC(Role-Based Access Control,基于角色的访问控制)方式
-
-## 需求简介
-
-一个用户拥有若干角色，一个角色拥有若干权限，权限就是对某个资源（模块）的某种操作（增、删、改、查），这样就构成了“用户-角色-权限”的授权模型
-
-在这种模型中，用户与角色之间，角色与权限之间，一般是多对多的关系
+- RBAC权限管理](./rbac/RBAC权限管理.md)
+- [创建数据库](./rbac/db/README.md)
+- [权限认证基础](rbac/base/权限认证基础.md)
+- shiro
+  - [shiro基础](rbac/shiro/shiro基础.md)
+  - [SpringBoot整合shiro](rbac/shiro/SpringBoot整合shiro.md)
+  - [Shiro与JWT整合](rbac/shiro/Shiro与JWT整合.md)
+- jwt
+  - [JWT详解](rbac/jwt/JWT详解.md)
