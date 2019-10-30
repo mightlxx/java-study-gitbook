@@ -51,6 +51,7 @@
             * [对象已经死亡？](base/jvm/对象已经死亡.md)
             * [垃圾收集算法](base/jvm/垃圾收集算法.md)
             * [垃圾收集器](base/jvm/垃圾收集器.md)
+            * [GC中对象自救](base/jvm/GC中对象自救.md)
         * JVM性能调优
             * [如何合理的规划 JVM 性能调优](base/jvm/如何合理的规划 JVM 性能调优.md)
         * [类加载过程](base/jvm/类加载过程.md)
@@ -273,6 +274,8 @@
 * [工具](tools/README.md)
     * [jrebel热加载](./tools/Jrebel/README.MD)
     * [p3c插件检测代码规范](./tools/p3c/README.MD)
+    * Swagger
+        * [Swagger的使用](tools/swagger/Swagger的使用.md)
     * [抓包](./tools/grabbag/README.MD)
         * [fiddler(windows推荐)](./tools/grabbag/fiddler.MD)
     * [gitlab](./tools/gitlab/README.md)

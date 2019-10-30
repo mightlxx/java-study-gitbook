@@ -1,6 +1,6 @@
 # Redis
 
-- redis面试考点](./redis/interview/README.md)
+- [redis面试考点](./redis/interview/README.md)
 - [redis事务](./redis/interview/redis事务.md)
 - redis使用场景
   - [Redis缓存场景](redis/scene/redis使用场景.md)
