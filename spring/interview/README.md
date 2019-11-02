@@ -93,9 +93,9 @@ beanfactory是基本容器，而applicationcontext是高级容器。Applicationc
 
 ### 5.1 谈谈自己对Spring AOP 的理解
 
-AOP(Aspect-Oriented Programming: 面向切面编程)：**能够分离系统的业务逻辑和系统服务**（例如，事务处理，日志管理，权限管理）**，便于**减少系统的重复代码，降低模块间的耦合度，并有利于未来的可扩展性和可维护性**
+AOP(Aspect-Oriented Programming: 面向切面编程)：**能够分离系统的业务逻辑和系统服务**（例如，事务处理，日志管理，权限管理），便于**减少系统的重复代码，降低模块间的耦合度，并有利于未来的可扩展性和可维护性**
 
-Spring AOP 就是基于动态代理的，如果要代理的对象，实现了某个接口，那么Spring AOP 会使用 **JDK Proxy**, 去创建代理对象，而对于没有实现接口的对象，就无法使用 JDK Proxy 去进行代理了，这时候 Spring AOP 会使用Cglib，**这时候 Spring AOP 会使用 Cglib 生成一个被代理对象的子类来作为代理**
+Spring AOP 就是基于动态代理的，如果要代理的对象，实现了某个接口，那么Spring AOP 会使用 **JDK Proxy**, 去创建代理对象，而对于没有实现接口的对象，就无法使用 JDK Proxy 去进行代理了，**这时候 Spring AOP 会使用 Cglib 生成一个被代理对象的子类来作为代理**
 
 ![image-20191013104519598](./img/image-20191013104519598.png)
 
@@ -133,14 +133,14 @@ Spring AOP 就是基于动态代理的，如果要代理的对象，实现了某
 
 常见的两种解决办法：
 
-1. 在Bean 对象中尽量避免定义可变的成员变量（不太显示）
+1. 在Bean 对象中尽量避免定义可变的成员变量（不太现实）
 2. 在类中定义一个ThreadLocal 成员变量，将需要的可变成员变量保存在 ThreadLocal 中（推荐的一种方式）
 
 ### 6.3 @Component 和 @Bean 的区别是什么
 
 1. 作用对象不同：`@Component`注解作用于类，而`@Bean`注解作用于方法
 2. `@Component` 通常是通过类路径扫描来自动侦测以及自动装配到Spring 容器中（我们可以使用@ComponentScan 注解定义要扫描的路径从中找出标识了需要装配的类自动装配到Spring 的 bean 容器中）。@Bean 注解通常是我们在标有该注解的方法中定义产生这个bean。@Bean告诉Spring 这是某个类的示例，当我们需要用它的时候还给我
-3. @Bean 注解比@Component 注解的自定义性更强，而且很多地方我们只能通过@Bean注解来注册bean，比如当我们引用引用第三方库中的类需要装配到`Spring` 容器时，则只能通过 @Bean 来实现
+3. @Bean 注解比@Component 注解的自定义性更强，而且很多地方我们只能通过@Bean注解来注册bean，比如当我们引用第三方库中的类需要装配到`Spring` 容器时，则只能通过 @Bean 来实现
 
 @Bean 注解使用实例
 
@@ -188,7 +188,7 @@ public OneService getService(status) {
 - `@Component` ：通用的注解，可标注任意类为 `Spring` 组件。如果一个Bean不知道属于哪个层，可以使用`@Component` 注解标注。
 - `@Repository` : 对应持久层即 Dao 层，主要用于数据库相关操作。
 - `@Service` : 对应服务层，主要涉及一些复杂的逻辑，需要用到 Dao层。
-- `@Controller` : 对应 Spring MVC 控制层，主要用户接受用户请求并调用 Service 层返回数据给前端页面。
+- `@Controller` : 对应 Spring MVC 控制层，主要接收用户请求并调用 Service 层返回数据给前端页面。
 
 ### 6.5 Spring 中的bean 生命周期？
 
@@ -226,10 +226,11 @@ MVC 是一种设计模式，Spring MVC 是一款很优秀的MVC 框架，Spring 
 
 Spring MVC 下我们一般把后端项目分为 
 
+- Controller 层（控制层，返回数据给前台页面）
+
 - Service 层（处理业务）、
 - Dao 层(数据库操作)
 - Entity层（实体类）
-- Controller 层（控制层，返回数据给前台页面）
 
 **Spring MVC的简单原理**
 
