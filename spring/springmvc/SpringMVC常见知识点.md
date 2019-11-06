@@ -26,7 +26,7 @@ Spring MVC 一共有九大核心组件，分别是：
 
 DiapatcherServlet 的工作流程可以用一副图来说明
 
-![image-20191101235522013](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20191101235522013.png)
+![image-20191101235522013](./img/image-20191101235522013.png)
 
 1. 发送请求
 

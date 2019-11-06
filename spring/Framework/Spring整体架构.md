@@ -16,7 +16,7 @@ Spring 是一个开源应用框架，旨在降低应用程序开发的复杂度
 
 Spring Framework 的模块图
 
-![image-20191102231354787](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20191102231354787.png)
+![image-20191102231354787](./img/image-20191102231354787.png)
 
 - **Spring 核心容器**（图中的Core Container）
 

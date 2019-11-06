@@ -76,6 +76,10 @@
 * [Spring](./spring/README.md)
     * [Spring常见知识点](spring/interview/README.md)
     * [Spring整体架构](spring/Framework/Spring整体架构.md)
+    * Spring IoC
+        * [Spring IoC常见问题](spring/ioc/SpringIoC常见问题.md)
+        * [Spring Bean常见问题](spring/ioc/SpringBean常见问题.md)
+        * [循环依赖问题](spring/ioc/循环依赖问题.md)
     * SpringAOP
         * [SpringAOP概述](spring/aop/README.md)
         * [Spring AOP实现原理](spring/aop/SpringAOP实现原理.md)
@@ -223,6 +227,11 @@
     * [存储过程](sql/存储过程/README.md)
     * [事务](sql/transaction/README.md)
     * [索引](sql/索引.md)
+* 消息中间件
+    * RabbitMQ
+        * [RabbitMQ基础](mq/RabbitMQ/RabbitMQ基础.md)
+        * 实战
+            * [RabbitMQ安装](mq/RabbitMQ/action/RabbitMQ安装.md)
 * [权限管理系统](./rbac/README.md)
     * [RBAC权限管理](./rbac/RBAC权限管理.md)
     * [创建数据库](./rbac/db/README.md)
