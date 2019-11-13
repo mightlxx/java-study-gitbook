@@ -1,4 +1,0 @@
-# 忽略java和java.zip
-java/
-java.zip
-node_modules/
