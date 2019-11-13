@@ -232,6 +232,16 @@
         * [RabbitMQ基础](mq/RabbitMQ/RabbitMQ基础.md)
         * 实战
             * [RabbitMQ安装](mq/RabbitMQ/action/RabbitMQ安装.md)
+* 微服务
+    * 服务发现(注册中心）
+        * eureka
+            * [eureka基础](microservice/ServiceDiscovery/eureka/eureka基础.md)
+        * nacos
+            * [nacos基础](microservice/ServiceDiscovery/nacos/nacos概念.md)
+            * [nacos安装与使用](microservice/ServiceDiscovery/nacos/nacos安装与使用.md)
+    * 分布式跟踪系统
+        * zipkin
+            * [ZinKin基础](microservice/track/zipkin/ZinKin基础.md)
 * [权限管理系统](./rbac/README.md)
     * [RBAC权限管理](./rbac/RBAC权限管理.md)
     * [创建数据库](./rbac/db/README.md)
