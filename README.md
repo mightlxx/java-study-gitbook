@@ -28,6 +28,7 @@
 自己的工作总结，读书笔记，以及对网上博客文章进行整理与总结。希望以最明了易懂的方式呈现出java技术架构，以便轻松应对面试
 
 - [Java学习+面试指南](<https://github.com/Snailclimb/JavaGuide>)
+- [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 - [芋道源码](http://www.iocoder.cn/?qun)
 - [张开涛博客](<https://www.iteye.com/blog/user/jinnianshilongnian>)
 - [纯洁的微笑](http://www.ityouknow.com/)

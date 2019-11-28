@@ -144,7 +144,7 @@
             * [Redis排行榜场景（zset）](redis/scene/Redis排行榜场景.md)
             * [Redis热门服务场景(zset)](redis/scene/Redis热门服务场景.md)
             * [Redis在线人数场景（zset）](redis/scene/Redis在线人数场景.md)
-    * redis可能出现的问题
+    * Redis可能出现的问题
         * [Redis缓存雪崩](redis/question/Redis缓存雪崩.md)
         * [Redis缓存穿透](redis/question/Redis缓存穿透.md)
         * [如何解决 Redis 的并发竞争 Key 问题](redis/question/如何解决 Redis 的并发竞争 Key 问题.md)
@@ -234,11 +234,16 @@
             * [RabbitMQ安装](mq/RabbitMQ/action/RabbitMQ安装.md)
 * 微服务
     * 服务发现(注册中心）
-        * eureka
-            * [eureka基础](microservice/ServiceDiscovery/eureka/eureka基础.md)
+        * Eureka
+            * [Eureka基础](microservice/ServiceDiscovery/eureka/eureka基础.md)
+            * [SpringBoot整合Eureka](microservice/ServiceDiscovery/eureka/SpringBoot整合Eureka.md)
         * nacos
             * [nacos基础](microservice/ServiceDiscovery/nacos/nacos概念.md)
             * [nacos安装与使用](microservice/ServiceDiscovery/nacos/nacos安装与使用.md)
+    * 网关
+        * zuul
+            * [zuul基础](microservice/gateway/zuul/zuul基础.md)
+            * [zuul实战](microservice/gateway/zuul/zuul实战.md)
     * 分布式跟踪系统
         * zipkin
             * [ZinKin基础](microservice/track/zipkin/ZinKin基础.md)
@@ -250,6 +255,10 @@
         * [shiro基础](rbac/shiro/shiro基础.md)
         * [SpringBoot整合shiro](rbac/shiro/SpringBoot整合shiro.md)
         * [Shiro与JWT整合](rbac/shiro/Shiro与JWT整合.md)
+    * Spring Security
+        * [SpringBoot整合Spring Security](rbac/SpringSecurity/SpringBoot整合SpringSecurity.md)
+    * OAuth2
+        * [OAuth2基础](rbac/oauth2/OAuth2基础.md)
     * jwt
         * [JWT详解](rbac/jwt/JWT详解.md)
 * [单元测试](./test/README.md)
