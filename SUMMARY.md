@@ -244,6 +244,7 @@
         * zuul
             * [zuul基础](microservice/gateway/zuul/zuul基础.md)
             * [zuul实战](microservice/gateway/zuul/zuul实战.md)
+            * [微服务保护](microservice/gateway/zuul/微服务保护.md)
     * 分布式跟踪系统
         * zipkin
             * [ZinKin基础](microservice/track/zipkin/ZinKin基础.md)
@@ -329,4 +330,9 @@
             * [gitignore文件屏蔽规则](./tools/vcs/git/gitignore文件屏蔽规则.md)
             * [android gitignore 模板](./tools/vcs/git/androidGitignore模板.md)
     * [运行脚本](tools/script/运行脚本.md)
+* 常用工具类
+    * 跨域支持
+        * [CorsConfig](utils/跨域支持/CorsConfig.md)
+* 部门管理/项目管理
+    * [关于亲力亲为的思考](manager/关于亲力亲为的思考.md)
 
