@@ -10,7 +10,7 @@ OAuth 是一个关于授权（authorization）的开放网络标准，在全世�
 
 有一个“云冲印”的网站，可以将用户存在Google 的招聘，冲印出来。用户为了使用该服务，必须让“云冲印”读取自己存储在Goodle上的照片
 
-<img src="/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20191114222612910.png" alt="image-20191114222612910" style="zoom:50%;" />
+<img src="./img/image-20191114222612910.png" alt="image-20191114222612910" style="zoom:30%;" />
 
 问题是只有得到用户的授权，google 才会同意“云冲印”读取这些招聘，那么，“云冲印”怎样获得用户的授权呢？
 
@@ -41,7 +41,7 @@ OAuth在“客户端”与“服务提供商”之间，设置了一个授权层
 
 OAuth 2.0 的运行流程如下图
 
-![image-20191114224148304](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20191114224148304.png)
+![image-20191114224148304](./img/image-20191114224148304.png)
 
 1. 用户打开客户端以后，客户端要求用于给予授权
 2. **用户同意给予客户端授权**
@@ -65,7 +65,7 @@ OAuth 2.0 的运行流程如下图
 
 授权码模式（authorization code）是功能最完整、流程最验密的授权模式。他的特点就是**通过客户端的后台服务器，与“服务提供商”的认证服务器进行互动**
 
-![image-20191114225241648](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20191114225241648.png)
+![image-20191114225241648](./img/image-20191114225241648.png)
 
 他的步骤如下：
 
@@ -79,7 +79,7 @@ OAuth 2.0 的运行流程如下图
 
 简化模式（implicit grant type）**不通过第三方应用服务器，直接在浏览器中想认证服务器申请令牌，跳过了“授权码”这个步骤**。所有步骤都在浏览器中完成，令牌对访问者是可见的，且客户端不需要认证
 
-![image-20191114230656462](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20191114230656462.png)
+![image-20191114230656462](./img/image-20191114230656462.png)
 
 1. 客户端将用户导向认证服务器
 2. 用户决定是否给予客户端授权
@@ -95,7 +95,7 @@ OAuth 2.0 的运行流程如下图
 
 在这种模式中，用户必须要把自己的密码给客户端，但是客户端不得存储密码。**这通常用在用户对客户端高度信任的情况下**。比如客户端是操作系统的一部分，或者由一个著名公司出品。而认证服务器只有在其他授权模式无法执行的情况下，才能考虑使用这种模式
 
-![image-20191114231623274](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20191114231623274.png)
+![image-20191114231623274](./img/image-20191114231623274.png)
 
 1. 用户向客户端提供用户名和密码
 2. 客户端将用户名和密码发送给认证服务器，向后者请求令牌
@@ -105,7 +105,7 @@ OAuth 2.0 的运行流程如下图
 
 客户端模式（Client Credentials Grant）指客户端以自己的名义，而不是以用户的名义，向“服务提供商”进行认证。严格的说，客户端模式并不属于OAuth框架所有解决的问题。在这种模式中，用户直接向客户端注册，客户端以自己的名义要求“服务提供商”，提供服务，其实不存在授权问题。
 
-![image-20191114232143335](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20191114232143335.png)
+![image-20191114232143335](./img/image-20191114232143335.png)
 
 1. 客户端向认证服务器进行身份认证，并要求一个访问令牌
 2. 认证服务器确认无误后，向客户端提供访问令牌

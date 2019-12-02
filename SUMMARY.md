@@ -307,6 +307,11 @@
     * [CDN](./cdn/README.md)
         * 相关概念
             * [DNS域名解析](cs/dns/README.md)
+* [第三方库](library/README.md)
+    * Sentinel
+        * [Sentinel限流](library/Sentinel/Sentinel限流.md)
+    * Spring Boot Admin
+        * [整合Spring Boot Admin](library/SpringBootAdmin/整合SpringBootAdmin.md)
 * [工具](tools/README.md)
     * maven
         * [Maven核心知识](tools/maven/Maven核心知识.md)
@@ -335,4 +340,6 @@
         * [CorsConfig](utils/跨域支持/CorsConfig.md)
 * 部门管理/项目管理
     * [关于亲力亲为的思考](manager/关于亲力亲为的思考.md)
+    * [如何进行工作分配](manager/如何进行工作分配.md)
+    * [如何做职场规划](manager/如何做职场规划.md)
 

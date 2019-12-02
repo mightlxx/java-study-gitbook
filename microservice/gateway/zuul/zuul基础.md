@@ -8,7 +8,7 @@
 
    在微服务架构模式下后端服务的实例数一般是动态的，对于客户端而言很难发现动态改变的服务的访问地址信息。因此在基于微服务的项目中为了简化前端的调用逻辑，通常会引入API Gateway 作为轻量级网关，同时API Gateway 中**也会实现相关的认证逻辑从而简化内部服务之间相互调用的复杂度**
 
-   <img src="/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20191115220102366.png" alt="image-20191115220102366" style="zoom:50%;" />
+   <img src="./img/image-20191115220102366.png" alt="image-20191115220102366" style="zoom:50%;" />
 
    
 
@@ -22,13 +22,13 @@
 
    当然我们还可以针对不同的渠道和客户端提供不同的API Gateway，对于该模式的使用由另外一个大家熟知的方式叫Backend for front-end, 在Backend for front-end模式当中，我们**可以针对不同的客户端分别创建其BFF**
 
-![image-20191115220734859](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20191115220734859.png)
+![image-20191115220734859](./img/image-20191115220734859.png)
 
 4. 遗留系统的微服务化改造
 
    对于系统而言进行微服务改造通常是由于原有的系统存在或多或少的问题，比如技术债务，代码质量，可维护性，可扩展性等等，API Gateway 的模式同样适用于这一类遗留系统的改造，通过微服务化的改造逐步实现对原有系统中的问题修复，从而提升对原有业务响应力的提升。通过引入抽象层，逐步使用新的实现替换旧的实现
 
-   ![image-20191115222430725](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20191115222430725.png)
+   ![image-20191115222430725](./img/image-20191115222430725.png)
 
 ## 2. Zuul
 
