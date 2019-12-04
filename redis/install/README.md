@@ -31,6 +31,24 @@ make PREFIX=/usr/local/redis install
 
 编译后的redis在 `/usr/local/redis`目录下
 
+#### 1.4.1 如遇安装异常cc: command not found
+
+/bin/sh: cc: command not found
+
+![image-20191203115107725](./img/image-20191203115107725.png)
+
+**解决方案：**安装gcc命令
+
+```
+yum install gcc
+```
+
+#### 1.4.2 make时报如下错误
+
+原因是jemalloc重载了Linux下的ANSI C的malloc和free函数。解决办法：make时添加参数。
+
+
+
 ### 1.5 redis的配置文件
 
 redis.conf是redis的配置文件，redis.conf在redis源码目录。

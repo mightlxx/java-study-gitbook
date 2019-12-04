@@ -248,9 +248,13 @@
     * 分布式跟踪系统
         * zipkin
             * [ZinKin基础](microservice/track/zipkin/ZinKin基础.md)
+            * [Sleuth Zipkin链路追踪](microservice/track/zipkin/Sleuth Zipkin链路追踪.md)
     * 服务调用
         * Feign
             * [Feign基础](microservice/callservice/Feign/Feign基础.md)
+    * 日志
+        * logback
+            * [logback日志打印](microservice/log/logback/logback日志打印.md)
 * [权限管理系统](./rbac/README.md)
     * [RBAC权限管理](./rbac/RBAC权限管理.md)
     * [创建数据库](./rbac/db/README.md)
