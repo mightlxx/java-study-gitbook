@@ -20,7 +20,7 @@ Spring Framework 的模块图
 
 - **Spring 核心容器**（图中的Core Container）
 
-  该层基本上是Spring Framework 的核心(其实就是 Spring AOC)。它包含一下模块：
+  该层基本上是Spring Framework 的核心(其实就是 Spring IOC)。它包含以下模块：
 
   - Spring Core
 
@@ -73,7 +73,6 @@ Spring Framework 的模块图
   
     >Spring 4.0 的一个最大更新是增加了对Websocket 的支持。Websocket 提供了一个在Web 应用中实现高效、双向通讯、需考虑客户端（浏览器）和服务端之间高频和低延时消息交换的机制。一般的应用场景有：在线交易，网页聊天，游戏、协作、数据可视化等
   
-
 - AOP
 
   该层支持面向切面编程，包含以下模块

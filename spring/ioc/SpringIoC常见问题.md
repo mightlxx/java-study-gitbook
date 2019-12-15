@@ -72,7 +72,7 @@ Spring 提供了两种（不是”个“）IoC 容器，分别是BeanFactory、A
   ### 5.1 BeanFactory 与 ApplicationContext 的两种差异
 
   | BeanFactory                | ApplicationContext       |
-  | -------------------------- | ------------------------ |
+  | -------------------------- | ----------------------|
   | 使用懒加载                 | 使用即时加载             |
   | 它使用语法显式提供资源对象 | 它自己创建和管理资源对象 |
   | 不支持国际化               | 支持国际化               |
@@ -194,7 +194,7 @@ public class AllApplicationEventListener implements ApplicationListener<Applicat
 
 ### 10.1 自定义扩展事件
 
-除了以上事件，还可以通过扩展 ApplicationEvent 类来开发**自定义**的时间
+除了以上事件，还可以通过扩展 ApplicationEvent 类来开发**自定义**的事件
 
 1. 实例自定义的事件的类
 

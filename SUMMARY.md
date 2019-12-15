@@ -54,6 +54,7 @@
             * [GC中对象自救](base/jvm/GC中对象自救.md)
         * JVM性能调优
             * [如何合理的规划 JVM 性能调优](base/jvm/如何合理的规划 JVM 性能调优.md)
+            * [常见的JVM设置](base/jvm/常见的JVM设置.md)
         * [类加载过程](base/jvm/类加载过程.md)
             * [类加载过程(精简版)](base/jvm/类加载过程精简版.md)
         * [类加载器](base/jvm/类加载器.md)
@@ -118,6 +119,7 @@
             * [在响应中设置头部信息](./spring/spring-in-action/RESTAPI/在响应中设置头部信息.md)
         * [NoSql](./spring/spring-in-action/NoSql/README.md)
             * [redis](./spring/spring-in-action/NoSql/redis/README.md)
+    * [Spring面试提问](spring/interview/Spring面试提问.md)
 * [MyBatis](./Mybatis/README.md)
     * [Mybatis常见面试题](Mybatis/interview/Mybatis常见面试题.md)
     * 《MyBatis入门到精通》读书笔记
@@ -255,6 +257,10 @@
     * 日志
         * logback
             * [logback日志打印](microservice/log/logback/logback日志打印.md)
+    * 微服务部署
+        * Docker
+            * [Centos安装Docker](microservice/deploy/docker/Centos安装Docker.md)
+            * [Docker 镜像与容器](microservice/deploy/docker/Docker镜像与容器.md)
 * [权限管理系统](./rbac/README.md)
     * [RBAC权限管理](./rbac/RBAC权限管理.md)
     * [创建数据库](./rbac/db/README.md)
