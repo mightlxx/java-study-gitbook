@@ -32,9 +32,9 @@ DiapatcherServlet 的工作流程可以用一副图来说明
 
    用户向服务器发送HTTP请求，请求被 Spring MVC 的调度器 DispatherServlet 捕获
 
-2. 映射处理器
+2. 映射处理器（HandlerMapping）
 
-   DispatcherServlet 根据请求 URL,调用 HandlerMapping 获取该 Handler 配置的所有相关的对象（包括 **Handler 对象**以及 Handler 对象对应的**拦截器**），最后以 HandlerExecutionChain 对象的形式返回。
+   **DispatcherServlet 根据请求 URL,调用 HandlerMapping 获取该 Handler 配置的所有相关的对象**（包括 Handler 对象以及 Handler 对象对应的拦截器），**最后以 HandlerExecutionChain 对象的形式返回。**
 
    - 既 HandlerExecutionChain 中，包含对应的Handler 对象和拦截器门
 
@@ -42,9 +42,9 @@ DiapatcherServlet 的工作流程可以用一副图来说明
    HandlerExecutionChain getHandler(HttpServletRequest request) throws Exception;
    ```
 
-3. 处理器适配
+3. 处理器适配（HandlerAdapter）
 
-   DispatcherServlet 根据获得的 Handler，选择一个合适的HandlerAdapter（注：如果成功获得HandlerAdapter后，此时将开始执行拦截器的#preHandler(...)方法）
+   **DispatcherServlet 根据获得的 Handler，选择一个合适的HandlerAdapter**（注：如果成功获得HandlerAdapter后，此时将开始执行拦截器的#preHandler(...)方法）
 
    提取请求 Request 中的模型数据，填充 Handler 入参，开始执行Handler（Controller）。在填充Handler的入参过程中，根据你的配置，Spring 将帮你做一些额外的操作
 
@@ -53,13 +53,13 @@ DiapatcherServlet 的工作流程可以用一副图来说明
    - 数据格式化：对请求消息进行数据格式化。如将字符串转换成格式化数字或格式化日期等
    - 数据验证： 验证数据的有效性（长度、格式等），验证结果存储到 BindingResult 或 Error 中。
 
-   Handler(Controller) 执行完成后，向 DispatcherServlet 返回一个 ModelAndView 对象。
+   **Handler(Controller) 执行完成后，向 DispatcherServlet 返回一个 ModelAndView 对象**。
 
    ```java
    ModelAndView handle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception;
    ```
 
-4. 图中没有4
+4. 调用处理器方法
 
 5. 解析视图
 

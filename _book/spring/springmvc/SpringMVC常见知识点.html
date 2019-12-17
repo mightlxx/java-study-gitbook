@@ -5346,6 +5346,38 @@
                 <span>
             
                     
+                    面试提问
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../interview/Spring面试提问.html">
+            
+                <a href="../interview/Spring面试提问.html">
+            
+                    
+                    Spring面试提问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
                     部门管理/项目管理
             
                 </span>
@@ -5355,7 +5387,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.19.1" data-path="../../manager/关于亲力亲为的思考.html">
+        <li class="chapter " data-level="1.20.1" data-path="../../manager/关于亲力亲为的思考.html">
             
                 <a href="../../manager/关于亲力亲为的思考.html">
             
@@ -5368,7 +5400,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.19.2" data-path="../../manager/如何进行工作分配.html">
+        <li class="chapter " data-level="1.20.2" data-path="../../manager/如何进行工作分配.html">
             
                 <a href="../../manager/如何进行工作分配.html">
             
@@ -5381,7 +5413,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.19.3" data-path="../../manager/如何做职场规划.html">
+        <li class="chapter " data-level="1.20.3" data-path="../../manager/如何做职场规划.html">
             
                 <a href="../../manager/如何做职场规划.html">
             
@@ -5469,16 +5501,16 @@
 <li><p>&#x53D1;&#x9001;&#x8BF7;&#x6C42;</p>
 <p>&#x7528;&#x6237;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;HTTP&#x8BF7;&#x6C42;&#xFF0C;&#x8BF7;&#x6C42;&#x88AB; Spring MVC &#x7684;&#x8C03;&#x5EA6;&#x5668; DispatherServlet &#x6355;&#x83B7;</p>
 </li>
-<li><p>&#x6620;&#x5C04;&#x5904;&#x7406;&#x5668;</p>
-<p>DispatcherServlet &#x6839;&#x636E;&#x8BF7;&#x6C42; URL,&#x8C03;&#x7528; HandlerMapping &#x83B7;&#x53D6;&#x8BE5; Handler &#x914D;&#x7F6E;&#x7684;&#x6240;&#x6709;&#x76F8;&#x5173;&#x7684;&#x5BF9;&#x8C61;&#xFF08;&#x5305;&#x62EC; <strong>Handler &#x5BF9;&#x8C61;</strong>&#x4EE5;&#x53CA; Handler &#x5BF9;&#x8C61;&#x5BF9;&#x5E94;&#x7684;<strong>&#x62E6;&#x622A;&#x5668;</strong>&#xFF09;&#xFF0C;&#x6700;&#x540E;&#x4EE5; HandlerExecutionChain &#x5BF9;&#x8C61;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x3002;</p>
+<li><p>&#x6620;&#x5C04;&#x5904;&#x7406;&#x5668;&#xFF08;HandlerMapping&#xFF09;</p>
+<p><strong>DispatcherServlet &#x6839;&#x636E;&#x8BF7;&#x6C42; URL,&#x8C03;&#x7528; HandlerMapping &#x83B7;&#x53D6;&#x8BE5; Handler &#x914D;&#x7F6E;&#x7684;&#x6240;&#x6709;&#x76F8;&#x5173;&#x7684;&#x5BF9;&#x8C61;</strong>&#xFF08;&#x5305;&#x62EC; Handler &#x5BF9;&#x8C61;&#x4EE5;&#x53CA; Handler &#x5BF9;&#x8C61;&#x5BF9;&#x5E94;&#x7684;&#x62E6;&#x622A;&#x5668;&#xFF09;&#xFF0C;<strong>&#x6700;&#x540E;&#x4EE5; HandlerExecutionChain &#x5BF9;&#x8C61;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x3002;</strong></p>
 <ul>
 <li>&#x65E2; HandlerExecutionChain &#x4E2D;&#xFF0C;&#x5305;&#x542B;&#x5BF9;&#x5E94;&#x7684;Handler &#x5BF9;&#x8C61;&#x548C;&#x62E6;&#x622A;&#x5668;&#x95E8;</li>
 </ul>
 <pre><code class="lang-java"><span class="hljs-function">HandlerExecutionChain <span class="hljs-title">getHandler</span><span class="hljs-params">(HttpServletRequest request)</span> <span class="hljs-keyword">throws</span> Exception</span>;
 </code></pre>
 </li>
-<li><p>&#x5904;&#x7406;&#x5668;&#x9002;&#x914D;</p>
-<p>DispatcherServlet &#x6839;&#x636E;&#x83B7;&#x5F97;&#x7684; Handler&#xFF0C;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5408;&#x9002;&#x7684;HandlerAdapter&#xFF08;&#x6CE8;&#xFF1A;&#x5982;&#x679C;&#x6210;&#x529F;&#x83B7;&#x5F97;HandlerAdapter&#x540E;&#xFF0C;&#x6B64;&#x65F6;&#x5C06;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x62E6;&#x622A;&#x5668;&#x7684;#preHandler(...)&#x65B9;&#x6CD5;&#xFF09;</p>
+<li><p>&#x5904;&#x7406;&#x5668;&#x9002;&#x914D;&#xFF08;HandlerAdapter&#xFF09;</p>
+<p><strong>DispatcherServlet &#x6839;&#x636E;&#x83B7;&#x5F97;&#x7684; Handler&#xFF0C;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5408;&#x9002;&#x7684;HandlerAdapter</strong>&#xFF08;&#x6CE8;&#xFF1A;&#x5982;&#x679C;&#x6210;&#x529F;&#x83B7;&#x5F97;HandlerAdapter&#x540E;&#xFF0C;&#x6B64;&#x65F6;&#x5C06;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x62E6;&#x622A;&#x5668;&#x7684;#preHandler(...)&#x65B9;&#x6CD5;&#xFF09;</p>
 <p>&#x63D0;&#x53D6;&#x8BF7;&#x6C42; Request &#x4E2D;&#x7684;&#x6A21;&#x578B;&#x6570;&#x636E;&#xFF0C;&#x586B;&#x5145; Handler &#x5165;&#x53C2;&#xFF0C;&#x5F00;&#x59CB;&#x6267;&#x884C;Handler&#xFF08;Controller&#xFF09;&#x3002;&#x5728;&#x586B;&#x5145;Handler&#x7684;&#x5165;&#x53C2;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6839;&#x636E;&#x4F60;&#x7684;&#x914D;&#x7F6E;&#xFF0C;Spring &#x5C06;&#x5E2E;&#x4F60;&#x505A;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x7684;&#x64CD;&#x4F5C;</p>
 <ul>
 <li>HttpMessageConverter&#xFF1A;&#x4F1A;&#x5C06;&#x8BF7;&#x6C42;&#x6D88;&#x606F;&#xFF08;&#x5982; JSON,XML &#x7B49;&#x6570;&#x636E;&#xFF09;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</li>
@@ -5486,11 +5518,11 @@
 <li>&#x6570;&#x636E;&#x683C;&#x5F0F;&#x5316;&#xFF1A;&#x5BF9;&#x8BF7;&#x6C42;&#x6D88;&#x606F;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x5316;&#x3002;&#x5982;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x683C;&#x5F0F;&#x5316;&#x6570;&#x5B57;&#x6216;&#x683C;&#x5F0F;&#x5316;&#x65E5;&#x671F;&#x7B49;</li>
 <li>&#x6570;&#x636E;&#x9A8C;&#x8BC1;&#xFF1A; &#x9A8C;&#x8BC1;&#x6570;&#x636E;&#x7684;&#x6709;&#x6548;&#x6027;&#xFF08;&#x957F;&#x5EA6;&#x3001;&#x683C;&#x5F0F;&#x7B49;&#xFF09;&#xFF0C;&#x9A8C;&#x8BC1;&#x7ED3;&#x679C;&#x5B58;&#x50A8;&#x5230; BindingResult &#x6216; Error &#x4E2D;&#x3002;</li>
 </ul>
-<p>Handler(Controller) &#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5411; DispatcherServlet &#x8FD4;&#x56DE;&#x4E00;&#x4E2A; ModelAndView &#x5BF9;&#x8C61;&#x3002;</p>
+<p><strong>Handler(Controller) &#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5411; DispatcherServlet &#x8FD4;&#x56DE;&#x4E00;&#x4E2A; ModelAndView &#x5BF9;&#x8C61;</strong>&#x3002;</p>
 <pre><code class="lang-java"><span class="hljs-function">ModelAndView <span class="hljs-title">handle</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response, Object handler)</span> <span class="hljs-keyword">throws</span> Exception</span>;
 </code></pre>
 </li>
-<li><p>&#x56FE;&#x4E2D;&#x6CA1;&#x6709;4</p>
+<li><p>&#x8C03;&#x7528;&#x5904;&#x7406;&#x5668;&#x65B9;&#x6CD5;</p>
 </li>
 <li><p>&#x89E3;&#x6790;&#x89C6;&#x56FE;</p>
 <p>&#x6839;&#x636E;&#x8FD4;&#x56DE;&#x7684;ModelAndView&#xFF0C;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5408;&#x9002;&#x7684;ViewResolver&#xFF08;&#x5FC5;&#x987B;&#x662F;&#x5DF2;&#x7ECF;&#x6CE8;&#x518C;&#x5230;Spring&#x5BB9;&#x5668;&#x4E2D;&#x7684;ViewResolver&#xFF09;&#xFF0C;&#x89E3;&#x6790;&#x51FA;View &#x5BF9;&#x8C61;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x7ED9;DispatcherServlet</p>
@@ -5605,7 +5637,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SpringMVC常见知识点","level":"1.5.6.1","depth":3,"next":{"title":"SpringMVC拦截器","level":"1.5.6.2","depth":3,"path":"spring/springmvc/SpringMVC拦截器.md","ref":"spring/springmvc/SpringMVC拦截器.md","articles":[]},"previous":{"title":"Spring MVC","level":"1.5.6","depth":2,"ref":"","articles":[{"title":"SpringMVC常见知识点","level":"1.5.6.1","depth":3,"path":"spring/springmvc/SpringMVC常见知识点.md","ref":"spring/springmvc/SpringMVC常见知识点.md","articles":[]},{"title":"SpringMVC拦截器","level":"1.5.6.2","depth":3,"path":"spring/springmvc/SpringMVC拦截器.md","ref":"spring/springmvc/SpringMVC拦截器.md","articles":[]},{"title":"RESTful","level":"1.5.6.3","depth":3,"path":"spring/springmvc/RESTful.md","ref":"spring/springmvc/RESTful.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","chapter-fold","anchor-navigation-ex","-lunr","-search","search-pro","code","github","-sharing"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/zszdevelop/java-study-gitbook"},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"spring/springmvc/SpringMVC常见知识点.md","mtime":"2019-11-03T04:54:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-15T10:18:33.569Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SpringMVC常见知识点","level":"1.5.6.1","depth":3,"next":{"title":"SpringMVC拦截器","level":"1.5.6.2","depth":3,"path":"spring/springmvc/SpringMVC拦截器.md","ref":"spring/springmvc/SpringMVC拦截器.md","articles":[]},"previous":{"title":"Spring MVC","level":"1.5.6","depth":2,"ref":"","articles":[{"title":"SpringMVC常见知识点","level":"1.5.6.1","depth":3,"path":"spring/springmvc/SpringMVC常见知识点.md","ref":"spring/springmvc/SpringMVC常见知识点.md","articles":[]},{"title":"SpringMVC拦截器","level":"1.5.6.2","depth":3,"path":"spring/springmvc/SpringMVC拦截器.md","ref":"spring/springmvc/SpringMVC拦截器.md","articles":[]},{"title":"RESTful","level":"1.5.6.3","depth":3,"path":"spring/springmvc/RESTful.md","ref":"spring/springmvc/RESTful.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","chapter-fold","anchor-navigation-ex","-lunr","-search","search-pro","code","github","-sharing"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/zszdevelop/java-study-gitbook"},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"spring/springmvc/SpringMVC常见知识点.md","mtime":"2019-12-16T15:20:04.615Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-17T01:39:01.991Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
