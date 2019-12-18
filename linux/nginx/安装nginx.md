@@ -12,24 +12,18 @@ yum -y install gcc zlib zlib-devel pcre-devel openssl openssl-devel
 ### 1.2 下载并解压安装包
 
 ```
-//创建一个文件夹
-cd /usr/local
-mkdir nginx
-cd nginx
 //下载tar包
 wget http://nginx.org/download/nginx-1.16.1.tar.gz
-tar -xvf nginx-1.16.1.tar.g
+tar -xvf nginx-1.16.1.tar.gz
 ```
 
 wget 下载的tar包版本可以通过[nginx官网](<https://nginx.org/en/download.html>)查看
-
-注：这样解压出来的nginx 在nginx/nginx-1.16.1目录下，强迫症的可以可以手动移动到nginx目录下
 
 ### 1.3 安装nginx
 
 ```
 //进入nginx目录
-cd /usr/local/nginx
+cd nginx-1.16.1
 //执行命令
 ./configure
 //执行make命令
@@ -37,6 +31,8 @@ make
 //执行make install命令
 make install
 ```
+
+安装完成会在/usr/local目录下出现nginx
 
 ### 1.4 配置nginx.conf
 

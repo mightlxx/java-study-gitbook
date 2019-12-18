@@ -479,6 +479,15 @@ EXplain 中的很多额外的信息会在 Extra 字段显示, 常见的有以下
 
   查询有使用临时表, 一般出现于排序, 分组和多表 join 的情况, 查询效率不高, 建议优化.
 
+## 4. 总结一下
+
+我们可以通过Explain 语句来判断sql是否高效，是否用到了索引。
+
+- key：通过key的值为 `PRIMARY` 则使用到了索引
+- rows：rows扫描的行数，越小越好
+- type：通过type的值判断查询是否高效，判断此次是全表扫描还是索引扫描
+  - ALL < index < range ~ index_merge < ref < eq_ref < const < system
+
 ### 参考文章
 
 [MySQL 性能优化神器 Explain 使用分析](https://segmentfault.com/a/1190000008131735)

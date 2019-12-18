@@ -199,6 +199,7 @@
             * [一条SQL语句在MySQL中如何执行的](db/mysql/optimize/一条SQL语句在MySQL中如何执行的.md)
         * 问题集锦
             * [无法连接远端Mysql](db/mysql/problem/无法连接远端Mysql.md)
+        * [MySql面试提问](db/mysql/interview/MySql面试提问.md)
     * [Oracle](./db/Oracle/README.md)
         * [序列](db/Oracle/序列.md)
 * [SQL](./sql/README.md)
@@ -303,6 +304,7 @@
                 * [nginx设置请求body大小](linux/nginx/problem/nginx设置请求body大小.md)
                 * [403 Forbidden](linux/nginx/problem/403Forbidden.md)
                 * [支持websocket](linux/nginx/problem/支持websocket.md)
+            * [nginx的root和alias的区别](linux/nginx/nginx的root和alias的区别.md)
         * [FTP](linux/ftp/README.md)
             * [安装FTP服务](linux/ftp/安装FTP服务.md)
         * [unzip](linux/unzip/README.md)
@@ -350,6 +352,7 @@
         * [CorsConfig](utils/跨域支持/CorsConfig.md)
 * 面试提问
     * [Spring面试提问](spring/interview/Spring面试提问.md)
+    * [MySql面试提问](db/mysql/interview/MySql面试提问.md)
 * 部门管理/项目管理
     * [关于亲力亲为的思考](manager/关于亲力亲为的思考.md)
     * [如何进行工作分配](manager/如何进行工作分配.md)

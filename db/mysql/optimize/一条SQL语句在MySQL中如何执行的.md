@@ -1,6 +1,6 @@
 # 一条SQL语句在MySQL中如何执行的
 
-本文会分析一个sql 语句在MySQL重的执行流程，包括
+本文会分析一个sql 语句在MySQL中的执行流程，包括
 
 - sql的查询在Mysql内部会怎么流转
 - sql语句的更新是怎么完成的
@@ -145,7 +145,7 @@ update tb_student A set A.age='19' where A.name=' 张三 ';
 - 判断 redo log 是否完整，如果判断是完整的，就立即提交。
 - 如果 redo log 只是预提交但不是 commit 状态，这个时候就会去判断 binlog 是否完整，如果完整就提交 redo log, 不完整就回滚事务。
 
-这样就解决了数据一致性的问题。
+这样就解决了**数据一致性的问题**。
 
 ## 4. 总结
 
