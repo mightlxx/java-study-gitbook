@@ -69,3 +69,4 @@ gitlab运行成功了yunx ceshi fcfdsfsd dd 删除了runner gi.再提交一次jj
 ### 参考文章
 
 [GitLab-CI与GitLab-Runner](<https://www.jianshu.com/p/2b43151fb92e>)
+

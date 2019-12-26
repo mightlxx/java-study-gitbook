@@ -155,6 +155,7 @@
     * [redis分布式锁](redis/lock/README.md)
         * [一步步实现单机redis的分布式锁（setnx）](redis/lock/一步步实现单机redis的分布式锁.md)
         * [Redlock分布式锁](redis/lock/Redlock分布式锁.md)
+    * [redis面试问题](redis/interview/redis面试问题.md)
     * 读书笔记
         * [Redis简介](./redis/book/README.md)
         * [5种数据结构](./redis/5种数据结构.md)
@@ -293,13 +294,16 @@
         * [根据端口号/进程号查项目位置](linux/operation/根据端口号/进程号查项目位置.md)
     * [sshd](linux/sshd/README.md)
         * [ssh一段时间就断掉](linux/sshd/ssh一段时间就断掉.md)
-    * [清除挖矿程序（sysupdate, networkservice进程）](linux/error/清除挖矿程序.md)
+    * 挖矿
+        * [清除挖矿程序（sysupdate, networkservice进程）](linux/error/清除挖矿程序.md)
+        * [清除挖矿程序（kdevtmpfsi进程）](linux/error/清除挖矿程序kdevtmpfsi.md)
     * 软件安装
         * [Java安装](linux/insatll/java.md)
         * MySQL
             * [CentosMySQL安装](db/mysql/CentosMySQL安装.md)
         * [nginx](linux/nginx/README.md)
             * [安装nginx](linux/nginx/安装nginx.md)
+            * [nginx设置开机自启动](linux/nginx/nginx设置开机自启动.md)
             * 问题集锦
                 * [nginx设置请求body大小](linux/nginx/problem/nginx设置请求body大小.md)
                 * [403 Forbidden](linux/nginx/problem/403Forbidden.md)
@@ -335,7 +339,9 @@
         * [fiddler(windows推荐)](./tools/grabbag/fiddler.MD)
     * [gitlab](./tools/gitlab/README.md)
         * [gitlab搭建](tools/gitlab/gitlab搭建.md)
-        * [Gitlab-Runner的安装与使用](tools/gitlab/Gitlab-Runner的安装与使用.md)
+        * Gitlab-CI
+            * [Gitlab-Runner的安装与使用](tools/gitlab/Gitlab-Runner的安装与使用.md)
+            * [Gitlab-Runner实践](tools/gitlab/ci/Gitlab-Runner实践.md)
         * [gitlab配置custom hook](tools/gitlab/custom-hook.md)
         * [问题集锦](tools/gitlab/问题集锦.md)
     * [数据库连接池Druid](druid/README.md)
@@ -353,6 +359,7 @@
 * 面试提问
     * [Spring面试提问](spring/interview/Spring面试提问.md)
     * [MySql面试提问](db/mysql/interview/MySql面试提问.md)
+    * [redis面试问题](redis/interview/redis面试问题.md)
 * 部门管理/项目管理
     * [关于亲力亲为的思考](manager/关于亲力亲为的思考.md)
     * [如何进行工作分配](manager/如何进行工作分配.md)
