@@ -7,6 +7,7 @@
     * [Java基础](base/object/Java基础.md)
         * [ final,static,this,super 关键字总结](base/object/关键字总结.md)
         * [Java异常处理](base/error/Java异常处理.md)
+        * [Java基础面试提问](base/interview/Java基础面试提问.md)
     * 容器
         * [Java容器基础](base/collection/Java容器基础.md)
         * [ArrayList 的扩容机制](base/collection/ArrayList 的扩容机制.md)
@@ -324,6 +325,7 @@
         * 相关概念
             * [DNS域名解析](cs/dns/README.md)
         * [阿里云CDN使用](cdn/阿里云CDN使用.md)
+        * [阿里云带宽价格](cdn/阿里云带宽价格.md)
 * [第三方库](library/README.md)
     * Sentinel
         * [Sentinel限流](library/Sentinel/Sentinel限流.md)
@@ -358,6 +360,7 @@
     * 跨域支持
         * [CorsConfig](utils/跨域支持/CorsConfig.md)
 * 面试提问
+    * [Java基础面试提问](base/interview/Java基础面试提问.md)
     * [Spring面试提问](spring/interview/Spring面试提问.md)
     * [MySql面试提问](db/mysql/interview/MySql面试提问.md)
     * [redis面试问题](redis/interview/redis面试问题.md)
@@ -365,4 +368,6 @@
     * [关于亲力亲为的思考](manager/关于亲力亲为的思考.md)
     * [如何进行工作分配](manager/如何进行工作分配.md)
     * [如何做职场规划](manager/如何做职场规划.md)
+* 工作日常思考
+    * [APP更新方案选择](work/APP更新方案选择.md)
 
