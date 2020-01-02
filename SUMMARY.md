@@ -2,6 +2,7 @@
 
 * [前言](README.md)
 * [开发规范](CodeStandard/README.md)
+  
     * [各层命名规范](CodeStandard/各层命名规范.md)
 * [Java基础](base/README.md)
     * [Java基础](base/object/Java基础.md)
@@ -279,16 +280,27 @@
         * [OAuth2基础](rbac/oauth2/OAuth2基础.md)
     * jwt
         * [JWT详解](rbac/jwt/JWT详解.md)
-* [单元测试](./test/README.md)
-    * [单元测试](test/单元测试.md)
-    * [Junit](./test/junit/README.md)
-        * [Junit常见注解和执行顺序](./test/junit/Junit常见注解和执行顺序.md)
-    * [Mock](./test/mock/README.md)
-        * [Mockito](./test/mock/mockito/README.md)
+* [测试](test/README.md)
+  * 单元测试
+        * [单元测试](test/单元测试.md)
+        * [Junit](test/junit/README.md)
+            * [Junit常见注解和执行顺序](./test/junit/Junit常见注解和执行顺序.md)
+    
+        * [Mock](./test/mock/README.md)
+            * [Mockito](./test/mock/mockito/README.md)
             * [Mockito基本功能](./test/mock/mockito/Mockito基本功能.md)
             * [Mockito使用案例](./test/mock/mockito/Mockito使用案例.md)
             * [Mockito原理](./test/mock/mockito/Mockito原理.md)
             * [Mockito单测service](test/mock/Mockito单测service.md)
+    * 压力测试
+          * siege
+            * [Mac/Linux压测Siege](test/PressureTest/siege/Mac压测Siege.md)
+            * [Siege压测POST实例](test/PressureTest/siege/Siege压测POST实例.md)
+        * JMeter
+          * [mac下JMeter的安装](test/PressureTest/JMeter/JMeter的安装.md)
+          * [JMeter的基本使用](test/PressureTest/JMeter/JMeter的基本使用.md)
+          * 遇到的问题
+            * [JMeter测试连接超时](test/PressureTest/JMeter/question/JMeter测试连接超时.md)
 * [linux](linux/README.md)
     * [操作命令](linux/operation/README.md)
         * [用户管理](linux/operation/用户管理.md)
@@ -335,9 +347,6 @@
 * [工具](tools/README.md)
     * maven
         * [Maven核心知识](tools/maven/Maven核心知识.md)
-    * 压测
-        * [Mac/Linux压测Siege](tools/PressureTest/siege/Mac压测Siege.md)
-        * [Siege压测POST实例](tools/PressureTest/siege/Siege压测POST实例.md)
     * [jrebel热加载](./tools/Jrebel/README.MD)
     * [p3c插件检测代码规范](./tools/p3c/README.MD)
     * Swagger
@@ -374,5 +383,6 @@
     * [如何进行工作分配](manager/如何进行工作分配.md)
     * [如何做职场规划](manager/如何做职场规划.md)
 * 工作日常思考
+  
     * [APP更新方案选择](work/APP更新方案选择.md)
 
