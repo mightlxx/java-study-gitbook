@@ -2,10 +2,10 @@
 
 * [前言](README.md)
 * [开发规范](CodeStandard/README.md)
-  
     * [各层命名规范](CodeStandard/各层命名规范.md)
 * [Java基础](base/README.md)
-    * [Java基础](base/object/Java基础.md)
+    * Java基础
+        * [Java基础](base/object/Java基础.md)
         * [ final,static,this,super 关键字总结](base/object/关键字总结.md)
         * [Java异常处理](base/error/Java异常处理.md)
         * [Java基础面试提问](base/interview/Java基础面试提问.md)
@@ -13,21 +13,25 @@
         * [Java容器基础](base/collection/Java容器基础.md)
         * [ArrayList 的扩容机制](base/collection/ArrayList 的扩容机制.md)
         * [Comparable和Comparator](base/collection/Comparable和Comparator.md)
-    * [多线程](base/thread/README.md)
+    * 多线程
+        * [多线程](base/thread/README.md)
         * [线程生命周期](base/thread/线程生命周期.md)
         * [线程通信(等待通知wait/notify机制)](base/thread/线程通信.md)
         * [死锁](base/thread/死锁.md)
-    * [并发](base/concurrent/README.md)
+    * 并发
         * [synchronized关键字](base/concurrent/synchronized关键字.md)
             * [ReentrantLock(补充)](base/concurrent/ReentrantLock.md)
         * [volatile关键字](base/concurrent/volatile关键字.md)
-        * [线程池](base/concurrent/线程池.md)
+        * 线程池
+            * [线程池](base/concurrent/线程池.md)
             * [ThreadPoolExecutor类](base/concurrent/ThreadPoolExecutor类.md)
             * [线程池的具体实现原理](base/concurrent/线程池的具体实现原理.md)
             * [线程池使用示例](base/concurrent/线程池使用示例.md)
             * [Executors创建线程池](base/concurrent/Executors创建线程池.md)
             * [如何合理配置线程池的大小](base/concurrent/如何合理配置线程池的大小.md)
-        * [ThreadLocal](base/concurrent/ThreadLocal.md)
+        * ThreadLocal
+            * [ThreadLocal](base/concurrent/ThreadLocal.md)
+            * [ThreadLocal使用不当导致内存泄漏](base/concurrent/ThreadLocal/ThreadLocal使用不当导致内存泄漏.md)
         * [乐观锁和悲观锁](base/concurrent/乐观锁和悲观锁.md)
         * [Callable和Future](base/concurrent/Callable和Future.md)
         * [Atomic原子类](base/concurrent/Atomic原子类.md)
@@ -281,26 +285,24 @@
     * jwt
         * [JWT详解](rbac/jwt/JWT详解.md)
 * [测试](test/README.md)
-  * 单元测试
-        * [单元测试](test/单元测试.md)
-        * [Junit](test/junit/README.md)
+    * 单元测试](test/单元测试.md)
+        * [Junit](./test/junit/README.md)
             * [Junit常见注解和执行顺序](./test/junit/Junit常见注解和执行顺序.md)
-    
         * [Mock](./test/mock/README.md)
             * [Mockito](./test/mock/mockito/README.md)
-            * [Mockito基本功能](./test/mock/mockito/Mockito基本功能.md)
-            * [Mockito使用案例](./test/mock/mockito/Mockito使用案例.md)
-            * [Mockito原理](./test/mock/mockito/Mockito原理.md)
-            * [Mockito单测service](test/mock/Mockito单测service.md)
+                * [Mockito基本功能](./test/mock/mockito/Mockito基本功能.md)
+                * [Mockito使用案例](./test/mock/mockito/Mockito使用案例.md)
+                * [Mockito原理](./test/mock/mockito/Mockito原理.md)
+                * [Mockito单测service](test/mock/Mockito单测service.md)
     * 压力测试
-          * siege
-            * [Mac/Linux压测Siege](test/PressureTest/siege/Mac压测Siege.md)
+        * siege
+            * [Mac压测Siege](test/PressureTest/siege/Mac压测Siege.md)
             * [Siege压测POST实例](test/PressureTest/siege/Siege压测POST实例.md)
         * JMeter
-          * [mac下JMeter的安装](test/PressureTest/JMeter/JMeter的安装.md)
-          * [JMeter的基本使用](test/PressureTest/JMeter/JMeter的基本使用.md)
-          * 遇到的问题
-            * [JMeter测试连接超时](test/PressureTest/JMeter/question/JMeter测试连接超时.md)
+            * [mac下JMeter的安装](test/PressureTest/JMeter/JMeter的安装.md)
+            * [JMeter的基本使用](test/PressureTest/JMeter/JMeter的基本使用.md)
+            * 遇到的问题
+                * [JMeter测试连接超时](test/PressureTest/JMeter/question/JMeter测试连接超时.md)
 * [linux](linux/README.md)
     * [操作命令](linux/operation/README.md)
         * [用户管理](linux/operation/用户管理.md)
@@ -383,6 +385,5 @@
     * [如何进行工作分配](manager/如何进行工作分配.md)
     * [如何做职场规划](manager/如何做职场规划.md)
 * 工作日常思考
-  
     * [APP更新方案选择](work/APP更新方案选择.md)
 
