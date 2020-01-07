@@ -1119,6 +1119,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3.6.6.1.3" data-path="mat/Shallow和Retained.html">
+            
+                <a href="mat/Shallow和Retained.html">
+            
+                    
+                    Shallow heap和Retained heap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6.1.4" data-path="mat/记一次MAT分析线上项目过程.html">
+            
+                <a href="mat/记一次MAT分析线上项目过程.html">
+            
+                    
+                    记一次MAT分析线上项目过程
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -6015,8 +6041,8 @@ C:\Users\SnailClimb&gt;jinfo  -flag  PrintGC 17340
 <p><code>jmap</code>&#xFF08;Memory Map for Java&#xFF09;&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x751F;&#x6210;&#x5806;&#x8F6C;&#x50A8;&#x5FEB;&#x7167;&#x3002; &#x5982;&#x679C;&#x4E0D;&#x4F7F;&#x7528; <code>jmap</code> &#x547D;&#x4EE4;&#xFF0C;&#x8981;&#x60F3;&#x83B7;&#x53D6; Java &#x5806;&#x8F6C;&#x50A8;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>&#x201C;-XX:+HeapDumpOnOutOfMemoryError&#x201D;</code> &#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x865A;&#x62DF;&#x673A;&#x5728; OOM &#x5F02;&#x5E38;&#x51FA;&#x73B0;&#x4E4B;&#x540E;&#x81EA;&#x52A8;&#x751F;&#x6210; dump &#x6587;&#x4EF6;&#xFF0C;Linux &#x547D;&#x4EE4;&#x4E0B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>kill -3</code> &#x53D1;&#x9001;&#x8FDB;&#x7A0B;&#x9000;&#x51FA;&#x4FE1;&#x53F7;&#x4E5F;&#x80FD;&#x62FF;&#x5230; dump &#x6587;&#x4EF6;&#x3002;</p>
 <p><code>jmap</code> &#x7684;&#x4F5C;&#x7528;&#x5E76;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x4E3A;&#x4E86;&#x83B7;&#x53D6; dump &#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x8FD8;&#x53EF;&#x4EE5;&#x67E5;&#x8BE2; finalizer &#x6267;&#x884C;&#x961F;&#x5217;&#x3001;Java &#x5806;&#x548C;&#x6C38;&#x4E45;&#x4EE3;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x7A7A;&#x95F4;&#x4F7F;&#x7528;&#x7387;&#x3001;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x54EA;&#x79CD;&#x6536;&#x96C6;&#x5668;&#x7B49;&#x3002;&#x548C;<code>jinfo</code>&#x4E00;&#x6837;&#xFF0C;<code>jmap</code>&#x6709;&#x4E0D;&#x5C11;&#x529F;&#x80FD;&#x5728; Windows &#x5E73;&#x53F0;&#x4E0B;&#x4E5F;&#x662F;&#x53D7;&#x9650;&#x5236;&#x7684;&#x3002;</p>
 <p>&#x793A;&#x4F8B;&#xFF1A;&#x5C06;&#x6307;&#x5B9A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x5806;&#x5FEB;&#x7167;&#x8F93;&#x51FA;&#x5230;&#x684C;&#x9762;&#x3002;&#x540E;&#x9762;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; jhat&#x3001;Visual VM &#x7B49;&#x5DE5;&#x5177;&#x5206;&#x6790;&#x8BE5;&#x5806;&#x6587;&#x4EF6;&#x3002;</p>
-<pre><code>C:\Users\SnailClimb&gt;jmap -dump:format=b,file=C:\Users\SnailClimb\Desktop\heap.hprof 17340
-Dumping heap to C:\Users\SnailClimb\Desktop\heap.hprof ...
+<pre><code>jmap -dump:format=b,file=./heap.hprof 19012
+Dumping heap to /home/ftpuser/services/mywebsocket/heap.hprof ...
 Heap dump file created
 </code></pre><h3 id="15-jhat-&#x5206;&#x6790;-heapdump-&#x6587;&#x4EF6;"><a name="15-jhat-&#x5206;&#x6790;-heapdump-&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#15-jhat-&#x5206;&#x6790;-heapdump-&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5 <strong>jhat</strong>: &#x5206;&#x6790; heapdump &#x6587;&#x4EF6;</h3>
 <p><strong>jhat</strong> &#x7528;&#x4E8E;&#x5206;&#x6790; heapdump &#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x4F1A;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A; HTTP/HTML &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x8BA9;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x67E5;&#x770B;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x3002;</p>
@@ -6177,7 +6203,7 @@ Found 1 deadlock.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JDK监控和故障处理工具汇总","level":"1.3.6.6","depth":3,"next":{"title":"MAT","level":"1.3.6.6.1","depth":4,"ref":"","articles":[{"title":"MAT安装","level":"1.3.6.6.1.1","depth":5,"path":"base/jvm/mat安装.md","ref":"base/jvm/mat安装.md","articles":[]},{"title":"MAT使用","level":"1.3.6.6.1.2","depth":5,"path":"base/jvm/mat使用.md","ref":"base/jvm/mat使用.md","articles":[]}]},"previous":{"title":"tomcat类加载器","level":"1.3.6.5.2","depth":4,"path":"base/jvm/tomcat类加载器.md","ref":"base/jvm/tomcat类加载器.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","chapter-fold","anchor-navigation-ex","-lunr","-search","search-pro","code","github","-sharing"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/zszdevelop/java-study-gitbook"},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"base/jvm/JDK监控和故障处理工具汇总.md","mtime":"2019-09-29T16:09:43.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-05T13:19:33.273Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JDK监控和故障处理工具汇总","level":"1.3.6.6","depth":3,"next":{"title":"MAT","level":"1.3.6.6.1","depth":4,"ref":"","articles":[{"title":"MAT安装","level":"1.3.6.6.1.1","depth":5,"path":"base/jvm/mat安装.md","ref":"base/jvm/mat安装.md","articles":[]},{"title":"MAT使用","level":"1.3.6.6.1.2","depth":5,"path":"base/jvm/mat使用.md","ref":"base/jvm/mat使用.md","articles":[]},{"title":"Shallow heap和Retained heap","level":"1.3.6.6.1.3","depth":5,"path":"base/jvm/mat/Shallow和Retained.md","ref":"base/jvm/mat/Shallow和Retained.md","articles":[]},{"title":"记一次MAT分析线上项目过程","level":"1.3.6.6.1.4","depth":5,"path":"base/jvm/mat/记一次MAT分析线上项目过程.md","ref":"base/jvm/mat/记一次MAT分析线上项目过程.md","articles":[]}]},"previous":{"title":"tomcat类加载器","level":"1.3.6.5.2","depth":4,"path":"base/jvm/tomcat类加载器.md","ref":"base/jvm/tomcat类加载器.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","chapter-fold","anchor-navigation-ex","-lunr","-search","search-pro","code","github","-sharing"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/zszdevelop/java-study-gitbook"},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"base/jvm/JDK监控和故障处理工具汇总.md","mtime":"2020-01-07T06:48:11.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-07T16:08:19.815Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1119,6 +1119,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3.6.6.1.3" data-path="../jvm/mat/Shallow和Retained.html">
+            
+                <a href="../jvm/mat/Shallow和Retained.html">
+            
+                    
+                    Shallow heap和Retained heap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6.1.4" data-path="../jvm/mat/记一次MAT分析线上项目过程.html">
+            
+                <a href="../jvm/mat/记一次MAT分析线上项目过程.html">
+            
+                    
+                    记一次MAT分析线上项目过程
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -6143,6 +6169,12 @@
 </ul>
 <p>&#x8FD9;&#x4E2A;&#x7B97;&#x6CD5;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x8BBE;&#x8BA1;&#x5462;&#xFF1F;</p>
 <p>&#x6211;&#x4EEC;&#x9996;&#x5148;&#x53EF;&#x80FD;&#x4F1A;&#x60F3;&#x5230;&#x91C7;&#x7528;%&#x53D6;&#x4F59;&#x7684;&#x64CD;&#x4F5C;&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x91CD;&#x70B9;&#x6765;&#x4E86;&#xFF1A;<strong>&#x201C;&#x53D6;&#x4F59;(%)&#x64CD;&#x4F5C;&#x4E2D;&#x5982;&#x679C;&#x9664;&#x6570;&#x662F;2&#x7684;&#x5E42;&#x6B21;&#x5219;&#x7B49;&#x4EF7;&#x4E8E;&#x4E0E;&#x5176;&#x9664;&#x6570;&#x51CF;&#x4E00;&#x7684;&#x4E0E;(&amp;)&#x64CD;&#x4F5C;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x8BF4; hash%length==hash&amp;(length-1)&#x7684;&#x524D;&#x63D0;&#x662F; length &#x662F;2&#x7684; n &#x6B21;&#x65B9;&#xFF1B;&#xFF09;&#x3002;&#x201D;</strong> &#x5E76;&#x4E14; <strong>&#x91C7;&#x7528;&#x4E8C;&#x8FDB;&#x5236;&#x4F4D;&#x64CD;&#x4F5C; &amp;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;%&#x80FD;&#x591F;&#x63D0;&#x9AD8;&#x8FD0;&#x7B97;&#x6548;&#x7387;&#xFF0C;&#x8FD9;&#x5C31;&#x89E3;&#x91CA;&#x4E86; HashMap &#x7684;&#x957F;&#x5EA6;&#x4E3A;&#x4EC0;&#x4E48;&#x662F;2&#x7684;&#x5E42;&#x6B21;&#x65B9;&#x3002;</strong></p>
+<p>&#x603B;&#x7ED3;&#xFF1A;</p>
+<ol>
+<li>HashMap&#x7684;hash&#x8868;&#x7B97;&#x6CD5;&#x601D;&#x8DEF;&#x662F;&#xFF1A;<strong>&#x5BF9;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#x53D6;&#x4F59;&#x5F53;&#x4E0B;&#x6807;</strong></li>
+<li>HashMap&#x7684;hash&#x8868;&#x5B9E;&#x9645;&#x7B97;&#x6CD5;&#x662F;&#xFF1A;<strong>&#xFF08;n-1&#xFF09;&amp;hash&#xFF0C;&#xFF08;n&#x4EE3;&#x8868;&#x6570;&#x7EC4;&#x957F;&#x5EA6;&#xFF09;</strong></li>
+<li>&#x53D6;&#x4F59;&#xFF08;%&#xFF09;&#x64CD;&#x4F5C;&#x548C;&#xFF08;n-1&#xFF09;&amp;hash&#x76F8;&#x7B49;&#x7684;&#x524D;&#x63D0;&#x5C31;&#x662F; <strong>length &#x662F;2&#x7684; n &#x6B21;&#x65B9;</strong></li>
+</ol>
 <h2 id="11-hashmap-&#x591A;&#x7EBF;&#x7A0B;&#x64CD;&#x4F5C;&#x5BFC;&#x81F4;&#x6B7B;&#x5FAA;&#x73AF;&#x95EE;&#x9898;"><a name="11-hashmap-&#x591A;&#x7EBF;&#x7A0B;&#x64CD;&#x4F5C;&#x5BFC;&#x81F4;&#x6B7B;&#x5FAA;&#x73AF;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#11-hashmap-&#x591A;&#x7EBF;&#x7A0B;&#x64CD;&#x4F5C;&#x5BFC;&#x81F4;&#x6B7B;&#x5FAA;&#x73AF;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>11. HashMap &#x591A;&#x7EBF;&#x7A0B;&#x64CD;&#x4F5C;&#x5BFC;&#x81F4;&#x6B7B;&#x5FAA;&#x73AF;&#x95EE;&#x9898;</h2>
 <p>&#x4E3B;&#x8981;&#x539F;&#x56E0;&#x5728;&#x4E8E; &#x5E76;&#x53D1;&#x4E0B;&#x7684; Rehash &#x4F1A;&#x9020;&#x6210;&#x5143;&#x7D20;&#x4E4B;&#x95F4;<strong>&#x4F1A;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x94FE;&#x8868;</strong>&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;JDK1.8 &#x4E4B;&#x540E;&#x89E3;&#x51B3;&#x4E86;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x662F;&#x4E0D;&#x5EFA;&#x8BAE;&#x5728;&#x591A;&#x7EBF;&#x7A0B;&#x4E0B;&#x4F7F;&#x7528; HashMap&#xFF0C;&#x56E0;&#x4E3A;&#x591A;&#x7EBF;&#x7A0B;&#x4E0B;&#x4F7F;&#x7528; HashMap &#x8FD8;&#x662F;&#x4F1A;&#x5B58;&#x5728;&#x5176;&#x4ED6;&#x95EE;&#x9898;&#xFF0C;&#x6BD4;&#x5982;&#x6570;&#x636E;&#x4E22;&#x5931;&#xFF0C;&#x5E76;&#x53D1;&#x73AF;&#x5883;&#x4E0B;&#x63A8;&#x8350;&#x4F7F;&#x7528;ConcurrentHashMap</p>
 <h2 id="12-concurrenthashmap-&#x548C;-hashtable-&#x7684;&#x533A;&#x522B;"><a name="12-concurrenthashmap-&#x548C;-hashtable-&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#12-concurrenthashmap-&#x548C;-hashtable-&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>12. ConcurrentHashMap &#x548C; HashTable &#x7684;&#x533A;&#x522B;</h2>
@@ -6286,7 +6318,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Java容器基础","level":"1.3.2.1","depth":3,"next":{"title":"ArrayList 的扩容机制","level":"1.3.2.2","depth":3,"path":"base/collection/ArrayList 的扩容机制.md","ref":"base/collection/ArrayList 的扩容机制.md","articles":[]},"previous":{"title":"容器","level":"1.3.2","depth":2,"ref":"","articles":[{"title":"Java容器基础","level":"1.3.2.1","depth":3,"path":"base/collection/Java容器基础.md","ref":"base/collection/Java容器基础.md","articles":[]},{"title":"ArrayList 的扩容机制","level":"1.3.2.2","depth":3,"path":"base/collection/ArrayList 的扩容机制.md","ref":"base/collection/ArrayList 的扩容机制.md","articles":[]},{"title":"Comparable和Comparator","level":"1.3.2.3","depth":3,"path":"base/collection/Comparable和Comparator.md","ref":"base/collection/Comparable和Comparator.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","chapter-fold","anchor-navigation-ex","-lunr","-search","search-pro","code","github","-sharing"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/zszdevelop/java-study-gitbook"},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"base/collection/Java容器基础.md","mtime":"2019-10-30T16:04:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-05T13:19:33.273Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Java容器基础","level":"1.3.2.1","depth":3,"next":{"title":"ArrayList 的扩容机制","level":"1.3.2.2","depth":3,"path":"base/collection/ArrayList 的扩容机制.md","ref":"base/collection/ArrayList 的扩容机制.md","articles":[]},"previous":{"title":"容器","level":"1.3.2","depth":2,"ref":"","articles":[{"title":"Java容器基础","level":"1.3.2.1","depth":3,"path":"base/collection/Java容器基础.md","ref":"base/collection/Java容器基础.md","articles":[]},{"title":"ArrayList 的扩容机制","level":"1.3.2.2","depth":3,"path":"base/collection/ArrayList 的扩容机制.md","ref":"base/collection/ArrayList 的扩容机制.md","articles":[]},{"title":"Comparable和Comparator","level":"1.3.2.3","depth":3,"path":"base/collection/Comparable和Comparator.md","ref":"base/collection/Comparable和Comparator.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","chapter-fold","anchor-navigation-ex","-lunr","-search","search-pro","code","github","-sharing"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/zszdevelop/java-study-gitbook"},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"base/collection/Java容器基础.md","mtime":"2020-01-05T14:26:02.736Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-07T16:08:19.815Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

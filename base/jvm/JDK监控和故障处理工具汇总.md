@@ -105,8 +105,8 @@ C:\Users\SnailClimb>jinfo  -flag  PrintGC 17340
 示例：将指定应用程序的堆快照输出到桌面。后面，可以通过 jhat、Visual VM 等工具分析该堆文件。
 
 ```
-C:\Users\SnailClimb>jmap -dump:format=b,file=C:\Users\SnailClimb\Desktop\heap.hprof 17340
-Dumping heap to C:\Users\SnailClimb\Desktop\heap.hprof ...
+jmap -dump:format=b,file=./heap.hprof 19012
+Dumping heap to /home/ftpuser/services/mywebsocket/heap.hprof ...
 Heap dump file created
 ```
 

@@ -70,6 +70,8 @@
             * MAT
                 * [MAT安装](base/jvm/mat安装.md)
                 * [MAT使用](base/jvm/mat使用.md)
+                * [Shallow heap和Retained heap](base/jvm/mat/Shallow和Retained.md)
+                * [记一次MAT分析线上项目过程](base/jvm/mat/记一次MAT分析线上项目过程.md)
         * [JVM面试提问](base/jvm/JVM面试提问.md)
 * [J2EE](J2EE/README.md)
     * [Servlet](J2EE/Servlet/README.md)

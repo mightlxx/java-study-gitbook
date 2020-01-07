@@ -47,5 +47,4 @@
 2. ArrayList的扩容机制
 3. HashMap的底层实现
 4. HashMap的哈希表长度为什么是2的幂次方
-5. HashMap 如何保证总是2的幂次方作为哈希表大小？
 6. HashSet是如何检查重复的？
