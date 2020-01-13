@@ -49,8 +49,18 @@ db.password=123456
 
 ## 5. 启动
 
-修改好application.properties配置后，双击bin/startup.cmd启动nacos服务端：
+- Linux
+
+  - 单机启动
+
+    ```
+	  sh startup.sh -m standalon
+    ```
+
+- Windowns
+
+  修改好application.properties配置后，双击bin/startup.cmd启动nacos服务端
 
 ## 6.浏览
 
-启动后使用浏览器访问：http://localhost:8001/nacos：
+启动后使用浏览器访问：http://localhost:8001/nacos

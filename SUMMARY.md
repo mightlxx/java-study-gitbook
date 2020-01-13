@@ -245,6 +245,7 @@
         * [RabbitMQ基础](mq/RabbitMQ/RabbitMQ基础.md)
         * 实战
             * [RabbitMQ安装](mq/RabbitMQ/action/RabbitMQ安装.md)
+            * [SpringBoot整合RabbitMQ](mq/RabbitMQ/action/SpringBoot整合RabbitMQ.md)
 * 微服务
     * 服务发现(注册中心）
         * Eureka
@@ -315,18 +316,16 @@
     * 挖矿
         * [清除挖矿程序（sysupdate, networkservice进程）](linux/error/清除挖矿程序.md)
         * [清除挖矿程序（kdevtmpfsi进程）](linux/error/清除挖矿程序kdevtmpfsi.md)
+    * [nginx](linux/nginx/README.md)
+        * [安装nginx](linux/nginx/安装nginx.md)
+        * [nginx设置开机自启动](linux/nginx/nginx设置开机自启动.md)
+        * 问题集锦
+            * [nginx设置请求body大小](linux/nginx/problem/nginx设置请求body大小.md)
+            * [403 Forbidden](linux/nginx/problem/403Forbidden.md)
+            * [支持websocket](linux/nginx/problem/支持websocket.md)
+        * [nginx的root和alias的区别](linux/nginx/nginx的root和alias的区别.md)
     * 软件安装
         * [Java安装](linux/insatll/java.md)
-        * MySQL
-            * [CentosMySQL安装](db/mysql/CentosMySQL安装.md)
-        * [nginx](linux/nginx/README.md)
-            * [安装nginx](linux/nginx/安装nginx.md)
-            * [nginx设置开机自启动](linux/nginx/nginx设置开机自启动.md)
-            * 问题集锦
-                * [nginx设置请求body大小](linux/nginx/problem/nginx设置请求body大小.md)
-                * [403 Forbidden](linux/nginx/problem/403Forbidden.md)
-                * [支持websocket](linux/nginx/problem/支持websocket.md)
-            * [nginx的root和alias的区别](linux/nginx/nginx的root和alias的区别.md)
         * [FTP](linux/ftp/README.md)
             * [安装FTP服务](linux/ftp/安装FTP服务.md)
         * [unzip](linux/unzip/README.md)
@@ -334,7 +333,9 @@
     * [云服务器ECS](aliyun/ecs/README.md)
         * [安装/重装系统](aliyun/ecs/安装系统.md)
 * [计算机基础](./cs/README.md)
-    * [计算机网络常见知识点](net/计算机网络常见知识点.md)
+    * 计算机网络
+        * [计算机网络常见知识点](net/计算机网络常见知识点.md)
+        * [计算机网络面试问题](net/计算机网络面试问题.md)
     * [UML类图](cs/uml/README.md)
     * [磁盘存取](cs/disk/README.md)
     * [DNS域名解析](cs/dns/README.md)
@@ -360,7 +361,7 @@
     * [gitlab](./tools/gitlab/README.md)
         * [gitlab搭建](tools/gitlab/gitlab搭建.md)
         * Gitlab-CI
-            * [Gitlab-Runner的安装与使用](tools/gitlab/Gitlab-Runner的安装与使用.md)
+            * [Gitlab-Runner的安装与使用](tools/gitlab/ci/Gitlab-Runner的安装与使用.md)
             * [Gitlab-Runner实践](tools/gitlab/ci/Gitlab-Runner实践.md)
         * [gitlab配置custom hook](tools/gitlab/custom-hook.md)
         * [问题集锦](tools/gitlab/问题集锦.md)
@@ -373,6 +374,9 @@
             * [gitignore文件屏蔽规则](./tools/vcs/git/gitignore文件屏蔽规则.md)
             * [android gitignore 模板](./tools/vcs/git/androidGitignore模板.md)
     * [运行脚本](tools/script/运行脚本.md)
+    * IDE
+        * IDEA
+            * [IDEA maven下载jar包太慢](tools/ide/idea/IDEAmaven下载jar包太慢.md)
 * 常用工具类
     * 跨域支持
         * [CorsConfig](utils/跨域支持/CorsConfig.md)
@@ -382,6 +386,7 @@
     * [Spring面试提问](spring/interview/Spring面试提问.md)
     * [MySql面试提问](db/mysql/interview/MySql面试提问.md)
     * [redis面试问题](redis/interview/redis面试问题.md)
+    * [计算机网络面试问题](net/计算机网络面试问题.md)
 * 部门管理/项目管理
     * [关于亲力亲为的思考](manager/关于亲力亲为的思考.md)
     * [如何进行工作分配](manager/如何进行工作分配.md)

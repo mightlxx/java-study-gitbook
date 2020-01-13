@@ -35,20 +35,36 @@
 
 如果要注册Specific Runner，你需要到项目的设置的Runner页面里面去找注册token。如下图所示：
 
-![image-20190916002335789](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20190916002335789.png)
+![image-20200109135721629](./img/image-20200109135721629.png)
 
 #### 1.2.3 注册runner
 
 找到token之后，运行下面这条命令注册Runner（当然，除了url和token之外，还需要其他的信息，比如执行器`executor`、构建目录`builds_dir`等）。
 `gitlab-ci-multi-runner register`
 
-![image-20190916002556183](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20190916002556183.png)
+![image-20200109140942669](./img/image-20200109140942669.png)
 
 依据提示输入
 
+### 注意事项
+
+- Whether to run untagged builds [true/false]:
+
+  是否运行在没有 tag 的 build 上面。在配置 gitlab-ci 时，会有很多 job，每个 job 可以通过 tags 属性来选择 Runner。**这里为 true 表示如果 job 没有配置 tags，也执行。**
+
+- Whether to lock the Runner to current project [true/false]:
+
+  是否锁定 Runner 到当前项目
+
+- 选择 executor，这里列出了很多 executor
+
+  shell
+
+
+
 注册完成之后，GitLab-CI就会多出一条Runner记录，如下图所示：
 
-![image-20190916003325162](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20190916003325162.png)
+![image-20200109141223152](./img/image-20200109141223152.png)
 
 ### 1.3 让注册好的Runner运行起来
 
@@ -64,7 +80,7 @@ gitlab-ci-multi-runner start gitbook-runner
 ps -aux | grep gitlab-runner
 ```
 
-gitlab运行成功了yunx ceshi fcfdsfsd dd 删除了runner gi.再提交一次jjj 我的测试，图片sdfssdf
+gitlab运行成功了
 
 ### 参考文章
 
