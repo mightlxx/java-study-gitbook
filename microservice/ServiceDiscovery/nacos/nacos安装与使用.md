@@ -54,7 +54,7 @@ db.password=123456
   - 单机启动
 
     ```
-	  sh startup.sh -m standalon
+	  sh startup.sh -m standalone
     ```
 
 - Windowns
@@ -64,3 +64,16 @@ db.password=123456
 ## 6.浏览
 
 启动后使用浏览器访问：http://localhost:8001/nacos
+
+![image-20200116224000360](./img/image-20200116224000360.png)
+
+默认*账号*:*nacos* 默认*密码*:*nacos*
+
+
+
+## 7. 关闭服务
+
+```
+sh shutdown.sh
+```
+

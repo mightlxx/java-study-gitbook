@@ -259,10 +259,15 @@
             * [zuul基础](microservice/gateway/zuul/zuul基础.md)
             * [zuul实战](microservice/gateway/zuul/zuul实战.md)
             * [微服务保护](microservice/gateway/zuul/微服务保护.md)
+        * Spring Cloud GateWay
+            * [服务网关Spring Cloud GateWay基础](microservice/gateway/SpringCloudGateWay/服务网关SpringCloudGateWay基础.md)
+            * [Spring Cloud GateWay实战](microservice/gateway/SpringCloudGateWay/SpringCloudGateWay实战.md)
     * 分布式跟踪系统
         * zipkin
             * [ZinKin基础](microservice/track/zipkin/ZinKin基础.md)
             * [Sleuth Zipkin链路追踪](microservice/track/zipkin/Sleuth Zipkin链路追踪.md)
+            * [Zipkin下载](microservice/track/zipkin/Zipkin下载.md)
+            * [SpringBoot整合Zipkin](microservice/track/zipkin/SpringBoot整合Zipkin.md)
     * 服务调用
         * Feign
             * [Feign基础](microservice/callservice/Feign/Feign基础.md)
