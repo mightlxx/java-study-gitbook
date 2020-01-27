@@ -4,7 +4,7 @@
 
 ### 1.1 OAuth 基本流程
 
-![image-20200124153249544](/Users/zsz/Library/Application Support/typora-user-images/image-20200124153249544.png)
+![image-20200124153249544](./img/image-20200124153249544.png)
 
 基本组件
 
@@ -184,7 +184,7 @@ JwtAccessTokenConverter jwtAccessTokenConverter = new JwtAccessTokenConverter();
  jwtAccessTokenConverter.setSigningKey("CatalpaFlat")
 ```
 
-![image-20200124221739806](/Users/zsz/Library/Application Support/typora-user-images/image-20200124221739806.png)
+![image-20200124221739806](./img/image-20200124221739806.png)
 
 #### 2.1.3 端点接入-endpoints
 
@@ -214,13 +214,12 @@ public AuthorizationServerEndpointsConfigurer pathMapping(String defaultPath, St
 		this.patternMap.put(defaultPath, customPath);
 		return this;
 }
-复制代码
 ```
 
 pathMapping的defaultPath有：
 
 - /oauth/authorize：授权端点
-- /oauth/token：令牌端点
+- /oauth/token：**获取授权token令牌**
 - /oauth/confirm_access：用户确认授权提交端点
 - /oauth/error：授权服务错误信息端点
 - /oauth/check_token：用于资源服务访问的令牌解析端点

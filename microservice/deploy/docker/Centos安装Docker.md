@@ -49,7 +49,7 @@ systemctl start docker
 
 查看是否安装成功：
 
-![image-20191204234236782](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20191204234236782.png)
+![image-20200126212039986](./img/image-20200126212039986.png)
 
 ## 2 安装Docker Compose
 
@@ -73,4 +73,5 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 ### 2.4 查看是否安装成功：
 
-![image-20191205091329641](/Users/zhangshengzhong/Library/Application Support/typora-user-images/image-20191205091329641.png)
+![image-20200126212141426](./img/image-20200126212141426.png)
+

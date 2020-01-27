@@ -272,6 +272,7 @@
         * spring-cloud-starter-oauth2
             * [使用spring-cloud-starter-oauth2搭建授权服务](microservice/auth/spring-cloud-starter-oauth2/使用spring-cloud-starter-oauth2搭建授权服务.md)
             * [Spring security OAuth2 深入解析](microservice/auth/spring-cloud-starter-oauth2/SpringsecurityOAuth2深入解析.md)
+            * [Spring security OAuth2  端点（endpoints）授权url](microservice/auth/spring-cloud-starter-oauth2/SpringsecurityOAuth2授权url].md)
     * 分布式跟踪系统
         * zipkin
             * [ZinKin基础](microservice/track/zipkin/ZinKin基础.md)
@@ -284,6 +285,9 @@
     * 日志
         * logback
             * [logback日志打印](microservice/log/logback/logback日志打印.md)
+        * ELK日志收集
+            * [ELK日志收集](microservice/log/elk/ELK日志收集.md)
+            * [微服务ELK日志配置](microservice/log/elk/微服务ELK日志配置.md)
     * 微服务部署
         * Docker
             * [Centos安装Docker](microservice/deploy/docker/Centos安装Docker.md)
@@ -300,6 +304,7 @@
         * [Shiro与JWT整合](rbac/shiro/Shiro与JWT整合.md)
     * Spring Security
         * [SpringBoot整合Spring Security](rbac/SpringSecurity/SpringBoot整合SpringSecurity.md)
+        * [Spring Security入门](rbac/SpringSecurity/SpringSecurity入门.md)
     * OAuth2
         * [OAuth2基础](rbac/oauth2/OAuth2基础.md)
     * jwt
