@@ -96,8 +96,8 @@ services:
       - "discovery.type=single-node" #单节点启动
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m" #jvm内存分配为512MB
     volumes:
-      - /febs/elasticsearch/plugins:/usr/share/elasticsearch/plugins
-      - /febs/elasticsearch/data:/usr/share/elasticsearch/data
+      - /elk/elasticsearch/plugins:/usr/share/elasticsearch/plugins
+      - /elk/elasticsearch/data:/usr/share/elasticsearch/data
     ports:
       - 9200:9200
   kibana:
@@ -108,14 +108,15 @@ services:
     depends_on:
       - elasticsearch
     environment:
-      - "elasticsearch.hosts=http://es:9200" #因为上面配置了域名，所以这里可以简写为http://es:9200
+      - "elasticsearch.hosts=http://es:9200" #因为上面配置了域名，所以这里可以简
+写为http://es:9200
     ports:
       - 5601:5601
   logstash:
     image: logstash:6.4.1
     container_name: logstash
     volumes:
-      - /febs/logstash/logstash-febs.conf:/usr/share/logstash/pipeline/logstash.conf
+      - /elk/logstash/logstash-elk.conf:/usr/share/logstash/pipeline/logstash.conf
     depends_on:
       - elasticsearch
     links:

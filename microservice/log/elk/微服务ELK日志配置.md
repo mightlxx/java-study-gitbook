@@ -15,7 +15,7 @@
 ```xml
 <!--输出到 logstash的 appender-->
 <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-    <destination>192.168.33.10:4560</destination>
+    <destination>120.79.200.111:4560</destination>
     <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder"/>
 </appender>
 
@@ -26,9 +26,11 @@
 </root>
 ```
 
-`120.79.200.111:4560`对应我们刚刚搭建的Logstash地址。
+120.79.200.111:4560对应我们刚刚搭建的Logstash地址。
 
 ## 2. 演示效果
+
+Kibana UI地址  [http://120.79.200.111:5601/](http://120.79.200.111:5601/)
 
 依次启动chinahrss-gateway、chinahrss-auth、chinahrss-server-system和chinahrss-server-test模块，然后回到Kibana管理界面创建Kinaba Index Patterns：
 

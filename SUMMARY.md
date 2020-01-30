@@ -279,6 +279,9 @@
             * [Sleuth Zipkin链路追踪](microservice/track/zipkin/Sleuth Zipkin链路追踪.md)
             * [Zipkin下载](microservice/track/zipkin/Zipkin下载.md)
             * [SpringBoot整合Zipkin](microservice/track/zipkin/SpringBoot整合Zipkin.md)
+        * skywalking
+            * [skywalking分布式追踪](microservice/track/skywalking/skywalking分布式追踪.md)
+            * [Spring Cloud应用整合Skywalking](microservice/track/skywalking/SpringCloud应用整合Skywalking.md)
     * 服务调用
         * Feign
             * [Feign基础](microservice/callservice/Feign/Feign基础.md)
@@ -288,12 +291,35 @@
         * ELK日志收集
             * [ELK日志收集](microservice/log/elk/ELK日志收集.md)
             * [微服务ELK日志配置](microservice/log/elk/微服务ELK日志配置.md)
+        * P6Spy记录数据库日志
+            * [P6Spy记录数据库日志](microservice/log/p6spy/P6Spy记录数据库日志.md)
     * 微服务部署
         * Docker
             * [Centos安装Docker](microservice/deploy/docker/Centos安装Docker.md)
             * [Docker 镜像与容器](microservice/deploy/docker/Docker镜像与容器.md)
+            * [使用Dockerfile定制镜像](microservice/deploy/docker/使用Dockerfile定制镜像.md)
+            * [Docker停止、删除所有的docker容器和镜像](microservice/deploy/docker/删除所有的docker容器和镜像.md)
+            * Dockerfile 指令
+                * [Dockerfile之COPY复制文件](microservice/deploy/docker/Instruction/Dockerfile之COPY复制文件.md)
+            * [Docker参考文章](https://yeasy.gitbooks.io/docker_practice/)
+        * Docker Compose
+            * [Docker Compose入门](microservice/deploy/dockerCompose/DockerCompose入门.md)
+        * Kubernetes容器编排管理平台
+            * [Kubeadm安装Kubernetes](microservice/deploy/Kubernetes/Kubeadm安装Kubernetes.md)
+        * Rancher
+            * [安装Rancher](microservice/deploy/rancher/安装Rancher.md)
+        * Docker镜像仓库
+            * Harbor
+                * [Docker镜像仓库Harbor](microservice/deploy/repository/harbor/Docker镜像仓库Harbor.md)
+    * 微服务监控
+        * Spring Boot Actuator
+            * [Spring Boot Actuator监控应用](microservice/monitor/SpringBootAdmin/SpringBootActuator监控应用.md)
+        * Spring Boot Admin
+            * [Spring Boot Admin入门指南](microservice/monitor/SpringBootAdmin/SpringBootAdmin入门.md)
     * 项目实践
-        * [中国人社微服务实践](microservice/action/中国人社微服务实践.md)
+        * [chinahrss微服务实践](microservice/action/中国人社微服务实践.md)
+        * [chinahrss微服务Docker化](microservice/action/chinahrss微服务Docker化.md)
+        * [chinahrss使用Docker Compose部署](microservice/action/chinahrss使用DockerCompose部署.md)
 * [权限管理系统](./rbac/README.md)
     * [RBAC权限管理](./rbac/RBAC权限管理.md)
     * [创建数据库](./rbac/db/README.md)
@@ -310,7 +336,7 @@
     * jwt
         * [JWT详解](rbac/jwt/JWT详解.md)
 * [测试](test/README.md)
-    * 单元测试](test/单元测试.md)
+    * [单元测试](test/单元测试.md)
         * [Junit](./test/junit/README.md)
             * [Junit常见注解和执行顺序](./test/junit/Junit常见注解和执行顺序.md)
         * [Mock](./test/mock/README.md)
@@ -387,6 +413,7 @@
             * [Gitlab-Runner的安装与使用](tools/gitlab/ci/Gitlab-Runner的安装与使用.md)
             * [Gitlab-Runner实践](tools/gitlab/ci/Gitlab-Runner实践.md)
         * [gitlab配置custom hook](tools/gitlab/custom-hook.md)
+        * [gitlab内存占用过大](tools/gitlab/gitlab内存占用过大.md)
         * [问题集锦](tools/gitlab/问题集锦.md)
     * [数据库连接池Druid](druid/README.md)
         * [Druid多数据源配置](druid/Druid多数据源配置.md)
