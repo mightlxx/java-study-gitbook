@@ -138,6 +138,12 @@ service docker restart
 
 ### 5.4 登录
 
+```
+docker login harbor.isture.com
+```
+
+
+
 ![image-20200130133118860](./img/image-20200130133118860.png)
 
 ## 6. 测试镜像推拉
@@ -163,8 +169,6 @@ docker tag busybox:latest harbor.isture.com/chinahrss/busybox:latest
 打好标签后，将 harbor.isture.com/chinahrss/busybox:latest 镜像推送到Harbor仓库：
 
 ```
-docker push harbor.isture.com/chinahrss/busybox:latest
-
 docker push harbor.isture.com/chinahrss/busybox:latest
 ```
 
@@ -248,3 +252,4 @@ docker images | grep chinahrss
 ```
 for i in $(docker images | grep harbor.isture.com | awk 'BEGIN{OFS=":"}{print $1,$2}'); do docker push $i; done
 ```
+

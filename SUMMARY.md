@@ -320,6 +320,7 @@
         * [chinahrss微服务实践](microservice/action/中国人社微服务实践.md)
         * [chinahrss微服务Docker化](microservice/action/chinahrss微服务Docker化.md)
         * [chinahrss使用Docker Compose部署](microservice/action/chinahrss使用DockerCompose部署.md)
+        * [项目部署后调优](microservice/action/项目部署后调优.md)
 * [权限管理系统](./rbac/README.md)
     * [RBAC权限管理](./rbac/RBAC权限管理.md)
     * [创建数据库](./rbac/db/README.md)
@@ -356,6 +357,7 @@
                 * [JMeter测试连接超时](test/PressureTest/JMeter/question/JMeter测试连接超时.md)
 * [linux](linux/README.md)
     * [操作命令](linux/operation/README.md)
+        * [linux查看哪些进程占用CPU内存资源多](linux/operation/linux查看哪些进程占用CPU内存资源多.md)
         * [用户管理](linux/operation/用户管理.md)
         * [查找文件](linux/operation/查找文件.md)
         * [根据端口号/进程号查项目位置](linux/operation/根据端口号/进程号查项目位置.md)
@@ -364,6 +366,7 @@
     * 挖矿
         * [清除挖矿程序（sysupdate, networkservice进程）](linux/error/清除挖矿程序.md)
         * [清除挖矿程序（kdevtmpfsi进程）](linux/error/清除挖矿程序kdevtmpfsi.md)
+        * [清除挖矿程序（docker中Ubuntu容器）](linux/error/清除挖矿程序docker中Ubuntu容器.md)
     * [nginx](linux/nginx/README.md)
         * [安装nginx](linux/nginx/安装nginx.md)
         * [nginx设置开机自启动](linux/nginx/nginx设置开机自启动.md)
