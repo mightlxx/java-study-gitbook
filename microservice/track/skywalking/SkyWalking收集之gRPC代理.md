@@ -51,6 +51,24 @@
 
 ![image-20200204210720400](./img2/image-20200204210720400.png)
 
+上面启动是前台启动，关闭页面就停止了。所以需要使用后台启动
+
+**后台启动**
+
+```
+nohup ./natapp -authtoken=d0ae75441459014e -log=stdout -loglevel=ERROR &
+```
+
+![image-20200205131045127](./img2/image-20200205131045127.png)
+
+查看是否启动
+
+```
+ps -ef|grep natapp
+```
+
+![image-20200205132814470](./img2/image-20200205132814470.png)
+
 ### 2.2.4 backend_service 地址更改
 
 ```

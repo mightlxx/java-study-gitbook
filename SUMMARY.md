@@ -308,6 +308,8 @@
         * Docker Compose
             * [Docker Compose入门](microservice/deploy/dockerCompose/DockerCompose入门.md)
         * Kubernetes容器编排管理平台
+            * [Kubernetes基本概念](microservice/deploy/Kubernetes/Kubernetes基本概念.md)
+            * [Kubernetes架构](microservice/deploy/Kubernetes/Kubernetes架构.md)
             * [Kubeadm安装Kubernetes](microservice/deploy/Kubernetes/Kubeadm安装Kubernetes.md)
         * Rancher
             * [安装Rancher](microservice/deploy/rancher/安装Rancher.md)
@@ -319,6 +321,9 @@
             * [Spring Boot Actuator监控应用](microservice/monitor/SpringBootAdmin/SpringBootActuator监控应用.md)
         * Spring Boot Admin
             * [Spring Boot Admin入门指南](microservice/monitor/SpringBootAdmin/SpringBootAdmin入门.md)
+    * 网络共享存储
+        * NFS服务器
+            * [NFS服务器搭建](microservice/网络文件系统/NFS服务器/NFS服务器搭建.md)
     * 项目实践
         * [chinahrss微服务实践](microservice/action/中国人社微服务实践.md)
         * [chinahrss微服务Docker化](microservice/action/chinahrss微服务Docker化.md)
@@ -361,6 +366,7 @@
 * [linux](linux/README.md)
     * [操作命令](linux/operation/README.md)
         * [linux查看哪些进程占用CPU内存资源多](linux/operation/linux查看哪些进程占用CPU内存资源多.md)
+        * [Linux清除缓存buff/cache](linux/operation/Linux清除缓存buffcache.md)
         * [用户管理](linux/operation/用户管理.md)
         * [查找文件](linux/operation/查找文件.md)
         * [根据端口号/进程号查项目位置](linux/operation/根据端口号/进程号查项目位置.md)
@@ -370,6 +376,8 @@
         * [清除挖矿程序（sysupdate, networkservice进程）](linux/error/清除挖矿程序.md)
         * [清除挖矿程序（kdevtmpfsi进程）](linux/error/清除挖矿程序kdevtmpfsi.md)
         * [清除挖矿程序（docker中Ubuntu容器）](linux/error/清除挖矿程序docker中Ubuntu容器.md)
+    * Swap交换分区
+        * [Linux Swap交换分区](linux/swap/LinuxSwap交换分区.md)
     * [nginx](linux/nginx/README.md)
         * [安装nginx](linux/nginx/安装nginx.md)
         * [nginx设置开机自启动](linux/nginx/nginx设置开机自启动.md)
