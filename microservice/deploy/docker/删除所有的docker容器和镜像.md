@@ -24,3 +24,17 @@ docker rm $(docker ps -aq)
 docker rmi $(docker images -q)
 ```
 
+## 5. 删除所有停止的容器
+
+```
+docker rm -f $(docker ps -a | grep Exit | awk '{ print $1 }')
+```
+
+## 6. 通过正则表达式找出指定id
+
+如：找出所有rancher容器相关的id
+
+```
+ docker ps | grep rancher | awk '{print $1}'
+```
+

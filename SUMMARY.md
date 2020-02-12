@@ -313,6 +313,10 @@
             * [Kubeadm安装Kubernetes](microservice/deploy/Kubernetes/Kubeadm安装Kubernetes.md)
         * Rancher
             * [安装Rancher](microservice/deploy/rancher/安装Rancher.md)
+            * Rancher部署服务
+                * [Rancher部署服务简单示例](microservice/deploy/rancher/Rancher部署服务简单示例.md)
+            * [Rancher集群启动失败Failed to bring up Etcd Plane](microservice/deploy/rancher/Rancher集群启动失败FailedtobringupEtcdPlane.md)
+            * [Rancher中文文档](https://docs.rancher.cn/rancher2x/)
         * Docker镜像仓库
             * Harbor
                 * [Docker镜像仓库Harbor](microservice/deploy/repository/harbor/Docker镜像仓库Harbor.md)
@@ -370,6 +374,7 @@
         * [用户管理](linux/operation/用户管理.md)
         * [查找文件](linux/operation/查找文件.md)
         * [根据端口号/进程号查项目位置](linux/operation/根据端口号/进程号查项目位置.md)
+        * [Linux文件大小和磁盘使用情况](linux/operation/Linux文件大小.md)
     * [sshd](linux/sshd/README.md)
         * [ssh一段时间就断掉](linux/sshd/ssh一段时间就断掉.md)
     * 挖矿
