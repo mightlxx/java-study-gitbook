@@ -40,8 +40,8 @@
             "button": "打赏",
             "alipayText": "支付宝打赏",
             "wechatText": "微信打赏",
-            "alipay": "http://ww1.sinaimg.cn/large/81eeb0fcgy1gbv1oemf5lj20k00v4td5.jpg",
-            "wechat": "http://ww1.sinaimg.cn/large/81eeb0fcgy1gbv1ox4etgj20v216mjuj.jpg"
+            "alipay": "http://filecdn.isture.com/images/pay/alipay.jpg",
+            "wechat": "http://filecdn.isture.com/images/pay/wechat.jpg"
         }
     }
 }
