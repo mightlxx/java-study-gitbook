@@ -6,15 +6,42 @@
          "-search", 
          "search-pro",
          "code",
-        "github",
-        "-sharing"
+        "github-buttons",
+        "-sharing",
+        "baidu-tongji",
+        "donate"
     ],
     "pluginsConfig": {
         "anchor-navigation-ex" : {
 			"showLevel": false
 			},
-        "github": {
-            "url": "https://github.com/zszdevelop/java-study-gitbook"
+        "github-buttons": {
+            "buttons": [
+            {
+                "user": "zszdevelop",
+                "repo": "java-study-gitbook", 
+                "type": "star",
+                "count": true,
+                "size": "small"
+            }, 
+            {
+                "user": "zszdevelop",
+                "width": "160", 
+                "type": "follow", 
+                "count": true,
+                "size": "small"
+            }
+        ]
+        },
+        "baidu-tongji": {
+            "token": "78dc0e0b4e3aedf643d6621778307a6f"
+        },
+        "donate": {
+            "button": "打赏",
+            "alipayText": "支付宝打赏",
+            "wechatText": "微信打赏",
+            "alipay": "http://ww1.sinaimg.cn/large/81eeb0fcgy1gbv1oemf5lj20k00v4td5.jpg",
+            "wechat": "http://ww1.sinaimg.cn/large/81eeb0fcgy1gbv1ox4etgj20v216mjuj.jpg"
         }
     }
 }

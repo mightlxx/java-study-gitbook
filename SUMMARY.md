@@ -328,11 +328,18 @@
     * 网络共享存储
         * NFS服务器
             * [NFS服务器搭建](microservice/网络文件系统/NFS服务器/NFS服务器搭建.md)
+    * 常见问题
+        * [分布式id生成方案](microservice/question/分布式id生成方案.md)
     * 项目实践
         * [chinahrss微服务实践](microservice/action/中国人社微服务实践.md)
         * [chinahrss微服务Docker化](microservice/action/chinahrss微服务Docker化.md)
         * [chinahrss使用Docker Compose部署](microservice/action/chinahrss使用DockerCompose部署.md)
         * [项目部署后调优](microservice/action/项目部署后调优.md)
+* 高并发&高可用
+    * 高并发
+  *
+    * 高可用
+        * [系统可用性几个9](high/available/系统可用性几个9.md)
 * [权限管理系统](./rbac/README.md)
     * [RBAC权限管理](./rbac/RBAC权限管理.md)
     * [创建数据库](./rbac/db/README.md)
