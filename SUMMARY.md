@@ -1,8 +1,6 @@
 # Summary
 
 * [前言](README.md)
-* [开发规范](CodeStandard/README.md)
-    * [各层命名规范](CodeStandard/各层命名规范.md)
 * [Java基础](base/README.md)
     * Java基础
         * [Java基础](base/object/Java基础.md)
@@ -335,11 +333,10 @@
         * [chinahrss微服务Docker化](microservice/action/chinahrss微服务Docker化.md)
         * [chinahrss使用Docker Compose部署](microservice/action/chinahrss使用DockerCompose部署.md)
         * [项目部署后调优](microservice/action/项目部署后调优.md)
-* 高并发&高可用
-    * 高并发
-  *
-    * 高可用
-        * [系统可用性几个9](high/available/系统可用性几个9.md)
+* 大型网站技术架构
+    * [大型网站技术架构思维导图](framework/大型网站技术架构思维导图.md)
+    * 高可用架构
+    * [系统可用性几个9](framework/highAvailable/系统可用性几个9.md)
 * [权限管理系统](./rbac/README.md)
     * [RBAC权限管理](./rbac/RBAC权限管理.md)
     * [创建数据库](./rbac/db/README.md)
@@ -450,6 +447,8 @@
             * [gitignore文件屏蔽规则](./tools/vcs/git/gitignore文件屏蔽规则.md)
             * [android gitignore 模板](./tools/vcs/git/androidGitignore模板.md)
     * [运行脚本](tools/script/运行脚本.md)
+    * gitbook
+        * [gitbook插件使用](https://juejin.im/post/5ce51e126fb9a07ed440d7d0)
     * IDE
         * IDEA
             * [IDEA maven下载jar包太慢](tools/ide/idea/IDEAmaven下载jar包太慢.md)
