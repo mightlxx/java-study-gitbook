@@ -6,9 +6,12 @@
         * [Java基础](base/object/Java基础.md)
         * [ final,static,this,super 关键字总结](base/object/关键字总结.md)
         * [Java异常处理](base/error/Java异常处理.md)
+        * [Java反射](base/error/Java反射.md)
+        * [Java注解](base/annotation/Java反射.md)
         * [Java基础面试提问](base/interview/Java基础面试提问.md)
     * 容器
         * [Java容器基础](base/collection/Java容器基础.md)
+        * [HashMap相关问题](base/collection/HashMap相关问题.md)
         * [ArrayList 的扩容机制](base/collection/ArrayList 的扩容机制.md)
         * [Comparable和Comparator](base/collection/Comparable和Comparator.md)
     * 多线程
@@ -30,13 +33,16 @@
         * ThreadLocal
             * [ThreadLocal](base/concurrent/ThreadLocal.md)
             * [ThreadLocal使用不当导致内存泄漏](base/concurrent/ThreadLocal/ThreadLocal使用不当导致内存泄漏.md)
-        * [乐观锁和悲观锁](base/concurrent/乐观锁和悲观锁.md)
+        * java锁
+            * [乐观锁和悲观锁](base/concurrent/乐观锁和悲观锁.md)
+            * [java锁分类](https://tech.meituan.com/2018/11/15/java-lock.html)
         * [Callable和Future](base/concurrent/Callable和Future.md)
         * [Atomic原子类](base/concurrent/Atomic原子类.md)
             * [CAS（比较并替换）](base/concurrent/cas.md)
         * [AQS构建锁和同步器](base/concurrent/AQS构建锁和同步器.md)
     * IO
         * [IO总结](base/io/IO总结.md)
+        * [100个http连接，BIO和NIO所需线程问题](base/io/question/100个http连接BIO和NIO所需线程问题.md)
         * [IO流入门](./base/io/README.md)
             * [File类](./base/io/File类.md)
             * [文件流](./base/io/file/README.md)
@@ -202,12 +208,15 @@
         * [事务](db/mysql/transaction/README.md)
         * [锁](db/mysql/lock/README.md)
             * [锁机制](db/mysql/lock/锁机制.md)
-        * [大表优化](db/mysql/bigtable/README.md)
         * [常用操作](./db/mysql/常用操作.md)
             * [MySQL配置文件](./db/mysql/MySQL配置文件.md)
         * 性能优化
+            * [大表优化](db/mysql/bigtable/README.md)
+            * [大表优化过程](db/mysql/optimize/大表优化过程.md)
             * [Explain使用分析](db/mysql/optimize/Explain使用分析.md)
             * [一条SQL语句在MySQL中如何执行的](db/mysql/optimize/一条SQL语句在MySQL中如何执行的.md)
+        * 备份
+            * [热备份和冷备份概念](db/mysql/backup/热备份和冷备份概念.md)
         * 问题集锦
             * [无法连接远端Mysql](db/mysql/problem/无法连接远端Mysql.md)
         * [MySql面试提问](db/mysql/interview/MySql面试提问.md)
@@ -256,6 +265,7 @@
             * [nacos基础](microservice/ServiceDiscovery/nacos/nacos概念.md)
             * [nacos安装与使用](microservice/ServiceDiscovery/nacos/nacos安装与使用.md)
     * 网关
+        * [为什么微服务需要API网关？](microservice/gateway/为什么微服务需要API网关.md)
         * zuul
             * [zuul基础](microservice/gateway/zuul/zuul基础.md)
             * [zuul实战](microservice/gateway/zuul/zuul实战.md)
@@ -268,6 +278,8 @@
             * [Spring Cloud GateWay负载均衡](microservice/gateway/SpringCloudGateWay/SpringCloudGateWay负载均衡.md)
             * [Spring Cloud GateWay之Hystrix断路器](microservice/gateway/SpringCloudGateWay/SpringCloudGateWay之Hystrix断路器.md)
             * [Spring Cloud GateWay跨域设置](microservice/gateway/SpringCloudGateWay/SpringCloudGateWay跨域设置.md)
+        * 网关功能
+            * [限流的算法](microservice/gateway/function/限流的算法.md)
     * 授权认证
         * spring-cloud-starter-oauth2
             * [使用spring-cloud-starter-oauth2搭建授权服务](microservice/auth/spring-cloud-starter-oauth2/使用spring-cloud-starter-oauth2搭建授权服务.md)
@@ -328,15 +340,19 @@
             * [NFS服务器搭建](microservice/网络文件系统/NFS服务器/NFS服务器搭建.md)
     * 常见问题
         * [分布式id生成方案](microservice/question/分布式id生成方案.md)
+        * [限流的算法](microservice/gateway/function/限流的算法.md)
     * 项目实践
         * [chinahrss微服务实践](microservice/action/中国人社微服务实践.md)
         * [chinahrss微服务Docker化](microservice/action/chinahrss微服务Docker化.md)
         * [chinahrss使用Docker Compose部署](microservice/action/chinahrss使用DockerCompose部署.md)
         * [项目部署后调优](microservice/action/项目部署后调优.md)
+    * [微服务面试提问](microservice/interview/微服务面试提问.md)
 * 大型网站技术架构
     * [大型网站技术架构思维导图](framework/大型网站技术架构思维导图.md)
+    * 高性能架构
+        * [高并发](framework/highConcurrent/高并发.md)
     * 高可用架构
-    * [系统可用性几个9](framework/highAvailable/系统可用性几个9.md)
+        * [可用性度量（系统可用性几个9）](framework/highAvailable/系统可用性几个9.md)
 * [权限管理系统](./rbac/README.md)
     * [RBAC权限管理](./rbac/RBAC权限管理.md)
     * [创建数据库](./rbac/db/README.md)
@@ -460,7 +476,8 @@
     * [JVM面试提问](base/jvm/JVM面试提问.md)
     * [Spring面试提问](spring/interview/Spring面试提问.md)
     * [MySql面试提问](db/mysql/interview/MySql面试提问.md)
-    * [redis面试问题](redis/interview/redis面试问题.md)
+    * [redis面试提问](redis/interview/redis面试问题.md)
+    * [微服务面试提问](microservice/interview/微服务面试提问.md)
     * [计算机网络面试问题](net/计算机网络面试问题.md)
 * 部门管理/项目管理
     * [关于亲力亲为的思考](manager/关于亲力亲为的思考.md)

@@ -46,5 +46,6 @@
 1. 说说ArrayList 的底层数据结构？
 2. ArrayList的扩容机制
 3. HashMap的底层实现
-4. HashMap的哈希表长度为什么是2的幂次方
+4. 假如我们需要存500个数需要多大的HashMap？
+5. HashMap的哈希表长度为什么是2的幂次方
 6. HashSet是如何检查重复的？
