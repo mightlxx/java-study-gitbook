@@ -172,6 +172,7 @@
         * [一步步实现单机redis的分布式锁（setnx）](redis/lock/一步步实现单机redis的分布式锁.md)
         * [Redlock分布式锁](redis/lock/Redlock分布式锁.md)
     * [redis面试问题](redis/interview/redis面试问题.md)
+    * [Redist禁用危险命令](redis/interview/Redist禁用危险命令.md)
     * 读书笔记
         * [Redis简介](./redis/book/README.md)
         * [5种数据结构](./redis/5种数据结构.md)
@@ -206,13 +207,16 @@
             * [索引实现](db/mysql/index/索引实现.md)
             * [联合索引](db/mysql/index/联合索引.md)
         * [事务](db/mysql/transaction/README.md)
-        * [锁](db/mysql/lock/README.md)
+        * 锁
+            * [锁](db/mysql/lock/README.md)
             * [锁机制](db/mysql/lock/锁机制.md)
         * [常用操作](./db/mysql/常用操作.md)
             * [MySQL配置文件](./db/mysql/MySQL配置文件.md)
+            * [MySql分页查询](./db/mysql/operation/MySql分页查询.md)
         * 性能优化
             * [大表优化](db/mysql/bigtable/README.md)
             * [大表优化过程](db/mysql/optimize/大表优化过程.md)
+            * [like模糊查询优化](db/mysql/optimize/like模糊查询优化.md)
             * [Explain使用分析](db/mysql/optimize/Explain使用分析.md)
             * [一条SQL语句在MySQL中如何执行的](db/mysql/optimize/一条SQL语句在MySQL中如何执行的.md)
         * 备份
@@ -339,6 +343,7 @@
         * NFS服务器
             * [NFS服务器搭建](microservice/网络文件系统/NFS服务器/NFS服务器搭建.md)
     * 常见问题
+        * [分布式事务](microservice/question/分布式事务.md)
         * [分布式id生成方案](microservice/question/分布式id生成方案.md)
         * [限流的算法](microservice/gateway/function/限流的算法.md)
     * 项目实践
