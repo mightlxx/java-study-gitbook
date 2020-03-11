@@ -18,7 +18,9 @@
         * [多线程](base/thread/README.md)
         * [线程生命周期](base/thread/线程生命周期.md)
         * [线程通信(等待通知wait/notify机制)](base/thread/线程通信.md)
-        * [死锁](base/thread/死锁.md)
+        * 死锁
+          * [死锁](base/thread/死锁.md)
+          * [如何发现、预防，解决死锁](base/thread/如何发现、预防，解决死锁.md)
     * 并发
         * [synchronized关键字](base/concurrent/synchronized关键字.md)
             * [ReentrantLock(补充)](base/concurrent/ReentrantLock.md)
@@ -86,6 +88,7 @@
         * [Cookie](J2EE/会话/Cookie.md)
         * [Session](J2EE/会话/Session.md)
         * [Cookie和Session总结](J2EE/会话/Cookie和Session总结.md)
+        * [黏性session和非黏性session](J2EE/会话/黏性session和非黏性session.md)
     * [Tomcat](J2EE/tomcat/README.md)
         * [Tomcat系统架构](J2EE/tomcat/Tomcat系统架构.md)
 * [Spring](./spring/README.md)
@@ -344,7 +347,8 @@
             * [NFS服务器搭建](microservice/网络文件系统/NFS服务器/NFS服务器搭建.md)
     * 常见问题
         * [分布式事务](microservice/question/分布式事务.md)
-        * [分布式id生成方案](microservice/question/分布式id生成方案.md)
+        * [单点登录SSO](microservice/question/单点登录SSO.md)
+        * [分dan布式id生成方案](microservice/question/分布式id生成方案.md)
         * [限流的算法](microservice/gateway/function/限流的算法.md)
     * 项目实践
         * [chinahrss微服务实践](microservice/action/中国人社微服务实践.md)
