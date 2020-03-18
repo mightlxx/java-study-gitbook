@@ -71,6 +71,8 @@
             * [如何合理的规划 JVM 性能调优](base/jvm/如何合理的规划 JVM 性能调优.md)
             * [常见的JVM设置](base/jvm/常见的JVM设置.md)
             * [内存溢出时打印内存信息](base/jvm/内存溢出时打印内存信息.md)
+            * [线上如何排查FullGC(系统 CPU 突然飙升且 GC 频繁，你该如何排查)](base/jvm/线上如何排查FullGC.md)
+            * [jstack等命令的实现原理](base/jvm/jstack等命令的实现原理.md)
         * [类加载过程](base/jvm/类加载过程.md)
             * [类加载过程(精简版)](base/jvm/类加载过程精简版.md)
         * [类加载器](base/jvm/类加载器.md)
@@ -480,9 +482,13 @@
     * IDE
         * IDEA
             * [IDEA maven下载jar包太慢](tools/ide/idea/IDEAmaven下载jar包太慢.md)
+* Java相关技术原理
+    * [JavaAgent探针原理JVMTI](principle/agent/JavaAgent探针原理JVMTI.md)
 * 常用工具类
     * 跨域支持
         * [CorsConfig](utils/跨域支持/CorsConfig.md)
+* 面经
+    * [盒马鲜生20200316](myinterview/2020/盒马鲜生20200316.md)
 * 面试提问
     * [Java基础面试提问](base/interview/Java基础面试提问.md)
     * [JVM面试提问](base/jvm/JVM面试提问.md)
