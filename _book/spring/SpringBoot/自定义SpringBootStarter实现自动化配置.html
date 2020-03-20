@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Tomcat · GitBook</title>
+        <title>自定义SpringBoot Starter实现自动化配置 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -78,10 +78,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Tomcat系统架构.html" />
+    <link rel="next" href="SpringBoot启动过程.html" />
     
     
-    <link rel="prev" href="../会话/黏性session和非黏性session.html" />
+    <link rel="prev" href="SpringBoot自动配置之@Enable*与@Import注解.html" />
     
 
     <style>
@@ -444,10 +444,9 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="1.2.4.1.1" data-path="../../base/concurrent/ReentrantLock.html">
+        <li class="chapter " data-level="1.2.4.2" data-path="../../base/concurrent/ReentrantLock.html">
             
                 <a href="../../base/concurrent/ReentrantLock.html">
             
@@ -460,12 +459,7 @@
             
         </li>
     
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.4.2" data-path="../../base/concurrent/volatile关键字.html">
+        <li class="chapter " data-level="1.2.4.3" data-path="../../base/concurrent/volatile关键字.html">
             
                 <a href="../../base/concurrent/volatile关键字.html">
             
@@ -478,7 +472,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.3" >
+        <li class="chapter " data-level="1.2.4.4" >
             
                 <span>
             
@@ -492,7 +486,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.4.3.1" data-path="../../base/concurrent/线程池.html">
+        <li class="chapter " data-level="1.2.4.4.1" data-path="../../base/concurrent/线程池.html">
             
                 <a href="../../base/concurrent/线程池.html">
             
@@ -505,7 +499,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.3.2" data-path="../../base/concurrent/ThreadPoolExecutor类.html">
+        <li class="chapter " data-level="1.2.4.4.2" data-path="../../base/concurrent/ThreadPoolExecutor类.html">
             
                 <a href="../../base/concurrent/ThreadPoolExecutor类.html">
             
@@ -518,7 +512,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.3.3" data-path="../../base/concurrent/线程池的具体实现原理.html">
+        <li class="chapter " data-level="1.2.4.4.3" data-path="../../base/concurrent/线程池的具体实现原理.html">
             
                 <a href="../../base/concurrent/线程池的具体实现原理.html">
             
@@ -531,7 +525,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.3.4" data-path="../../base/concurrent/线程池的处理流程.html">
+        <li class="chapter " data-level="1.2.4.4.4" data-path="../../base/concurrent/线程池的处理流程.html">
             
                 <a href="../../base/concurrent/线程池的处理流程.html">
             
@@ -544,7 +538,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.3.5" data-path="../../base/concurrent/线程池使用示例.html">
+        <li class="chapter " data-level="1.2.4.4.5" data-path="../../base/concurrent/线程池使用示例.html">
             
                 <a href="../../base/concurrent/线程池使用示例.html">
             
@@ -557,7 +551,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.3.6" data-path="../../base/concurrent/Executors创建线程池.html">
+        <li class="chapter " data-level="1.2.4.4.6" data-path="../../base/concurrent/Executors创建线程池.html">
             
                 <a href="../../base/concurrent/Executors创建线程池.html">
             
@@ -570,7 +564,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.3.7" data-path="../../base/concurrent/如何合理配置线程池的大小.html">
+        <li class="chapter " data-level="1.2.4.4.7" data-path="../../base/concurrent/如何合理配置线程池的大小.html">
             
                 <a href="../../base/concurrent/如何合理配置线程池的大小.html">
             
@@ -588,7 +582,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.4" >
+        <li class="chapter " data-level="1.2.4.5" >
             
                 <span>
             
@@ -602,7 +596,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.4.4.1" data-path="../../base/concurrent/ThreadLocal.html">
+        <li class="chapter " data-level="1.2.4.5.1" data-path="../../base/concurrent/ThreadLocal.html">
             
                 <a href="../../base/concurrent/ThreadLocal.html">
             
@@ -615,7 +609,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.4.2" data-path="../../base/concurrent/ThreadLocal/ThreadLocal使用不当导致内存泄漏.html">
+        <li class="chapter " data-level="1.2.4.5.2" data-path="../../base/concurrent/ThreadLocal/ThreadLocal使用不当导致内存泄漏.html">
             
                 <a href="../../base/concurrent/ThreadLocal/ThreadLocal使用不当导致内存泄漏.html">
             
@@ -633,7 +627,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.5" >
+        <li class="chapter " data-level="1.2.4.6" >
             
                 <span>
             
@@ -647,7 +641,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.4.5.1" data-path="../../base/concurrent/乐观锁和悲观锁.html">
+        <li class="chapter " data-level="1.2.4.6.1" data-path="../../base/concurrent/乐观锁和悲观锁.html">
             
                 <a href="../../base/concurrent/乐观锁和悲观锁.html">
             
@@ -660,7 +654,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.5.2" >
+        <li class="chapter " data-level="1.2.4.6.2" >
             
                 <a target="_blank" href="https://tech.meituan.com/2018/11/15/java-lock.html">
             
@@ -678,7 +672,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.6" data-path="../../base/concurrent/Callable和Future.html">
+        <li class="chapter " data-level="1.2.4.7" data-path="../../base/concurrent/Callable和Future.html">
             
                 <a href="../../base/concurrent/Callable和Future.html">
             
@@ -691,7 +685,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.7" data-path="../../base/concurrent/Atomic原子类.html">
+        <li class="chapter " data-level="1.2.4.8" data-path="../../base/concurrent/Atomic原子类.html">
             
                 <a href="../../base/concurrent/Atomic原子类.html">
             
@@ -702,10 +696,9 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="1.2.4.7.1" data-path="../../base/concurrent/cas.html">
+        <li class="chapter " data-level="1.2.4.9" data-path="../../base/concurrent/cas.html">
             
                 <a href="../../base/concurrent/cas.html">
             
@@ -718,12 +711,7 @@
             
         </li>
     
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.4.8" data-path="../../base/concurrent/AQS构建锁和同步器.html">
+        <li class="chapter " data-level="1.2.4.10" data-path="../../base/concurrent/AQS构建锁和同步器.html">
             
                 <a href="../../base/concurrent/AQS构建锁和同步器.html">
             
@@ -781,7 +769,21 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5.3" data-path="../../base/io/">
+        <li class="chapter " data-level="1.2.5.3" >
+            
+                <span>
+            
+                    
+                    IO流入门
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.3.1" data-path="../../base/io/">
             
                 <a href="../../base/io/">
             
@@ -792,10 +794,9 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="1.2.5.3.1" data-path="../../base/io/File类.html">
+        <li class="chapter " data-level="1.2.5.3.2" data-path="../../base/io/File类.html">
             
                 <a href="../../base/io/File类.html">
             
@@ -808,21 +809,21 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5.3.2" data-path="../../base/io/file/">
+        <li class="chapter " data-level="1.2.5.3.3" >
             
-                <a href="../../base/io/file/">
+                <span>
             
                     
                     文件流
             
-                </a>
+                </span>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.5.3.2.1" data-path="../../base/io/file/FileInputStream.html">
+        <li class="chapter " data-level="1.2.5.3.3.1" data-path="../../base/io/file/FileInputStream.html">
             
                 <a href="../../base/io/file/FileInputStream.html">
             
@@ -835,7 +836,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5.3.2.2" data-path="../../base/io/file/FileOutputStream.html">
+        <li class="chapter " data-level="1.2.5.3.3.2" data-path="../../base/io/file/FileOutputStream.html">
             
                 <a href="../../base/io/file/FileOutputStream.html">
             
@@ -848,7 +849,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5.3.2.3" data-path="../../base/io/file/FileReader.html">
+        <li class="chapter " data-level="1.2.5.3.3.3" data-path="../../base/io/file/FileReader.html">
             
                 <a href="../../base/io/file/FileReader.html">
             
@@ -861,7 +862,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5.3.2.4" data-path="../../base/io/file/FileWriter.html">
+        <li class="chapter " data-level="1.2.5.3.3.4" data-path="../../base/io/file/FileWriter.html">
             
                 <a href="../../base/io/file/FileWriter.html">
             
@@ -879,7 +880,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5.3.3" data-path="../../base/io/buffered/">
+        <li class="chapter " data-level="1.2.5.3.4" data-path="../../base/io/buffered/">
             
                 <a href="../../base/io/buffered/">
             
@@ -892,7 +893,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5.3.4" data-path="../../base/io/IO转换流/">
+        <li class="chapter " data-level="1.2.5.3.5" data-path="../../base/io/IO转换流/">
             
                 <a href="../../base/io/IO转换流/">
             
@@ -905,7 +906,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5.3.5" data-path="../../base/io/对象流/">
+        <li class="chapter " data-level="1.2.5.3.6" data-path="../../base/io/对象流/">
             
                 <a href="../../base/io/对象流/">
             
@@ -1168,7 +1169,21 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6.4" data-path="../../base/jvm/类加载过程.html">
+        <li class="chapter " data-level="1.2.6.4" >
+            
+                <span>
+            
+                    
+                    类加载过程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.4.1" data-path="../../base/jvm/类加载过程.html">
             
                 <a href="../../base/jvm/类加载过程.html">
             
@@ -1179,10 +1194,9 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="1.2.6.4.1" data-path="../../base/jvm/类加载过程精简版.html">
+        <li class="chapter " data-level="1.2.6.4.2" data-path="../../base/jvm/类加载过程精简版.html">
             
                 <a href="../../base/jvm/类加载过程精简版.html">
             
@@ -1200,7 +1214,21 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6.5" data-path="../../base/jvm/类加载器.html">
+        <li class="chapter " data-level="1.2.6.5" >
+            
+                <span>
+            
+                    
+                    类加载器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.5.1" data-path="../../base/jvm/类加载器.html">
             
                 <a href="../../base/jvm/类加载器.html">
             
@@ -1211,10 +1239,9 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="1.2.6.5.1" data-path="../../base/jvm/类加载器常见面试.html">
+        <li class="chapter " data-level="1.2.6.5.2" data-path="../../base/jvm/类加载器常见面试.html">
             
                 <a href="../../base/jvm/类加载器常见面试.html">
             
@@ -1227,7 +1254,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6.5.2" data-path="../../base/jvm/tomcat类加载器.html">
+        <li class="chapter " data-level="1.2.6.5.3" data-path="../../base/jvm/tomcat类加载器.html">
             
                 <a href="../../base/jvm/tomcat类加载器.html">
             
@@ -1245,7 +1272,21 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6.6" data-path="../../base/jvm/JDK监控和故障处理工具汇总.html">
+        <li class="chapter " data-level="1.2.6.6" >
+            
+                <span>
+            
+                    
+                    JDK问题排查
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.6.1" data-path="../../base/jvm/JDK监控和故障处理工具汇总.html">
             
                 <a href="../../base/jvm/JDK监控和故障处理工具汇总.html">
             
@@ -1256,10 +1297,9 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="1.2.6.6.1" >
+        <li class="chapter " data-level="1.2.6.6.2" >
             
                 <span>
             
@@ -1273,7 +1313,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.6.6.1.1" data-path="../../base/jvm/mat安装.html">
+        <li class="chapter " data-level="1.2.6.6.2.1" data-path="../../base/jvm/mat安装.html">
             
                 <a href="../../base/jvm/mat安装.html">
             
@@ -1286,7 +1326,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6.6.1.2" data-path="../../base/jvm/mat使用.html">
+        <li class="chapter " data-level="1.2.6.6.2.2" data-path="../../base/jvm/mat使用.html">
             
                 <a href="../../base/jvm/mat使用.html">
             
@@ -1299,7 +1339,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6.6.1.3" data-path="../../base/jvm/mat/Shallow和Retained.html">
+        <li class="chapter " data-level="1.2.6.6.2.3" data-path="../../base/jvm/mat/Shallow和Retained.html">
             
                 <a href="../../base/jvm/mat/Shallow和Retained.html">
             
@@ -1312,7 +1352,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6.6.1.4" data-path="../../base/jvm/mat/记一次MAT分析线上项目过程.html">
+        <li class="chapter " data-level="1.2.6.6.2.4" data-path="../../base/jvm/mat/记一次MAT分析线上项目过程.html">
             
                 <a href="../../base/jvm/mat/记一次MAT分析线上项目过程.html">
             
@@ -1358,9 +1398,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../">
+        <li class="chapter " data-level="1.3" data-path="../../J2EE/">
             
-                <a href="../">
+                <a href="../../J2EE/">
             
                     
                     J2EE
@@ -1372,9 +1412,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../Servlet/">
+        <li class="chapter " data-level="1.3.1" data-path="../../J2EE/Servlet/">
             
-                <a href="../Servlet/">
+                <a href="../../J2EE/Servlet/">
             
                     
                     Servlet
@@ -1385,9 +1425,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../转发和重定向.html">
+        <li class="chapter " data-level="1.3.2" data-path="../../J2EE/转发和重定向.html">
             
-                <a href="../转发和重定向.html">
+                <a href="../../J2EE/转发和重定向.html">
             
                     
                     转发和重定向
@@ -1398,9 +1438,23 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../会话/">
+        <li class="chapter " data-level="1.3.3" >
             
-                <a href="../会话/">
+                <span>
+            
+                    
+                    会话跟踪
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../J2EE/会话/">
+            
+                <a href="../../J2EE/会话/">
             
                     
                     会话跟踪
@@ -1409,12 +1463,11 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="1.3.3.1" data-path="../会话/会话机制.html">
+        <li class="chapter " data-level="1.3.3.2" data-path="../../J2EE/会话/会话机制.html">
             
-                <a href="../会话/会话机制.html">
+                <a href="../../J2EE/会话/会话机制.html">
             
                     
                     会话机制
@@ -1425,9 +1478,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3.2" data-path="../会话/Cookie.html">
+        <li class="chapter " data-level="1.3.3.3" data-path="../../J2EE/会话/Cookie.html">
             
-                <a href="../会话/Cookie.html">
+                <a href="../../J2EE/会话/Cookie.html">
             
                     
                     Cookie
@@ -1438,9 +1491,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3.3" data-path="../会话/Session.html">
+        <li class="chapter " data-level="1.3.3.4" data-path="../../J2EE/会话/Session.html">
             
-                <a href="../会话/Session.html">
+                <a href="../../J2EE/会话/Session.html">
             
                     
                     Session
@@ -1451,9 +1504,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3.4" data-path="../会话/Cookie和Session总结.html">
+        <li class="chapter " data-level="1.3.3.5" data-path="../../J2EE/会话/Cookie和Session总结.html">
             
-                <a href="../会话/Cookie和Session总结.html">
+                <a href="../../J2EE/会话/Cookie和Session总结.html">
             
                     
                     Cookie和Session总结
@@ -1464,9 +1517,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3.5" data-path="../会话/黏性session和非黏性session.html">
+        <li class="chapter " data-level="1.3.3.6" data-path="../../J2EE/会话/黏性session和非黏性session.html">
             
-                <a href="../会话/黏性session和非黏性session.html">
+                <a href="../../J2EE/会话/黏性session和非黏性session.html">
             
                     
                     黏性session和非黏性session
@@ -1482,23 +1535,23 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.4" data-path="./">
+        <li class="chapter " data-level="1.3.4" >
             
-                <a href="./">
+                <span>
             
                     
                     Tomcat
             
-                </a>
+                </span>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.4.1" data-path="Tomcat系统架构.html">
+        <li class="chapter " data-level="1.3.4.1" data-path="../../J2EE/tomcat/Tomcat系统架构.html">
             
-                <a href="Tomcat系统架构.html">
+                <a href="../../J2EE/tomcat/Tomcat系统架构.html">
             
                     
                     Tomcat系统架构
@@ -1519,9 +1572,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../../spring/">
+        <li class="chapter " data-level="1.4" data-path="../">
             
-                <a href="../../spring/">
+                <a href="../">
             
                     
                     Spring
@@ -1533,9 +1586,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../../spring/interview/">
+        <li class="chapter " data-level="1.4.1" data-path="../interview/">
             
-                <a href="../../spring/interview/">
+                <a href="../interview/">
             
                     
                     Spring常见知识点
@@ -1546,9 +1599,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../../spring/Framework/Spring整体架构.html">
+        <li class="chapter " data-level="1.4.2" data-path="../Framework/Spring整体架构.html">
             
-                <a href="../../spring/Framework/Spring整体架构.html">
+                <a href="../Framework/Spring整体架构.html">
             
                     
                     Spring整体架构
@@ -1573,9 +1626,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.3.1" data-path="../../spring/ioc/SpringIoC常见问题.html">
+        <li class="chapter " data-level="1.4.3.1" data-path="../ioc/SpringIoC常见问题.html">
             
-                <a href="../../spring/ioc/SpringIoC常见问题.html">
+                <a href="../ioc/SpringIoC常见问题.html">
             
                     
                     Spring IoC常见问题
@@ -1586,9 +1639,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3.2" data-path="../../spring/ioc/SpringBean常见问题.html">
+        <li class="chapter " data-level="1.4.3.2" data-path="../ioc/SpringBean常见问题.html">
             
-                <a href="../../spring/ioc/SpringBean常见问题.html">
+                <a href="../ioc/SpringBean常见问题.html">
             
                     
                     Spring Bean常见问题
@@ -1599,9 +1652,22 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3.3" data-path="../../spring/ioc/循环依赖问题.html">
+        <li class="chapter " data-level="1.4.3.3" data-path="../ioc/Spring 装配Bean的3种方式.html">
             
-                <a href="../../spring/ioc/循环依赖问题.html">
+                <a href="../ioc/Spring 装配Bean的3种方式.html">
+            
+                    
+                    Spring 装配Bean的3种方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="../ioc/循环依赖问题.html">
+            
+                <a href="../ioc/循环依赖问题.html">
             
                     
                     循环依赖问题
@@ -1631,9 +1697,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.4.1" data-path="../../spring/aop/">
+        <li class="chapter " data-level="1.4.4.1" data-path="../aop/">
             
-                <a href="../../spring/aop/">
+                <a href="../aop/">
             
                     
                     SpringAOP概述
@@ -1644,9 +1710,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4.2" data-path="../../spring/aop/SpringAOP实现原理.html">
+        <li class="chapter " data-level="1.4.4.2" data-path="../aop/SpringAOP实现原理.html">
             
-                <a href="../../spring/aop/SpringAOP实现原理.html">
+                <a href="../aop/SpringAOP实现原理.html">
             
                     
                     Spring AOP实现原理
@@ -1671,9 +1737,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.4.3.1" data-path="../../spring/aop/AOP打印日志.html">
+        <li class="chapter " data-level="1.4.4.3.1" data-path="../aop/AOP打印日志.html">
             
-                <a href="../../spring/aop/AOP打印日志.html">
+                <a href="../aop/AOP打印日志.html">
             
                     
                     AOP实现打印日志
@@ -1684,9 +1750,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4.3.2" data-path="../../spring/aop/Limit限流.html">
+        <li class="chapter " data-level="1.4.4.3.2" data-path="../aop/Limit限流.html">
             
-                <a href="../../spring/aop/Limit限流.html">
+                <a href="../aop/Limit限流.html">
             
                     
                     AOP实现Limit限流
@@ -1721,9 +1787,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.5.1" data-path="../../spring/transaction/">
+        <li class="chapter " data-level="1.4.5.1" data-path="../transaction/">
             
-                <a href="../../spring/transaction/">
+                <a href="../transaction/">
             
                     
                     Spring事务
@@ -1753,9 +1819,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.6.1" data-path="../../spring/springmvc/SpringMVC常见知识点.html">
+        <li class="chapter " data-level="1.4.6.1" data-path="../springmvc/SpringMVC常见知识点.html">
             
-                <a href="../../spring/springmvc/SpringMVC常见知识点.html">
+                <a href="../springmvc/SpringMVC常见知识点.html">
             
                     
                     SpringMVC常见知识点
@@ -1766,9 +1832,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.6.2" data-path="../../spring/springmvc/SpringMVC拦截器.html">
+        <li class="chapter " data-level="1.4.6.2" data-path="../springmvc/SpringMVC拦截器.html">
             
-                <a href="../../spring/springmvc/SpringMVC拦截器.html">
+                <a href="../springmvc/SpringMVC拦截器.html">
             
                     
                     SpringMVC拦截器
@@ -1779,9 +1845,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.6.3" data-path="../../spring/springmvc/RESTful.html">
+        <li class="chapter " data-level="1.4.6.3" data-path="../springmvc/RESTful.html">
             
-                <a href="../../spring/springmvc/RESTful.html">
+                <a href="../springmvc/RESTful.html">
             
                     
                     RESTful
@@ -1811,9 +1877,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.7.1" data-path="../../spring/SpringBoot/">
+        <li class="chapter " data-level="1.4.7.1" data-path="./">
             
-                <a href="../../spring/SpringBoot/">
+                <a href="./">
             
                     
                     Spring Boot常见知识点
@@ -1824,12 +1890,38 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.7.2" data-path="../../spring/SpringBoot/SpringBoot自动配置之@Enable*与@Import注解.html">
+        <li class="chapter " data-level="1.4.7.2" data-path="SpringBoot自动配置之@Enable*与@Import注解.html">
             
-                <a href="../../spring/SpringBoot/SpringBoot自动配置之@Enable*与@Import注解.html">
+                <a href="SpringBoot自动配置之@Enable*与@Import注解.html">
             
                     
                     Spring Boot 自动配置之@Enable*与@Import注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.7.3" data-path="自定义SpringBootStarter实现自动化配置.html">
+            
+                <a href="自定义SpringBootStarter实现自动化配置.html">
+            
+                    
+                    自定义SpringBoot Starter实现自动化配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7.4" data-path="SpringBoot启动过程.html">
+            
+                <a href="SpringBoot启动过程.html">
+            
+                    
+                    SpringBoot启动过程
             
                 </a>
             
@@ -1842,7 +1934,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8" >
+        <li class="chapter " data-level="1.4.8" data-path="../development/Spring发展提升.html">
+            
+                <a href="../development/Spring发展提升.html">
+            
+                    
+                    Spring发展提升
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" >
             
                 <span>
             
@@ -1856,9 +1961,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.8.1" data-path="../../spring/spring-in-action/Spring概述.html">
+        <li class="chapter " data-level="1.4.9.1" data-path="../spring-in-action/Spring概述.html">
             
-                <a href="../../spring/spring-in-action/Spring概述.html">
+                <a href="../spring-in-action/Spring概述.html">
             
                     
                     Spring概述
@@ -1870,9 +1975,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.8.1.1" data-path="../../spring/spring-in-action/面向切面.html">
+        <li class="chapter " data-level="1.4.9.1.1" data-path="../spring-in-action/面向切面.html">
             
-                <a href="../../spring/spring-in-action/面向切面.html">
+                <a href="../spring-in-action/面向切面.html">
             
                     
                     面向切面
@@ -1883,9 +1988,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.1.2" data-path="../../spring/spring-in-action/summary/Spring容器.html">
+        <li class="chapter " data-level="1.4.9.1.2" data-path="../spring-in-action/summary/Spring容器.html">
             
-                <a href="../../spring/spring-in-action/summary/Spring容器.html">
+                <a href="../spring-in-action/summary/Spring容器.html">
             
                     
                     Spring容器
@@ -1896,9 +2001,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.1.3" data-path="../../spring/spring-in-action/summary/bean的生命周期.html">
+        <li class="chapter " data-level="1.4.9.1.3" data-path="../spring-in-action/summary/bean的生命周期.html">
             
-                <a href="../../spring/spring-in-action/summary/bean的生命周期.html">
+                <a href="../spring-in-action/summary/bean的生命周期.html">
             
                     
                     bean的生命周期
@@ -1910,9 +2015,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.8.1.3.1" data-path="../../spring/spring-in-action/summary/bean的生命周期实例.html">
+        <li class="chapter " data-level="1.4.9.1.3.1" data-path="../spring-in-action/summary/bean的生命周期实例.html">
             
-                <a href="../../spring/spring-in-action/summary/bean的生命周期实例.html">
+                <a href="../spring-in-action/summary/bean的生命周期实例.html">
             
                     
                     bean的生命周期实例
@@ -1933,9 +2038,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.2" data-path="../../spring/spring-in-action/DI/">
+        <li class="chapter " data-level="1.4.9.2" data-path="../spring-in-action/DI/">
             
-                <a href="../../spring/spring-in-action/DI/">
+                <a href="../spring-in-action/DI/">
             
                     
                     依赖注入
@@ -1947,9 +2052,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.8.2.1" data-path="../../spring/spring-in-action/DI/装配Bean.html">
+        <li class="chapter " data-level="1.4.9.2.1" data-path="../spring-in-action/DI/装配Bean.html">
             
-                <a href="../../spring/spring-in-action/DI/装配Bean.html">
+                <a href="../spring-in-action/DI/装配Bean.html">
             
                     
                     装配Bean
@@ -1960,9 +2065,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.2.2" data-path="../../spring/spring-in-action/DI/高级装配.html">
+        <li class="chapter " data-level="1.4.9.2.2" data-path="../spring-in-action/DI/高级装配.html">
             
-                <a href="../../spring/spring-in-action/DI/高级装配.html">
+                <a href="../spring-in-action/DI/高级装配.html">
             
                     
                     高级装配
@@ -1974,9 +2079,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.8.2.2.1" data-path="../../spring/spring-in-action/DI/高级装配/环境与profile.html">
+        <li class="chapter " data-level="1.4.9.2.2.1" data-path="../spring-in-action/DI/高级装配/环境与profile.html">
             
-                <a href="../../spring/spring-in-action/DI/高级装配/环境与profile.html">
+                <a href="../spring-in-action/DI/高级装配/环境与profile.html">
             
                     
                     环境与profile
@@ -1987,9 +2092,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.2.2.2" data-path="../../spring/spring-in-action/DI/高级装配/条件化的bean.html">
+        <li class="chapter " data-level="1.4.9.2.2.2" data-path="../spring-in-action/DI/高级装配/条件化的bean.html">
             
-                <a href="../../spring/spring-in-action/DI/高级装配/条件化的bean.html">
+                <a href="../spring-in-action/DI/高级装配/条件化的bean.html">
             
                     
                     条件化的bean
@@ -2000,9 +2105,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.2.2.3" data-path="../../spring/spring-in-action/DI/高级装配/处理自动装配的歧义性.html">
+        <li class="chapter " data-level="1.4.9.2.2.3" data-path="../spring-in-action/DI/高级装配/处理自动装配的歧义性.html">
             
-                <a href="../../spring/spring-in-action/DI/高级装配/处理自动装配的歧义性.html">
+                <a href="../spring-in-action/DI/高级装配/处理自动装配的歧义性.html">
             
                     
                     处理自动装配的歧义性
@@ -2013,9 +2118,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.2.2.4" data-path="../../spring/spring-in-action/DI/高级装配/bean的作用域.html">
+        <li class="chapter " data-level="1.4.9.2.2.4" data-path="../spring-in-action/DI/高级装配/bean的作用域.html">
             
-                <a href="../../spring/spring-in-action/DI/高级装配/bean的作用域.html">
+                <a href="../spring-in-action/DI/高级装配/bean的作用域.html">
             
                     
                     bean的作用域
@@ -2026,9 +2131,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.2.2.5" data-path="../../spring/spring-in-action/DI/高级装配/运行时值的注入.html">
+        <li class="chapter " data-level="1.4.9.2.2.5" data-path="../spring-in-action/DI/高级装配/运行时值的注入.html">
             
-                <a href="../../spring/spring-in-action/DI/高级装配/运行时值的注入.html">
+                <a href="../spring-in-action/DI/高级装配/运行时值的注入.html">
             
                     
                     运行时值的注入
@@ -2049,9 +2154,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.3" data-path="../../spring/spring-in-action/SpringMVC/">
+        <li class="chapter " data-level="1.4.9.3" data-path="../spring-in-action/SpringMVC/">
             
-                <a href="../../spring/spring-in-action/SpringMVC/">
+                <a href="../spring-in-action/SpringMVC/">
             
                     
                     Spring MVC
@@ -2063,9 +2168,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.8.3.1" data-path="../../spring/spring-in-action/SpringMVC/SpringMVC请求流程.html">
+        <li class="chapter " data-level="1.4.9.3.1" data-path="../spring-in-action/SpringMVC/SpringMVC请求流程.html">
             
-                <a href="../../spring/spring-in-action/SpringMVC/SpringMVC请求流程.html">
+                <a href="../spring-in-action/SpringMVC/SpringMVC请求流程.html">
             
                     
                     SpringMVC请求流程
@@ -2076,9 +2181,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.3.2" data-path="../../spring/spring-in-action/SpringMVC/RequestMapping处理请求.html">
+        <li class="chapter " data-level="1.4.9.3.2" data-path="../spring-in-action/SpringMVC/RequestMapping处理请求.html">
             
-                <a href="../../spring/spring-in-action/SpringMVC/RequestMapping处理请求.html">
+                <a href="../spring-in-action/SpringMVC/RequestMapping处理请求.html">
             
                     
                     RequestMapping处理请求
@@ -2089,9 +2194,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.3.3" data-path="../../spring/spring-in-action/SpringMVC/接收请求参数.html">
+        <li class="chapter " data-level="1.4.9.3.3" data-path="../spring-in-action/SpringMVC/接收请求参数.html">
             
-                <a href="../../spring/spring-in-action/SpringMVC/接收请求参数.html">
+                <a href="../spring-in-action/SpringMVC/接收请求参数.html">
             
                     
                     接收请求参数
@@ -2102,9 +2207,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.3.4" data-path="../../spring/spring-in-action/SpringMVC/校验数据.html">
+        <li class="chapter " data-level="1.4.9.3.4" data-path="../spring-in-action/SpringMVC/校验数据.html">
             
-                <a href="../../spring/spring-in-action/SpringMVC/校验数据.html">
+                <a href="../spring-in-action/SpringMVC/校验数据.html">
             
                     
                     校验数据
@@ -2115,9 +2220,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.3.5" data-path="../../spring/spring-in-action/SpringMVC/重定向与转发.html">
+        <li class="chapter " data-level="1.4.9.3.5" data-path="../spring-in-action/SpringMVC/重定向与转发.html">
             
-                <a href="../../spring/spring-in-action/SpringMVC/重定向与转发.html">
+                <a href="../spring-in-action/SpringMVC/重定向与转发.html">
             
                     
                     重定向与转发
@@ -2128,9 +2233,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.3.6" data-path="../../spring/spring-in-action/SpringMVC/测试控制器.html">
+        <li class="chapter " data-level="1.4.9.3.6" data-path="../spring-in-action/SpringMVC/测试控制器.html">
             
-                <a href="../../spring/spring-in-action/SpringMVC/测试控制器.html">
+                <a href="../spring-in-action/SpringMVC/测试控制器.html">
             
                     
                     测试控制器
@@ -2146,9 +2251,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.4" data-path="../../spring/spring-in-action/viewResolver/">
+        <li class="chapter " data-level="1.4.9.4" data-path="../spring-in-action/viewResolver/">
             
-                <a href="../../spring/spring-in-action/viewResolver/">
+                <a href="../spring-in-action/viewResolver/">
             
                     
                     渲染Web视图
@@ -2159,9 +2264,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.5" data-path="../../spring/spring-in-action/RESTAPI/">
+        <li class="chapter " data-level="1.4.9.5" data-path="../spring-in-action/RESTAPI/">
             
-                <a href="../../spring/spring-in-action/RESTAPI/">
+                <a href="../spring-in-action/RESTAPI/">
             
                     
                     REST API
@@ -2173,9 +2278,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.8.5.1" data-path="../../spring/spring-in-action/RESTAPI/表达性.html">
+        <li class="chapter " data-level="1.4.9.5.1" data-path="../spring-in-action/RESTAPI/表达性.html">
             
-                <a href="../../spring/spring-in-action/RESTAPI/表达性.html">
+                <a href="../spring-in-action/RESTAPI/表达性.html">
             
                     
                     表达性
@@ -2186,9 +2291,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.5.2" data-path="../../spring/spring-in-action/RESTAPI/异常处理并更改状态码.html">
+        <li class="chapter " data-level="1.4.9.5.2" data-path="../spring-in-action/RESTAPI/异常处理并更改状态码.html">
             
-                <a href="../../spring/spring-in-action/RESTAPI/异常处理并更改状态码.html">
+                <a href="../spring-in-action/RESTAPI/异常处理并更改状态码.html">
             
                     
                     异常处理并更改状态码
@@ -2199,9 +2304,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.5.3" data-path="../../spring/spring-in-action/RESTAPI/在响应中设置头部信息.html">
+        <li class="chapter " data-level="1.4.9.5.3" data-path="../spring-in-action/RESTAPI/在响应中设置头部信息.html">
             
-                <a href="../../spring/spring-in-action/RESTAPI/在响应中设置头部信息.html">
+                <a href="../spring-in-action/RESTAPI/在响应中设置头部信息.html">
             
                     
                     在响应中设置头部信息
@@ -2217,9 +2322,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8.6" data-path="../../spring/spring-in-action/NoSql/">
+        <li class="chapter " data-level="1.4.9.6" data-path="../spring-in-action/NoSql/">
             
-                <a href="../../spring/spring-in-action/NoSql/">
+                <a href="../spring-in-action/NoSql/">
             
                     
                     NoSql
@@ -2231,9 +2336,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.8.6.1" data-path="../../spring/spring-in-action/NoSql/redis/">
+        <li class="chapter " data-level="1.4.9.6.1" data-path="../spring-in-action/NoSql/redis/">
             
-                <a href="../../spring/spring-in-action/NoSql/redis/">
+                <a href="../spring-in-action/NoSql/redis/">
             
                     
                     redis
@@ -2254,9 +2359,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.9" data-path="../../spring/interview/Spring面试提问.html">
+        <li class="chapter " data-level="1.4.10" data-path="../interview/Spring面试提问.html">
             
-                <a href="../../spring/interview/Spring面试提问.html">
+                <a href="../interview/Spring面试提问.html">
             
                     
                     Spring面试提问
@@ -7523,9 +7628,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.21.3" data-path="../../spring/interview/Spring面试提问.html">
+        <li class="chapter " data-level="1.21.3" data-path="../interview/Spring面试提问.html">
             
-                <a href="../../spring/interview/Spring面试提问.html">
+                <a href="../interview/Spring面试提问.html">
             
                     
                     Spring面试提问
@@ -7713,7 +7818,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Tomcat</a>
+        <a href="../.." >自定义SpringBoot Starter实现自动化配置</a>
     </h1>
 </div>
 
@@ -7728,7 +7833,131 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#tomcat"><b></b>Tomcat</a></li></ul></div><a href="#tomcat" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="tomcat"><a name="tomcat" class="anchor-navigation-ex-anchor" href="#tomcat"><i class="fa fa-link" aria-hidden="true"></i></a>Tomcat</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x81EA;&#x5B9A;&#x4E49;springboot-starter&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;"><b></b>&#x81EA;&#x5B9A;&#x4E49;SpringBoot Starter&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;</a></li><ul><li><span class="title-icon "></span><a href="#1-&#x81EA;&#x5B9A;&#x4E49;&#x6B65;&#x9AA4;"><b></b>1. &#x81EA;&#x5B9A;&#x4E49;&#x6B65;&#x9AA4;</a></li><ul><li><span class="title-icon "></span><a href="#11--&#x5F15;&#x5165;springboot-&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;&#x4F9D;&#x8D56;&#xFF1A;"><b></b>1.1  &#x5F15;&#x5165;SpringBoot &#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;&#x4F9D;&#x8D56;&#xFF1A;</a></li><li><span class="title-icon "></span><a href="#12-&#x521B;&#x5EFA;-service"><b></b>1.2 &#x521B;&#x5EFA; Service</a></li><li><span class="title-icon "></span><a href="#13-&#x521B;&#x5EFA;&#x5C5E;&#x6027;&#x7C7B;"><b></b>1.3 &#x521B;&#x5EFA;&#x5C5E;&#x6027;&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#14-&#x521B;&#x5EFA;&#x81EA;&#x52A8;&#x914D;&#x7F6E;&#x7C7B;"><b></b>1.4 &#x521B;&#x5EFA;&#x81EA;&#x52A8;&#x914D;&#x7F6E;&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#15-meta-inf-&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;-springfactories"><b></b>1.5 META-INF &#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA; spring.factories</a></li></ul><li><span class="title-icon "></span><a href="#2-&#x5F15;&#x7528;starter"><b></b>2. &#x5F15;&#x7528;Starter</a></li><li><span class="title-icon "></span><a href="#&#x9762;&#x8BD5;&#x771F;&#x9898;"><b></b>&#x9762;&#x8BD5;&#x771F;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x6587;&#x7AE0;"><b></b>&#x53C2;&#x8003;&#x6587;&#x7AE0;</a></li></ul></ul></div><a href="#&#x81EA;&#x5B9A;&#x4E49;springboot-starter&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x81EA;&#x5B9A;&#x4E49;springboot-starter&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;"><a name="&#x81EA;&#x5B9A;&#x4E49;springboot-starter&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x5B9A;&#x4E49;springboot-starter&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x5B9A;&#x4E49;SpringBoot Starter&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;</h1>
+<p>&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;&#x9700;&#x6EE1;&#x8DB3;&#x4E24;&#x4E2A;&#x6761;&#x4EF6;</p>
+<ol>
+<li>&#x80FD;&#x591F;&#x751F;&#x6210;Bean&#xFF0C;&#x5E76;&#x6CE8;&#x518C;&#x5230;Bean&#x5BB9;&#x5668;&#x4E2D;</li>
+<li>&#x80FD;&#x591F;&#x81EA;&#x52A8;&#x914D;&#x7F6E;&#x9879;&#x76EE;&#x6240;&#x9700;&#x8981;&#x7684;&#x914D;&#x7F6E;</li>
+</ol>
+<h2 id="1-&#x81EA;&#x5B9A;&#x4E49;&#x6B65;&#x9AA4;"><a name="1-&#x81EA;&#x5B9A;&#x4E49;&#x6B65;&#x9AA4;" class="anchor-navigation-ex-anchor" href="#1-&#x81EA;&#x5B9A;&#x4E49;&#x6B65;&#x9AA4;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x81EA;&#x5B9A;&#x4E49;&#x6B65;&#x9AA4;</h2>
+<h3 id="11--&#x5F15;&#x5165;springboot-&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;&#x4F9D;&#x8D56;&#xFF1A;"><a name="11--&#x5F15;&#x5165;springboot-&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;&#x4F9D;&#x8D56;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#11--&#x5F15;&#x5165;springboot-&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;&#x4F9D;&#x8D56;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1  &#x5F15;&#x5165;SpringBoot &#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;&#x4F9D;&#x8D56;&#xFF1A;</h3>
+<p>&#x5F15;&#x5165; SpringBoot &#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;&#x4F9D;&#x8D56;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-autoconfigure<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.5.9.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span>
+</code></pre>
+<h3 id="12-&#x521B;&#x5EFA;-service"><a name="12-&#x521B;&#x5EFA;-service" class="anchor-navigation-ex-anchor" href="#12-&#x521B;&#x5EFA;-service"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 &#x521B;&#x5EFA; Service</h3>
+<p>spring-boot-starter-helloworld &#x53EA;&#x662F;&#x4F5C;&#x4E3A;&#x4F8B;&#x5B50;&#x6F14;&#x793A;&#x81EA;&#x5B9A;&#x4E49; starter &#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x5B9E;&#x73B0;&#x7684;&#x529F;&#x80FD;&#x5F88;&#x7B80;&#x5355;&#x5C31;&#x662F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; HelloworldService &#x7684;&#xFF0C;&#x5E76;&#x914D;&#x7F6E; sayHello() &#x65B9;&#x6CD5;&#x6253;&#x5370;&#x7684;&#x8BED;&#x53E5;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloworldService</span> </span>{
+
+  <span class="hljs-keyword">private</span> String words;
+
+  <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">getWords</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> words;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setWords</span><span class="hljs-params">(String words)</span> </span>{
+    <span class="hljs-keyword">this</span>.words = words;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">sayHello</span><span class="hljs-params">()</span> </span>{
+     <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;hello, &quot;</span> + words;
+  }
+}
+</code></pre>
+<h3 id="13-&#x521B;&#x5EFA;&#x5C5E;&#x6027;&#x7C7B;"><a name="13-&#x521B;&#x5EFA;&#x5C5E;&#x6027;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#13-&#x521B;&#x5EFA;&#x5C5E;&#x6027;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3 &#x521B;&#x5EFA;&#x5C5E;&#x6027;&#x7C7B;</h3>
+<p>&#x521B;&#x5EFA;&#x5C5E;&#x6027;&#x7C7B;&#xFF0C;prefix = &#x201C;helloworld&#x201D;&#x4EE3;&#x8868;&#x8BE5;&#x9879;&#x76EE;&#x5728;&#x5C5E;&#x6027;&#x6587;&#x4EF6;&#x4E2D;&#x914D;&#x7F6E;&#x7684;&#x524D;&#x7F00;&#xFF0C;&#x5373;&#x53EF;&#x4EE5;&#x5728;&#x5C5E;&#x6027;&#x6587;&#x4EF6;&#x4E2D;&#x901A;&#x8FC7; helloworld.words=springboot&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x5C5E;&#x6027;&#x7C7B;&#x5B57;&#x6BB5; words &#x7684;&#x503C;&#x4E86;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@ConfigurationProperties</span>(prefix = <span class="hljs-string">&quot;helloworld&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloworldProperties</span> </span>{
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String DEFAULT_WORDS = <span class="hljs-string">&quot;world&quot;</span>;
+
+  <span class="hljs-keyword">private</span> String words = DEFAULT_WORDS;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getWords</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> words;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setWords</span><span class="hljs-params">(String words)</span> </span>{
+    <span class="hljs-keyword">this</span>.words = words;
+  }
+}
+</code></pre>
+<h3 id="14-&#x521B;&#x5EFA;&#x81EA;&#x52A8;&#x914D;&#x7F6E;&#x7C7B;"><a name="14-&#x521B;&#x5EFA;&#x81EA;&#x52A8;&#x914D;&#x7F6E;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#14-&#x521B;&#x5EFA;&#x81EA;&#x52A8;&#x914D;&#x7F6E;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4 &#x521B;&#x5EFA;&#x81EA;&#x52A8;&#x914D;&#x7F6E;&#x7C7B;</h3>
+<p>&#x521B;&#x5EFA;&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;&#x7C7B;&#xFF0C;&#x8FD9;&#x4E2A;&#x76F8;&#x5F53;&#x4E8E;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684; Java &#x914D;&#x7F6E;&#x7C7B;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x521B;&#x5EFA; Bean&#xFF0C;&#x5E76;&#x53EF;&#x83B7;&#x5F97;&#x4E0E; application.properties &#x5C5E;&#x6027;&#x6587;&#x4EF6;&#x76F8;&#x5BF9;&#x5E94;&#x7684;&#x5C5E;&#x6027;&#x7C7B;&#x7684; Bean&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684; java &#x914D;&#x7F6E;&#x7C7B;</span>
+<span class="hljs-meta">@Configuration</span>
+<span class="hljs-comment">// &#x5F53; HelloworldService &#x5728;&#x7C7B;&#x8DEF;&#x5F84;&#x7684;&#x6761;&#x4EF6;&#x4E0B;</span>
+<span class="hljs-meta">@ConditionalOnClass</span>({HelloworldService.class})
+<span class="hljs-comment">// &#x5C06; application.properties &#x7684;&#x76F8;&#x5173;&#x7684;&#x5C5E;&#x6027;&#x5B57;&#x6BB5;&#x4E0E;&#x8BE5;&#x7C7B;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#xFF0C;&#x5E76;&#x751F;&#x6210; Bean</span>
+<span class="hljs-meta">@EnableConfigurationProperties</span>(HelloworldProperties.class)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloworldAutoConfiguration</span> </span>{
+
+  <span class="hljs-comment">// &#x6CE8;&#x5165;&#x5C5E;&#x6027;&#x7C7B;</span>
+  <span class="hljs-meta">@Autowired</span>
+  <span class="hljs-keyword">private</span> HelloworldProperties hellowordProperties;
+
+  <span class="hljs-meta">@Bean</span>
+  <span class="hljs-comment">// &#x5F53;&#x5BB9;&#x5668;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A; Bean &#x7684;&#x65F6;&#x5019;&#x624D;&#x521B;&#x5EFA;&#x8FD9;&#x4E2A; Bean</span>
+  <span class="hljs-meta">@ConditionalOnMissingBean</span>(HelloworldService.class)
+  <span class="hljs-function"><span class="hljs-keyword">public</span> HelloworldService <span class="hljs-title">helloworldService</span><span class="hljs-params">()</span> </span>{
+    HelloworldService helloworldService = <span class="hljs-keyword">new</span> HelloworldService();
+    helloworldService.setWords(hellowordProperties.getWords());
+    <span class="hljs-keyword">return</span> helloworldService;
+  }
+}
+</code></pre>
+<h3 id="15-meta-inf-&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;-springfactories"><a name="15-meta-inf-&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;-springfactories" class="anchor-navigation-ex-anchor" href="#15-meta-inf-&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;-springfactories"><i class="fa fa-link" aria-hidden="true"></i></a>1.5 META-INF &#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA; spring.factories</h3>
+<p>&#x5728; META-INF &#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA; spring.factories&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x6587;&#x4EF6;&#x53EF;&#x91CD;&#x8981;&#x5566;&#xFF0C;&#x56E0;&#x4E3A; SpringBoot &#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;&#x6700;&#x7EC8;&#x5C31;&#x662F;&#x8981;&#x626B;&#x63CF; META-INF/spring.factories &#x6765;&#x52A0;&#x8F7D;&#x9879;&#x76EE;&#x7684;&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;&#x7C7B;&#x3002;</p>
+<pre><code class="lang-java"># Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.objcoding.starters.helloworld.HelloworldAutoConfiguration
+</code></pre>
+<h2 id="2-&#x5F15;&#x7528;starter"><a name="2-&#x5F15;&#x7528;starter" class="anchor-navigation-ex-anchor" href="#2-&#x5F15;&#x7528;starter"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x5F15;&#x7528;Starter</h2>
+<p>&#x4E3A;&#x4E86;&#x5F15;&#x5165; starter&#xFF0C;&#x6211;&#x5728;&#x8FD9;&#x91CC;&#x518D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; spring-boot-starter-helloworld-sample &#x9879;&#x76EE;&#x3002;</p>
+<p>&#x6DFB;&#x52A0; spring-boot-starter-helloworld &#x8D77;&#x6B65;&#x4F9D;&#x8D56;&#xFF1A;</p>
+<pre><code class="lang-pom">&lt;dependency&gt;
+  &lt;groupId&gt;com.objcoding&lt;/groupId&gt;
+  &lt;artifactId&gt;spring-boot-starter-helloworld&lt;/artifactId&gt;
+  &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+<p>&#x5728; application.properties &#x4E2D;&#x6DFB;&#x52A0;&#x5C5E;&#x6027;&#xFF1A;</p>
+<pre><code>helloworld.words=springboot
+</code></pre><p>&#x5728; SpringBoot &#x4E3B;&#x7A0B;&#x5E8F;&#x4E2D; &#x6CE8;&#x5165; helloworldService</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RestController</span>
+<span class="hljs-meta">@SpringBootApplication</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloworldApplication</span> </span>{
+
+  <span class="hljs-meta">@Autowired</span>
+  <span class="hljs-keyword">private</span> HelloworldService helloworldService;
+
+  <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/&quot;</span>)
+  <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">sayHello</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> helloworldService.sayHello();
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    SpringApplication.run(HelloworldApplication.class, args);
+  }
+}
+</code></pre>
+<p>&#x8BBF;&#x95EE; <a href="http://localhost:8080/&#xFF0C;&#x6253;&#x5370;&#x4EE5;&#x4E0B;&#x7ED3;&#x679C;&#xFF1A;" target="_blank">http://localhost:8080/&#xFF0C;&#x6253;&#x5370;&#x4EE5;&#x4E0B;&#x7ED3;&#x679C;&#xFF1A;</a></p>
+<p><img src="img/image-20200321000541904.png" alt="image-20200321000541904"></p>
+<h2 id="&#x9762;&#x8BD5;&#x771F;&#x9898;"><a name="&#x9762;&#x8BD5;&#x771F;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x9762;&#x8BD5;&#x771F;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9762;&#x8BD5;&#x771F;&#x9898;</h2>
+<p>&#x4F60;&#x81EA;&#x5DF1;&#x6709;&#x5B9A;&#x4E49;&#x8FC7;&#x4E00;&#x4E9B;&#xFF08;Springboot&#xFF09;&#x81EA;&#x52A8;&#x5316;&#x914D;&#x7F6E;&#x5417;&#xFF1F;</p>
+<blockquote>
+<p>&#x6211;&#x4E4B;&#x524D;&#x505A;&#x8FC7;xxx&#x4F7F;&#x7528;&#x5230;&#x4E86;&#xFF0C;&#x4ED6;&#x7684;&#x521B;&#x5EFA;&#x6B65;&#x9AA4;</p>
+<ol>
+<li>&#x4F7F;&#x7528; @ConfigurationProperties &#x521B;&#x5EFA;&#x5C5E;&#x6027;&#x7C7B;</li>
+<li>&#x4E3B;&#x8981;&#x901A;&#x8FC7;@Configuration &#x548C; @Bean &#x5B9E;&#x73B0; Java&#x663E;&#x793A;&#x914D;&#x7F6E;&#xFF0C;&#x5E76;&#x6CE8;&#x5165;&#x5C5E;&#x6027;</li>
+<li>&#x521B;&#x5EFA; META-INF/spring.factories &#x6587;&#x4EF6;&#xFF0C;&#x6DFB;&#x52A0;&#x8FD9;&#x4E2A;&#x5141;&#x8BB8;&#x81EA;&#x52A8;&#x914D;&#x7F6E;&#x7684;&#x7C7B;</li>
+</ol>
+</blockquote>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x7AE0;"><a name="&#x53C2;&#x8003;&#x6587;&#x7AE0;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x6587;&#x7AE0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x6587;&#x7AE0;</h2>
+<p><a href="https://objcoding.com/2018/02/02/Costom-SpringBoot-Starter/" target="_blank">&#x5B9E;&#x6218;|&#x5982;&#x4F55;&#x81EA;&#x5B9A;&#x4E49;SpringBoot Starter&#xFF1F;</a></p>
 
                                 
                                 </section>
@@ -7756,12 +7985,12 @@
 
             
                 
-                <a href="../会话/黏性session和非黏性session.html" class="navigation navigation-prev " aria-label="Previous page: 黏性session和非黏性session">
+                <a href="SpringBoot自动配置之@Enable*与@Import注解.html" class="navigation navigation-prev " aria-label="Previous page: Spring Boot 自动配置之@Enable*与@Import注解">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Tomcat系统架构.html" class="navigation navigation-next " aria-label="Next page: Tomcat系统架构">
+                <a href="SpringBoot启动过程.html" class="navigation navigation-next " aria-label="Next page: SpringBoot启动过程">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -7772,7 +8001,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Tomcat","level":"1.3.4","depth":2,"next":{"title":"Tomcat系统架构","level":"1.3.4.1","depth":3,"path":"J2EE/tomcat/Tomcat系统架构.md","ref":"J2EE/tomcat/Tomcat系统架构.md","articles":[]},"previous":{"title":"黏性session和非黏性session","level":"1.3.3.5","depth":3,"path":"J2EE/会话/黏性session和非黏性session.md","ref":"J2EE/会话/黏性session和非黏性session.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","chapter-fold","anchor-navigation-ex","-lunr","-search","search-pro","code","github-buttons","-sharing","baidu-tongji","donate"],"pluginsConfig":{"chapter-fold":{},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"78dc0e0b4e3aedf643d6621778307a6f"},"search-pro":{},"code":{"copyButtons":true},"donate":{"alipay":"http://filecdn.isture.com/images/pay/alipay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"http://filecdn.isture.com/images/pay/wechat.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"github-buttons":{"buttons":[{"user":"zszdevelop","repo":"java-study-gitbook","type":"star","count":true,"size":"small"},{"user":"zszdevelop","width":"160","type":"follow","count":true,"size":"small"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"J2EE/tomcat/README.md","mtime":"2019-08-27T14:58:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-20T02:27:39.782Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"自定义SpringBoot Starter实现自动化配置","level":"1.4.7.3","depth":3,"next":{"title":"SpringBoot启动过程","level":"1.4.7.4","depth":3,"path":"spring/SpringBoot/SpringBoot启动过程.md","ref":"spring/SpringBoot/SpringBoot启动过程.md","articles":[]},"previous":{"title":"Spring Boot 自动配置之@Enable*与@Import注解","level":"1.4.7.2","depth":3,"path":"spring/SpringBoot/SpringBoot自动配置之@Enable*与@Import注解.md","ref":"spring/SpringBoot/SpringBoot自动配置之@Enable*与@Import注解.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","chapter-fold","anchor-navigation-ex","-lunr","-search","search-pro","code","github-buttons","-sharing","baidu-tongji","donate"],"pluginsConfig":{"chapter-fold":{},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"78dc0e0b4e3aedf643d6621778307a6f"},"search-pro":{},"code":{"copyButtons":true},"donate":{"alipay":"http://filecdn.isture.com/images/pay/alipay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"http://filecdn.isture.com/images/pay/wechat.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"github-buttons":{"buttons":[{"user":"zszdevelop","repo":"java-study-gitbook","type":"star","count":true,"size":"small"},{"user":"zszdevelop","width":"160","type":"follow","count":true,"size":"small"}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"spring/SpringBoot/自定义SpringBootStarter实现自动化配置.md","mtime":"2020-03-20T16:49:52.092Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-20T17:07:51.906Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

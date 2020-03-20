@@ -4,7 +4,7 @@
 
 Spring Boot 项目的启动注解是：@SpringBootApplication，其实他由下面三个注解组成的：
 
-- @Configuration
+- @SpringBootConfiguration
 - @ComponentScan
 - @EnableAutoConfiguration
 
