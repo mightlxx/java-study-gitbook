@@ -505,6 +505,11 @@
 * 常用工具类
     * 跨域支持
         * [CorsConfig](utils/跨域支持/CorsConfig.md)
+* 前端
+    * 优化
+        * 首屏优化
+            * [首屏优化之-vue路由懒加载和使用懒加载prefetch问题](frontend/optimization/firstscreen/首屏优化之-vue路由懒加载.md)
+            * [首页优化之-gzip压缩](frontend/optimization/firstscreen/首页优化之-gzip压缩.md)
 * 面经
     * [盒马鲜生20200316](myinterview/2020/盒马鲜生20200316.md)
 * 面试提问
