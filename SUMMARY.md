@@ -463,7 +463,7 @@
             * [DNS域名解析](cs/dns/README.md)
         * [阿里云CDN使用](cdn/阿里云CDN使用.md)
         * [阿里云带宽价格](cdn/阿里云带宽价格.md)
-* [第三方库](library/README.md)
+* 常用框架
     * Sentinel
         * [Sentinel限流](library/Sentinel/Sentinel限流.md)
         * [Sentinel与Spring Cloud Gateway限流实例](library/Sentinel/Sentinel限流实例.md)
@@ -500,6 +500,13 @@
     * IDE
         * IDEA
             * [IDEA maven下载jar包太慢](tools/ide/idea/IDEAmaven下载jar包太慢.md)
+* 技术问题&解决方案
+    * 报表
+        * [java报表技术选型](problem&solve/report/java报表技术选型.md)
+    * office相关
+        * java导出生成word
+            * [java导出生成word技术选型](problem&solve/office/java导出生成word技术选型.md)
+            * [java导出生成word之XML方式](problem&solve/office/toword/java导出生成word之XML方式.md)
 * Java相关技术原理
     * [JavaAgent探针原理JVMTI](principle/agent/JavaAgent探针原理JVMTI.md)
 * 常用工具类
